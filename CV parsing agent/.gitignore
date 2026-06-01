@@ -1,0 +1,17 @@
+# Credentials — never commit
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated output (can be reproduced by running pipelines)
+pipeline_output/
+bulk_parse_output/
+preview_output/
+logs/
+raw_responses/
+
+# macOS
+.DS_Store

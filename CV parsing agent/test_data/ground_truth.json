@@ -1,0 +1,477 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-05-14",
+  "notes": {
+    "custcolumn4": "checkbox — '1' = open to relocation (Yes in resume), '0' = not open (No in resume)",
+    "custcolumn5": "dropdown — must match exactly: Full-time, Part-time, Contract, Internship, Freelance",
+    "custcolumn6": "multiselect — assert each listed element is present in parsed response",
+    "custcolumn10": "number — expected as numeric string (no currency symbol)",
+    "date_format": "YYYY-MM-DD",
+    "resume_section": "Custom-field values appear in natural sentences under 'Availability & Preferences' (same strings as custcolumn values)"
+  },
+  "field_map": {
+    "1": {
+      "name": "Preferred Contact Window",
+      "type": "text",
+      "custcolumn": "custcolumn1"
+    },
+    "2": {
+      "name": "Career Objective Statement",
+      "type": "longtext",
+      "custcolumn": "custcolumn2"
+    },
+    "3": {
+      "name": "Professional Certification Expiry",
+      "type": "date",
+      "custcolumn": "custcolumn3"
+    },
+    "4": {
+      "name": "Open to Relocation",
+      "type": "checkbox",
+      "custcolumn": "custcolumn4"
+    },
+    "5": {
+      "name": "Preferred Employment Type",
+      "type": "dropdown",
+      "custcolumn": "custcolumn5"
+    },
+    "6": {
+      "name": "Acceptable Work Arrangements",
+      "type": "multiselect",
+      "custcolumn": "custcolumn6"
+    },
+    "7": {
+      "name": "Alternate Contact Phone",
+      "type": "phonenumber",
+      "custcolumn": "custcolumn7"
+    },
+    "8": {
+      "name": "Secondary Professional Email",
+      "type": "email",
+      "custcolumn": "custcolumn8"
+    },
+    "9": {
+      "name": "Portfolio Website URL",
+      "type": "social_profile",
+      "custcolumn": "custcolumn9"
+    },
+    "10": {
+      "name": "Expected Annual Salary",
+      "type": "number",
+      "custcolumn": "custcolumn10"
+    }
+  },
+  "test_cases": [
+    {
+      "tc_id": "TC001",
+      "resume_file": "001_sarah_johnson.pdf",
+      "candidate_name": "Sarah Johnson",
+      "standard_fields": {
+        "firstname": "Sarah",
+        "lastname": "Johnson",
+        "emailid": "sarah.johnson@gmail.com",
+        "contactnumber": "+1 415 555 0198",
+        "city": "San Francisco",
+        "state": "California",
+        "country": "United States",
+        "position": "Senior Software Engineer",
+        "lastorganisation": "Stripe",
+        "workexpyr": 6,
+        "skill": "Python, Go, AWS, PostgreSQL, Kubernetes, Redis, gRPC",
+        "qualification": "B.S. Computer Science"
+      },
+      "custom_fields": {
+        "custcolumn1": "weekday mornings",
+        "custcolumn2": "Looking to move into a principal engineering role at a high-growth fintech company where I can own platform reliability and mentor junior engineers.",
+        "custcolumn3": "2027-03-31",
+        "custcolumn4": "1",
+        "custcolumn5": "Full-time",
+        "custcolumn6": [
+          "Remote",
+          "Hybrid"
+        ],
+        "custcolumn7": "+1 415 555 0142",
+        "custcolumn8": "sarah.work@protonmail.com",
+        "custcolumn9": "https://github.com/sarahjohnson",
+        "custcolumn10": "120000"
+      },
+      "assert_hints": {
+        "custcolumn1": {
+          "match": "contains"
+        },
+        "custcolumn2": {
+          "match": "semantic",
+          "note": "longtext — semantic match preferred"
+        },
+        "custcolumn3": {
+          "match": "exact"
+        },
+        "custcolumn4": {
+          "match": "exact"
+        },
+        "custcolumn5": {
+          "match": "exact"
+        },
+        "custcolumn6": {
+          "match": "all_items_present"
+        },
+        "custcolumn7": {
+          "match": "contains",
+          "note": "phone format may vary"
+        },
+        "custcolumn8": {
+          "match": "exact"
+        },
+        "custcolumn9": {
+          "match": "contains"
+        },
+        "custcolumn10": {
+          "match": "exact"
+        }
+      }
+    },
+    {
+      "tc_id": "TC002",
+      "resume_file": "002_james_patel.pdf",
+      "candidate_name": "James Patel",
+      "standard_fields": {
+        "firstname": "James",
+        "lastname": "Patel",
+        "emailid": "james.patel@gmail.com",
+        "contactnumber": "+1 212 555 0198",
+        "city": "New York",
+        "state": "New York",
+        "country": "United States",
+        "position": "Senior Data Scientist",
+        "lastorganisation": "Bloomberg LP",
+        "workexpyr": 5,
+        "skill": "Python, R, TensorFlow, Spark, SQL, Airflow",
+        "qualification": "M.S. Statistics"
+      },
+      "custom_fields": {
+        "custcolumn1": "afternoons after 2pm",
+        "custcolumn2": "Aiming to transition from data science into a machine learning engineering role where I can build production-grade ML pipelines and recommendation systems.",
+        "custcolumn3": "2026-11-30",
+        "custcolumn4": "0",
+        "custcolumn5": "Contract",
+        "custcolumn6": [
+          "Remote"
+        ],
+        "custcolumn7": "+1 212 555 0187",
+        "custcolumn8": "james.patel.pro@outlook.com",
+        "custcolumn9": "https://www.kaggle.com/jamespatel",
+        "custcolumn10": "145000"
+      },
+      "assert_hints": {
+        "custcolumn1": {
+          "match": "contains"
+        },
+        "custcolumn2": {
+          "match": "semantic"
+        },
+        "custcolumn3": {
+          "match": "exact"
+        },
+        "custcolumn4": {
+          "match": "exact"
+        },
+        "custcolumn5": {
+          "match": "exact"
+        },
+        "custcolumn6": {
+          "match": "all_items_present"
+        },
+        "custcolumn7": {
+          "match": "contains"
+        },
+        "custcolumn8": {
+          "match": "exact"
+        },
+        "custcolumn9": {
+          "match": "contains"
+        },
+        "custcolumn10": {
+          "match": "exact"
+        }
+      }
+    },
+    {
+      "tc_id": "TC003",
+      "resume_file": "003_emily_chen.pdf",
+      "candidate_name": "Emily Chen",
+      "standard_fields": {
+        "firstname": "Emily",
+        "lastname": "Chen",
+        "emailid": "emily.chen@gmail.com",
+        "contactnumber": "+1 650 555 0198",
+        "city": "Austin",
+        "state": "Texas",
+        "country": "United States",
+        "position": "Senior UX Designer",
+        "lastorganisation": "Dell Technologies",
+        "workexpyr": 7,
+        "skill": "Figma, Sketch, UserTesting, HTML, CSS, Framer",
+        "qualification": "B.F.A. Interaction Design"
+      },
+      "custom_fields": {
+        "custcolumn1": "evenings between 6pm and 8pm",
+        "custcolumn2": "Passionate about building intuitive consumer products; seeking a senior UX designer role at a company where design drives product decisions.",
+        "custcolumn3": "2025-12-15",
+        "custcolumn4": "1",
+        "custcolumn5": "Full-time",
+        "custcolumn6": [
+          "On-site",
+          "Hybrid"
+        ],
+        "custcolumn7": "+1 650 555 0231",
+        "custcolumn8": "emily.chen.design@gmail.com",
+        "custcolumn9": "https://www.behance.net/emilychen",
+        "custcolumn10": "95000"
+      },
+      "assert_hints": {
+        "custcolumn1": {
+          "match": "contains"
+        },
+        "custcolumn2": {
+          "match": "semantic"
+        },
+        "custcolumn3": {
+          "match": "exact"
+        },
+        "custcolumn4": {
+          "match": "exact"
+        },
+        "custcolumn5": {
+          "match": "exact"
+        },
+        "custcolumn6": {
+          "match": "all_items_present"
+        },
+        "custcolumn7": {
+          "match": "contains"
+        },
+        "custcolumn8": {
+          "match": "exact"
+        },
+        "custcolumn9": {
+          "match": "contains"
+        },
+        "custcolumn10": {
+          "match": "exact"
+        }
+      }
+    },
+    {
+      "tc_id": "TC004",
+      "resume_file": "004_michael_torres.pdf",
+      "candidate_name": "Michael Torres",
+      "standard_fields": {
+        "firstname": "Michael",
+        "lastname": "Torres",
+        "emailid": "m.torres@gmail.com",
+        "contactnumber": "+1 206 555 0198",
+        "city": "Seattle",
+        "state": "Washington",
+        "country": "United States",
+        "position": "Senior DevOps Engineer",
+        "lastorganisation": "Amazon Web Services",
+        "workexpyr": 8,
+        "skill": "Terraform, Kubernetes, AWS, CI/CD, Docker, Prometheus",
+        "qualification": "B.S. Information Systems"
+      },
+      "custom_fields": {
+        "custcolumn1": "Monday to Friday, 9am to noon",
+        "custcolumn2": "Seeking a senior DevOps or SRE role where I can build scalable cloud infrastructure and drive cost optimization initiatives across engineering teams.",
+        "custcolumn3": "2026-06-30",
+        "custcolumn4": "1",
+        "custcolumn5": "Full-time",
+        "custcolumn6": [
+          "Remote",
+          "Weekly travel"
+        ],
+        "custcolumn7": "+1 512 555 0087",
+        "custcolumn8": "mike.torres.devops@yahoo.com",
+        "custcolumn9": "https://github.com/mitorres",
+        "custcolumn10": "135000"
+      },
+      "assert_hints": {
+        "custcolumn1": {
+          "match": "contains"
+        },
+        "custcolumn2": {
+          "match": "semantic"
+        },
+        "custcolumn3": {
+          "match": "exact"
+        },
+        "custcolumn4": {
+          "match": "exact"
+        },
+        "custcolumn5": {
+          "match": "exact"
+        },
+        "custcolumn6": {
+          "match": "all_items_present"
+        },
+        "custcolumn7": {
+          "match": "contains"
+        },
+        "custcolumn8": {
+          "match": "exact"
+        },
+        "custcolumn9": {
+          "match": "contains"
+        },
+        "custcolumn10": {
+          "match": "exact"
+        }
+      }
+    },
+    {
+      "tc_id": "TC005",
+      "resume_file": "005_priya_sharma.pdf",
+      "candidate_name": "Priya Sharma",
+      "standard_fields": {
+        "firstname": "Priya",
+        "lastname": "Sharma",
+        "emailid": "priya.sharma@gmail.com",
+        "contactnumber": "+1 312 555 0198",
+        "city": "Chicago",
+        "state": "Illinois",
+        "country": "United States",
+        "position": "Senior Product Manager",
+        "lastorganisation": "Salesforce",
+        "workexpyr": 9,
+        "skill": "Product Strategy, Roadmapping, SQL, A/B Testing, JIRA, Figma",
+        "qualification": "MBA"
+      },
+      "custom_fields": {
+        "custcolumn1": "Tuesday and Thursday mornings",
+        "custcolumn2": "Aiming for a senior PM role in a B2B SaaS company where I can drive product strategy and lead cross-functional teams through 0-to-1 launches.",
+        "custcolumn3": "2027-09-30",
+        "custcolumn4": "0",
+        "custcolumn5": "Full-time",
+        "custcolumn6": [
+          "Hybrid",
+          "Client-site"
+        ],
+        "custcolumn7": "+1 408 555 0312",
+        "custcolumn8": "priya.sharma.pm@protonmail.com",
+        "custcolumn9": "https://www.linkedin.com/in/priyasharma-pm",
+        "custcolumn10": "150000"
+      },
+      "assert_hints": {
+        "custcolumn1": {
+          "match": "contains"
+        },
+        "custcolumn2": {
+          "match": "semantic"
+        },
+        "custcolumn3": {
+          "match": "exact"
+        },
+        "custcolumn4": {
+          "match": "exact"
+        },
+        "custcolumn5": {
+          "match": "exact"
+        },
+        "custcolumn6": {
+          "match": "all_items_present"
+        },
+        "custcolumn7": {
+          "match": "contains"
+        },
+        "custcolumn8": {
+          "match": "exact"
+        },
+        "custcolumn9": {
+          "match": "contains"
+        },
+        "custcolumn10": {
+          "match": "exact"
+        }
+      }
+    }
+  ],
+  "nested_test_cases": [
+    {
+      "tc_id": "TC006_NESTED",
+      "resume_file": "006_alex_kumar_nested.pdf",
+      "candidate_name": "Alex Kumar",
+      "standard_fields": {
+        "firstname": "Alex",
+        "lastname": "Kumar",
+        "emailid": "alex.kumar@gmail.com",
+        "contactnumber": "+1 408 555 0299",
+        "city": "San Jose",
+        "state": "California",
+        "country": "United States",
+        "position": "Senior Backend Engineer",
+        "lastorganisation": "Databricks",
+        "workexpyr": 9,
+        "skill": "Python, Django, FastAPI, Apache Spark, Airflow, Kafka, PostgreSQL",
+        "qualification": "M.S. Computer Science"
+      },
+      "nested_custom_fields": {
+        "custcolumn1": "1",
+        "custcolumn2": "Remote",
+        "custcolumn3": [
+          "Backend",
+          "Data"
+        ],
+        "custcolumn4": "200 mile radius",
+        "custcolumn5": "Dedicated room",
+        "custcolumn6": null,
+        "custcolumn7": [
+          "Django",
+          "FastAPI"
+        ],
+        "custcolumn8": "Apache Spark and Airflow",
+        "custcolumn9": "4",
+        "custcolumn10": "$150/hour"
+      },
+      "validation_notes": {
+        "col4": "Visible because col1=1 (willing to travel)",
+        "col5": "Visible and filtered to {Dedicated room, Shared space} because col2=Remote",
+        "col6": "Hidden because col2=Remote (only visible when Onsite)",
+        "col7": "Visible and union of Backend+Data filters: all 4 options valid (Django, Spring Boot, FastAPI, Express)",
+        "col8": "Visible because Data is selected in col3"
+      }
+    },
+    {
+      "test_case_id": "TC007_INVALID_DEPENDENCY",
+      "resume_file": "007_mary_jones_invalid.pdf",
+      "description": "INVALID: Onsite Location present in text but Work Mode=Remote should hide it",
+      "standard_fields": {
+        "firstname": "Mary",
+        "lastname": "Jones",
+        "email": "mary.jones@techmail.com",
+        "phone": "+1 650 555 0123"
+      },
+      "nested_custom_fields": {
+        "custcolumn1": "1",
+        "custcolumn2": "Remote",
+        "custcolumn3": [
+          "Backend",
+          "Data"
+        ],
+        "custcolumn4": "100 miles",
+        "custcolumn5": "Dedicated room",
+        "custcolumn6": null,
+        "custcolumn7": [
+          "Django",
+          "FastAPI"
+        ],
+        "custcolumn8": "Apache Spark",
+        "custcolumn9": 30,
+        "custcolumn10": "$95/hour"
+      },
+      "validation_notes": {
+        "dependency_violation": "custcolumn6 (Onsite Location)",
+        "reason": "Resume text mentions 'San Francisco office' but Work Mode Preference is 'Remote', which should hide Onsite Location field",
+        "expected_behavior": "Parser should NOT extract custcolumn6 value even though text is present, because dependency rules make this field hidden"
+      }
+    }
+  ]
+}
