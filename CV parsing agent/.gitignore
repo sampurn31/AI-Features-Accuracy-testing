@@ -12,6 +12,7 @@ bulk_parse_output/
 preview_output/
 logs/
 raw_responses/
+ai_parser_parity/output/
 
 # macOS
 .DS_Store

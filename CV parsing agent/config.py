@@ -53,6 +53,8 @@ ML_JAPANESE_SS_BASE_URL      = os.getenv("ML_JAPANESE_SS_BASE_URL", "")
 ML_JAPANESE_SS_EMAIL         = os.getenv("ML_JAPANESE_SS_EMAIL", "")
 ML_JAPANESE_SS_PASSWORD      = os.getenv("ML_JAPANESE_SS_PASSWORD", "")
 
+AI_PARSER_TOKEN = os.getenv("AI_PARSER_TOKEN", "")
+
 EEO_API_BASE_URL  = os.getenv("EEO_API_BASE_URL", "").rstrip("/")
 EEO_AUTH_BASE_URL = os.getenv("EEO_AUTH_BASE_URL", "").rstrip("/")
 EEO_AUTH_EMAIL    = os.getenv("EEO_AUTH_EMAIL", "")
