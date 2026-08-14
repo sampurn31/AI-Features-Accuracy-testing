@@ -14,16 +14,50 @@ the AI parser HTTP service instead of a second Albatross environment.
 ```bash
 cd "CV parsing agent/ai_parser_parity"
 
-python3 ai_parser_parity.py                # all resumes in ../100 resumes/
+python3 ai_parser_parity.py                # parse whatever isn't cached yet
 python3 ai_parser_parity.py --limit 5      # first 5 only (smoke test)
-python3 ai_parser_parity.py --reparse      # ignore cache, hit both APIs again
-python3 ai_parser_parity.py --model-id 8   # AI parser model_id (default 8)
+python3 ai_parser_parity.py --reparse-b    # reuse Track A baseline, re-call the AI parser
+python3 ai_parser_parity.py --reparse-a    # rebuild the Track A baseline only
+python3 ai_parser_parity.py --reparse      # re-parse both tracks
+python3 ai_parser_parity.py --model-id 1   # different AI model (own cache)
 python3 ai_parser_parity.py --resumes ../multilingual/German
 python3 ai_parser_parity.py --sleep 0.5    # gap between resumes (default 1.0s)
 ```
 
-Results are cached in `output/ai_parity_results.json`. A plain re-run reuses that
-cache and only rebuilds the report — pass `--reparse` to actually re-parse.
+---
+
+## Caching
+
+The two tracks are cached **separately**, both keyed by filename, and **Track A is
+reused by default whenever a baseline exists**:
+
+| File | Holds | Reused |
+|---|---|---|
+| `output/track_a_baseline.json` | Track A standard fields + timings, plus `user_id` / `account_id` | always, unless `--reparse-a` / `--reparse` |
+| `output/track_b_results_model{N}.json` | AI parser fields + timings, **one file per `model_id`** | always, unless `--reparse-b` / `--reparse` |
+
+A plain re-run parses only what's missing from each cache, then merges the two
+into `ai_parity_results.json` and rebuilds the report. If everything is cached,
+no API is called at all.
+
+Why it's split this way:
+
+- **Track A parses the unmodified original**, so its output is stable — there's no
+  reason to re-parse it every time, especially with staging returning intermittent
+  500s.
+- **Track B is cached per model**, because output and timings change with
+  `model_id`. That makes the useful comparison cheap: run `--model-id 8`, then
+  `--model-id 1`, and both are scored against the *same* Track A baseline.
+- **`user_id` / `account_id` are stored in the Track A cache**, so a Track-B-only
+  run needs no login and never touches staging.
+- **Failures are never cached** — a resume that errored is simply retried next run.
+  If a resume is missing from either cache at merge time it becomes an `ERROR` row
+  naming the track that's missing.
+
+Caches are written after **every** resume, so an interrupted or partially failed
+run keeps everything it already completed; just run again to top it up.
+
+To start completely clean, delete `output/`.
 
 Credentials come from `../.env` via `../config.py` — `TRACK_A_*` for the baseline
 environment and `AI_PARSER_TOKEN` for the AI parser. The token is the **full header
@@ -145,9 +179,11 @@ LLM time, average non-LLM overhead, and LLM share of total AI request time.
 
 ```
 output/
-  ai_parity_results.json          # per-resume raw comparison data + timings
-  ai_parity_report.xlsx           # 5 sheets (below)
-  raw_ai_responses/<resume>.json  # unmodified AI parser payloads
+  track_a_baseline.json                    # Track A cache (reused by default)
+  track_b_results_model8.json              # Track B cache, per model_id
+  ai_parity_results.json                   # merged per-resume comparison + timings
+  ai_parity_report.xlsx                    # 5 sheets (below)
+  raw_ai_responses/<resume>_model<N>.json  # unmodified AI parser payloads
 logs/
   ai_parser_parity.log
 ```

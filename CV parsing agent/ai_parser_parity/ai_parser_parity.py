@@ -86,8 +86,9 @@ RESUME_FOLDER = PARENT / "100 resumes"
 
 OUTPUT_DIR   = HERE / "output"
 RAW_AI_DIR   = OUTPUT_DIR / "raw_ai_responses"
-RESULTS_JSON = OUTPUT_DIR / "ai_parity_results.json"
-REPORT_FILE  = OUTPUT_DIR / "ai_parity_report.xlsx"
+RESULTS_JSON  = OUTPUT_DIR / "ai_parity_results.json"
+TRACK_A_CACHE = OUTPUT_DIR / "track_a_baseline.json"
+REPORT_FILE   = OUTPUT_DIR / "ai_parity_report.xlsx"
 LOGS_DIR     = HERE / "logs"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -756,76 +757,206 @@ def discover_resumes(folder: Path, limit: int = 0) -> list:
     return unique[:limit] if limit else unique
 
 
-def run_parity_parse(auth: dict, resumes: list, model_id: int, sleep_s: float) -> list:
-    results = []
-    total   = len(resumes)
-    print(f"\n[Parity] {total} resume(s) — Track A: {BASE_URL_TRACK_A}")
-    print(f"[Parity] Track B: {AI_PARSER_URL}?model_id={model_id}  "
-          f"(account_id={auth['account_id']}, user_id={auth['user_id']})\n")
+# ── Caches ───────────────────────────────────────────────────────────────────
+# Track A and Track B are cached SEPARATELY, both keyed by filename:
+#
+#   track_a_baseline.json          — Track A parses the unmodified original, so
+#                                    its output is stable and worth keeping.
+#                                    Reused by default; also stores user_id /
+#                                    account_id so a Track-B-only run needs no
+#                                    login at all (staging is flaky).
+#   track_b_results_model{N}.json  — per model_id, because Track B output and
+#                                    timings change with the model.
+#
+# Failures are never cached, so a resume that errored is retried on the next run.
 
-    for idx, resume_path in enumerate(resumes, start=1):
-        rid = f"R{idx:03d}"
-        print(f"  [{rid}] {resume_path.name} ...", end=" ", flush=True)
+def _empty_track_a_cache() -> dict:
+    return {"base_url": BASE_URL_TRACK_A, "user_id": None, "account_id": None,
+            "resumes": {}}
 
+
+def load_track_a_cache() -> dict:
+    if not TRACK_A_CACHE.is_file():
+        return _empty_track_a_cache()
+    try:
+        cache = json.loads(TRACK_A_CACHE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        log.warning(f"Track A cache unreadable ({exc}) — starting fresh")
+        return _empty_track_a_cache()
+    if cache.get("base_url") and cache["base_url"] != BASE_URL_TRACK_A:
+        print(f"  ! Track A cache was built against {cache['base_url']}, "
+              f"now targeting {BASE_URL_TRACK_A} — ignoring cache")
+        return _empty_track_a_cache()
+    cache.setdefault("resumes", {})
+    return cache
+
+
+def save_track_a_cache(cache: dict) -> None:
+    cache["updated"] = time.strftime("%Y-%m-%d %H:%M:%S")
+    TRACK_A_CACHE.write_text(json.dumps(cache, indent=2, ensure_ascii=False),
+                             encoding="utf-8")
+
+
+def track_b_cache_path(model_id: int) -> Path:
+    return OUTPUT_DIR / f"track_b_results_model{model_id}.json"
+
+
+def load_track_b_cache(model_id: int) -> dict:
+    path = track_b_cache_path(model_id)
+    if not path.is_file():
+        return {"ai_url": AI_PARSER_URL, "model_id": model_id, "resumes": {}}
+    try:
+        cache = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        log.warning(f"Track B cache unreadable ({exc}) — starting fresh")
+        return {"ai_url": AI_PARSER_URL, "model_id": model_id, "resumes": {}}
+    cache.setdefault("resumes", {})
+    return cache
+
+
+def save_track_b_cache(model_id: int, cache: dict) -> None:
+    cache["updated"] = time.strftime("%Y-%m-%d %H:%M:%S")
+    track_b_cache_path(model_id).write_text(
+        json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+
+
+def run_track_a_phase(resumes: list, cache: dict, force: bool,
+                      auth_provider, sleep_s: float) -> dict:
+    """Parse on Track A only what the cache is missing.  Saves after each resume."""
+    todo = [p for p in resumes if force or p.name not in cache["resumes"]]
+    cached = len(resumes) - len(todo)
+
+    print(f"\n[Track A] {BASE_URL_TRACK_A}")
+    print(f"          {cached} cached, {len(todo)} to parse")
+    if not todo:
+        return cache
+
+    auth = auth_provider()
+    for idx, resume_path in enumerate(todo, start=1):
+        print(f"  [{idx}/{len(todo)}] {resume_path.name} ...", end=" ", flush=True)
         try:
-            std_a, timings_a = parse_on_track_a(
+            std_a, timings = parse_on_track_a(
                 BASE_URL_TRACK_A, auth["token"], resume_path
             )
-            print(f"A✓({timings_a['total_ms']:.0f}ms)", end=" ", flush=True)
+            cache["resumes"][resume_path.name] = {
+                "standard_fields": std_a,
+                "presign_ms":      timings["presign_ms"],
+                "upload_ms":       timings["upload_ms"],
+                "parse_ms":        timings["parse_ms"],
+                "total_ms":        timings["total_ms"],
+                "parsed_at":       time.strftime("%Y-%m-%d %H:%M:%S"),
+            }
+            save_track_a_cache(cache)
+            print(f"OK ({timings['total_ms']:.0f}ms)")
+            log.info(f"[Track A] {resume_path.name} OK {timings['total_ms']}ms")
+        except Exception as exc:
+            print(f"ERROR — {exc}")
+            log.error(f"[Track A] {resume_path.name} failed: {exc}")
+        time.sleep(sleep_s)
 
-            payload, ai_ms = call_ai_parser(
-                resume_path, auth["account_id"], auth["user_id"], model_id
-            )
+    return cache
+
+
+def run_track_b_phase(resumes: list, cache: dict, force: bool, model_id: int,
+                      account_id, user_id, sleep_s: float) -> dict:
+    """Call the AI parser only for what the per-model cache is missing."""
+    todo = [p for p in resumes if force or p.name not in cache["resumes"]]
+    cached = len(resumes) - len(todo)
+
+    print(f"\n[Track B] {AI_PARSER_URL}?model_id={model_id}")
+    print(f"          account_id={account_id}, user_id={user_id}")
+    print(f"          {cached} cached, {len(todo)} to parse")
+    if not todo:
+        return cache
+
+    for idx, resume_path in enumerate(todo, start=1):
+        print(f"  [{idx}/{len(todo)}] {resume_path.name} ...", end=" ", flush=True)
+        try:
+            payload, ai_ms = call_ai_parser(resume_path, account_id, user_id, model_id)
             record   = extract_ai_record(payload)
             llm_secs = find_llm_response_time(payload, record)
             std_b    = extract_standard_fields_ai(record)
 
-            (RAW_AI_DIR / f"{resume_path.stem}.json").write_text(
+            (RAW_AI_DIR / f"{resume_path.stem}_model{model_id}.json").write_text(
                 json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
             )
 
-            llm_ms   = round(llm_secs * 1000, 2) if llm_secs is not None else None
-            diff_ms  = round(ai_ms - timings_a["total_ms"], 2)
-            faster   = "A" if diff_ms > 0 else "B" if diff_ms < 0 else "Equal"
+            llm_ms = round(llm_secs * 1000, 2) if llm_secs is not None else None
+            cache["resumes"][resume_path.name] = {
+                "standard_fields":     std_b,
+                "request_ms":          ai_ms,
+                "llm_response_ms":     llm_ms,
+                "llm_response_s":      llm_secs,
+                "overhead_ms":         (round(ai_ms - llm_ms, 2)
+                                        if llm_ms is not None else None),
+                "model_id":            payload.get("model_id", model_id),
+                "sovren_document_id":  record.get("sovrenDocumentId", ""),
+                "parsed_at":           time.strftime("%Y-%m-%d %H:%M:%S"),
+            }
+            save_track_b_cache(model_id, cache)
             llm_note = f", llm={llm_ms:.0f}ms" if llm_ms is not None else ", llm=n/a"
-            print(f"B✓({ai_ms:.0f}ms{llm_note}) [Δ={diff_ms:+.0f}ms, {faster} faster]")
-
-            results.append({
-                "resume_id":            rid,
-                "filename":             resume_path.name,
-                "track_a":              std_a,
-                "track_b":              std_b,
-                "track_a_presign_ms":   timings_a["presign_ms"],
-                "track_a_upload_ms":    timings_a["upload_ms"],
-                "track_a_parse_ms":     timings_a["parse_ms"],
-                "track_a_total_ms":     timings_a["total_ms"],
-                "ai_request_ms":        ai_ms,
-                "ai_llm_response_ms":   llm_ms,
-                "ai_llm_response_s":    llm_secs,
-                "ai_overhead_ms": (round(ai_ms - llm_ms, 2)
-                                   if llm_ms is not None else None),
-                "time_difference_ms":   diff_ms,
-                "faster_env":           faster,
-                "ai_model_id":          payload.get("model_id", model_id),
-                "ai_sovren_document_id": record.get("sovrenDocumentId", ""),
-            })
-            log.info(f"[Parity] {rid} OK | A={timings_a['total_ms']}ms "
-                     f"B={ai_ms}ms llm={llm_ms}")
-
+            print(f"OK ({ai_ms:.0f}ms{llm_note})")
+            log.info(f"[Track B m{model_id}] {resume_path.name} OK "
+                     f"{ai_ms}ms llm={llm_ms}")
         except Exception as exc:
             print(f"ERROR — {exc}")
-            log.error(f"[Parity] {rid} ({resume_path.name}) failed: {exc}")
-            results.append({
-                "resume_id": rid,
-                "filename":  resume_path.name,
-                "error":     str(exc),
-            })
-
+            log.error(f"[Track B m{model_id}] {resume_path.name} failed: {exc}")
         time.sleep(sleep_s)
+
+    return cache
+
+
+def merge_results(resumes: list, a_cache: dict, b_cache: dict) -> list:
+    """
+    Join the two caches into the per-resume records the validator and report
+    consume.  A resume missing from either side becomes an ERROR row naming
+    which track is missing, and will be retried on the next run.
+    """
+    results = []
+    for idx, resume_path in enumerate(resumes, start=1):
+        rid  = f"R{idx:03d}"
+        name = resume_path.name
+        a    = a_cache["resumes"].get(name)
+        b    = b_cache["resumes"].get(name)
+
+        if not a or not b:
+            missing = "Track A" if not a else "Track B"
+            if not a and not b:
+                missing = "Track A and Track B"
+            results.append({
+                "resume_id": rid, "filename": name,
+                "error": f"no parse result for {missing}",
+            })
+            continue
+
+        ai_ms   = b["request_ms"]
+        a_total = a["total_ms"]
+        diff_ms = round(ai_ms - a_total, 2)
+        results.append({
+            "resume_id":             rid,
+            "filename":              name,
+            "track_a":               a["standard_fields"],
+            "track_b":               b["standard_fields"],
+            "track_a_presign_ms":    a["presign_ms"],
+            "track_a_upload_ms":     a["upload_ms"],
+            "track_a_parse_ms":      a["parse_ms"],
+            "track_a_total_ms":      a_total,
+            "ai_request_ms":         ai_ms,
+            "ai_llm_response_ms":    b["llm_response_ms"],
+            "ai_llm_response_s":     b["llm_response_s"],
+            "ai_overhead_ms":        b["overhead_ms"],
+            "time_difference_ms":    diff_ms,
+            "faster_env":            "A" if diff_ms > 0 else "B" if diff_ms < 0 else "Equal",
+            "ai_model_id":           b["model_id"],
+            "ai_sovren_document_id": b["sovren_document_id"],
+            "track_a_parsed_at":     a["parsed_at"],
+            "track_b_parsed_at":     b["parsed_at"],
+        })
 
     RESULTS_JSON.write_text(json.dumps(results, indent=2, ensure_ascii=False),
                             encoding="utf-8")
-    print(f"\n[Parity] Results saved → {RESULTS_JSON}")
+    print(f"\n[Parity] Merged results saved → {RESULTS_JSON}")
     return results
 
 
@@ -1261,6 +1392,8 @@ def build_report(df: pd.DataFrame, results: list, model_id: int) -> None:
         ("Fields compared", ", ".join(COMPARE_FIELDS)),
         ("Set-compared fields", ", ".join(sorted(SET_FIELDS))),
         ("Excluded fields", "sovren_document_id (unrelated ids on the two services)"),
+        ("Track A cache", str(TRACK_A_CACHE.name)),
+        ("Track B cache", str(track_b_cache_path(model_id).name)),
         ("Generated", time.strftime("%Y-%m-%d %H:%M:%S")),
     ]
     ws_i.column_dimensions["A"].width = 26
@@ -1364,7 +1497,11 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0,
                     help="only process the first N resumes (0 = all)")
     ap.add_argument("--reparse", action="store_true",
-                    help="ignore cached results and parse again")
+                    help="re-parse BOTH tracks, ignoring both caches")
+    ap.add_argument("--reparse-a", action="store_true",
+                    help="re-parse Track A only (rebuild the baseline)")
+    ap.add_argument("--reparse-b", action="store_true",
+                    help="re-parse Track B only (reuse the Track A baseline)")
     ap.add_argument("--model-id", type=int, default=AI_MODEL_ID,
                     help=f"AI parser model_id (default {AI_MODEL_ID})")
     ap.add_argument("--resumes", type=str, default=str(RESUME_FOLDER),
@@ -1373,28 +1510,59 @@ def main() -> None:
                     help="seconds to sleep between resumes (default 1.0)")
     args = ap.parse_args()
 
+    force_a = args.reparse or args.reparse_a
+    force_b = args.reparse or args.reparse_b
+
     print("=" * 70)
     print("AI Parser Standard Field Parity Check")
     print("=" * 70)
 
-    if RESULTS_JSON.exists() and not args.reparse:
-        print(f"\n[Parity] Loading cached results → {RESULTS_JSON}")
-        print("         (use --reparse to force a fresh run)")
-        results = json.loads(RESULTS_JSON.read_text(encoding="utf-8"))
+    folder  = Path(args.resumes)
+    resumes = discover_resumes(folder, args.limit)
+    if not resumes:
+        print(f"[Parity] No resumes found in {folder}")
+        return
+    print(f"\n[Parity] {len(resumes)} resume(s) from {folder}")
+
+    a_cache = load_track_a_cache()
+    b_cache = load_track_b_cache(args.model_id)
+
+    # Log in lazily and only once: a Track-B-only run reuses the ids stored in
+    # the Track A cache and never touches (flaky) staging.
+    _auth = {}
+
+    def auth_provider() -> dict:
+        if not _auth:
+            print("\n[Auth] Logging in to Track A ...")
+            _auth.update(login_track_a(BASE_URL_TRACK_A, EMAIL_TRACK_A,
+                                       PASSWORD_TRACK_A))
+            print(f"  Token OK | user_id={_auth['user_id']} "
+                  f"account_id={_auth['account_id']}")
+            a_cache["user_id"]    = _auth["user_id"]
+            a_cache["account_id"] = _auth["account_id"]
+            save_track_a_cache(a_cache)
+        return _auth
+
+    a_cache = run_track_a_phase(resumes, a_cache, force_a, auth_provider, args.sleep)
+
+    b_todo = [p for p in resumes if force_b or p.name not in b_cache["resumes"]]
+    if b_todo:
+        account_id = a_cache.get("account_id")
+        user_id    = a_cache.get("user_id")
+        if account_id is None or user_id is None:
+            auth       = auth_provider()
+            account_id = auth["account_id"]
+            user_id    = auth["user_id"]
+        b_cache = run_track_b_phase(resumes, b_cache, force_b, args.model_id,
+                                    account_id, user_id, args.sleep)
     else:
-        print("\n[Auth] Logging in to Track A ...")
-        auth = login_track_a(BASE_URL_TRACK_A, EMAIL_TRACK_A, PASSWORD_TRACK_A)
-        print(f"  Token OK | user_id={auth['user_id']} account_id={auth['account_id']}")
+        print(f"\n[Track B] {AI_PARSER_URL}?model_id={args.model_id}")
+        print(f"          {len(resumes)} cached, 0 to parse")
 
-        folder  = Path(args.resumes)
-        resumes = discover_resumes(folder, args.limit)
-        if not resumes:
-            print(f"[Parity] No resumes found in {folder}")
-            return
-        results = run_parity_parse(auth, resumes, args.model_id, args.sleep)
+    results = merge_results(resumes, a_cache, b_cache)
 
-    ok  = sum(1 for r in results if "error" not in r)
-    print(f"[Parity] {ok}/{len(results)} resume(s) parsed on both tracks")
+    ok = sum(1 for r in results if "error" not in r)
+    print(f"[Parity] {ok}/{len(results)} resume(s) present on both tracks")
 
     print("\n[Validation] Comparing standard fields ...")
     df = run_parity_validation(results)
