@@ -3,3 +3,24 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
+
+# Run outputs. These hold real candidate and job data pulled from the account —
+# never commit them.
+pipeline_output/
+reports/
+logs/
+*.xlsx
+
+# Activity Context caches, plans and results
+corpus.json
+jobs_full.json
+pools.json
+plan.json
+wrote.json
+summary.json
+eval_manifest.json
+eval_results.json
+manifest.json
+activity_context_manifest.json
+activity_context_edge_manifest.json
+results_*.json
