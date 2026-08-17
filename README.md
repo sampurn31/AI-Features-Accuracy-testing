@@ -1,6 +1,6 @@
 # Accuracy Testing
 
-Two independent test suites for validating Recruit CRM's AI parsing and LLM features.
+Three independent test suites for validating Recruit CRM's AI parsing, LLM, and AI Matching features.
 
 ---
 
@@ -11,6 +11,9 @@ Tests the **resume parser** — uploads real resumes, checks how accurately stan
 
 ### `LLM Replacement/`
 Tests **Neptune LLM features** — sends the same prompt to two environments (baseline vs new model), judges the output quality using a Groq LLM, and writes a scored Excel report.
+
+### `Activity Context/`
+Tests whether giving the **AI Matching scorer** a candidate's notes and call logs improves its reasoning and scores. Two deployments over one shared database — one that can see activity, one that cannot.
 
 ---
 
@@ -72,6 +75,42 @@ python3 run_all_tests.py --excel-only  # write Excel from last saved log
 
 ---
 
+## Activity Context — how to run
+
+**What it does:** Seeds notes and call logs against the account's real candidates, re-scores every job on both deployments with pinned criteria, and has a judge grade each match analysis at criterion level.
+
+Two projects live here. **`activity_eval/` is the current one** — it uses the account's real candidates and grades at criterion level. `activity_context/` is the earlier synthetic-twin-pair version, kept for its design notes and its record of what the public API blocks.
+
+**Step 1 — Setup**
+```bash
+cd "Activity Context"
+pip install -r requirements.txt
+cd activity_eval
+cp .env.example .env        # fill in AI2 / DEV credentials + ANTHROPIC_API_KEY
+```
+
+**Step 2 — Run, in order**
+
+| Goal | Script |
+|------|--------|
+| Offline sanity check — always run first, costs nothing | `python3 selfcheck.py` |
+| Fetch real jobs + candidates | `python3 corpus.py --build` |
+| Ask the system which candidates match which job | `python3 pools.py` |
+| Plan the activity, grounded in each profile | `python3 design.py --plan` then `--show 4` |
+| Write the notes + call logs (additive, reversible) | `python3 seed_plan.py` (`--dry-run` first) |
+| Score both flows | `python3 evaluate.py` |
+| Write the Excel | `python3 report.py` |
+
+`python3 seed_plan.py --undo` removes every note and call log this wrote.
+
+**Step 3 — Find your output**
+
+The Excel written by `report.py` — Sheet 1 scores each analysis, Sheet 2 compares AI2 vs DEV blind, Sheet 3 covers response time.
+
+See [Activity Context/activity_eval/README.md](Activity%20Context/activity_eval/README.md) for what the numbers mean and the five API behaviours that are easy to get wrong.
+
+---
+
 ## Which one should I use?
 
 | I want to test... | Use |
@@ -81,3 +120,4 @@ python3 run_all_tests.py --excel-only  # write Excel from last saved log
 | EEO compliance guardrail | `CV parsing agent` |
 | Candidate summary, email generation, job description | `LLM Replacement` |
 | Any Neptune AI feature (before/after model swap) | `LLM Replacement` |
+| Whether notes / call logs improve AI Matching scores | `Activity Context` |

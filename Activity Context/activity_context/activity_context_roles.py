@@ -1,0 +1,248 @@
+#!/usr/bin/env python3
+"""
+Role catalogue for the Activity Context (PW-6968) accuracy test data.
+
+20 roles across distinct industries. Each entry drives one job (JD + company +
+contact) and the pool of candidates seeded against it.
+
+Fields per role:
+  key                 short id, used in names/emails/manifest
+  title               job title / the strong candidate's own title
+  industry            free text, used in the company name and JD
+  city / country      job location
+  min_exp / max_exp   experience range on the job
+  skills              the skills a STRONG candidate has (also drive the JD)
+  partial_skills      subset a MEDIUM candidate has
+  alt_titles          adjacent titles used for MEDIUM candidates
+  companies           employer names used on candidate profiles
+  degree              typical qualification line for the resume text
+  jd                  the job description text
+"""
+
+ROLES = [
+{
+  "key": 'backend', "title": 'Senior Backend Engineer',
+  "industry": 'B2B SaaS', "city": 'Berlin', "country": 'Germany',
+  "min_exp": 6, "max_exp": 12,
+  "skills": ['Python', 'PostgreSQL', 'Kafka', 'Kubernetes', 'Terraform', 'AWS'],
+  "partial_skills": ['Python', 'PostgreSQL', 'Docker'],
+  "alt_titles": ['Backend Developer', 'Software Engineer', 'Platform Engineer'],
+  "companies": ['Zalando', 'Delivery Hero', 'N26', 'SoundCloud', 'HelloFresh'],
+  "degree": 'B.Sc. Computer Science',
+  "jd": 'Own the settlement and reconciliation services end to end: design, build, run, and the pager that comes with them. 6+ years of Python, production Kubernetes, PostgreSQL at scale and Kafka with exactly-once semantics. Three days a week on site in Berlin.',
+},
+{
+  "key": 'nurse', "title": 'Registered Nurse - Acute Medical Unit',
+  "industry": 'Healthcare', "city": 'Manchester', "country": 'United Kingdom',
+  "min_exp": 2, "max_exp": 10,
+  "skills": ['NEWS2 escalation', 'A-E assessment', 'SBAR handover', 'venepuncture', 'cannulation'],
+  "partial_skills": ['patient assessment', 'medicines administration'],
+  "alt_titles": ['Staff Nurse', 'Clinical Practitioner', 'Band 5 Nurse'],
+  "companies": ['Manchester Royal Infirmary', 'Salford Royal', 'Wythenshawe Hospital'],
+  "degree": 'BSc (Hons) Adult Nursing',
+  "jd": 'A 32-bed acute medical unit taking direct GP admissions and A&E step-downs. Current NMC registration, 2+ years post-registration acute experience, structured A-E assessment with NEWS2 escalation and SBAR handover. Full rotating shift pattern including nights.',
+},
+{
+  "key": 'finanalyst', "title": 'Financial Analyst - FP&A',
+  "industry": 'Consumer Goods', "city": 'Chicago', "country": 'United States',
+  "min_exp": 3, "max_exp": 8,
+  "skills": ['financial modelling', 'variance analysis', 'SQL', 'Power BI', 'budgeting'],
+  "partial_skills": ['Excel modelling', 'variance analysis'],
+  "alt_titles": ['Commercial Analyst', 'Business Analyst', 'Finance Associate'],
+  "companies": ['Conagra Brands', 'Kraft Heinz', 'Mondelez', 'Kellanova'],
+  "degree": 'BSc Accounting and Finance',
+  "jd": 'Own the monthly close variance pack for a $400m division and the driver-based forecast behind it. Three-statement modelling, advanced Excel, SQL and Power BI. Part-qualified CIMA/ACCA preferred. Two days a week on site.',
+},
+{
+  "key": 'mecheng', "title": 'Mechanical Design Engineer',
+  "industry": 'Industrial Manufacturing', "city": 'Pune', "country": 'India',
+  "min_exp": 4, "max_exp": 10,
+  "skills": ['SolidWorks', 'GD&T', 'DFM', 'tolerance stack-up', 'injection moulding'],
+  "partial_skills": ['SolidWorks', 'technical drawings'],
+  "alt_titles": ['Design Engineer', 'Product Engineer', 'CAD Engineer'],
+  "companies": ['Cummins', 'Tata Motors', 'Bharat Forge', 'Thermax'],
+  "degree": 'B.E. Mechanical Engineering',
+  "jd": 'Design injection-moulded and sheet-metal assemblies from concept to production release. SolidWorks, GD&T on every drawing, DFM reviews with suppliers and tolerance stack-up analysis. Six-day week during launch phases.',
+},
+{
+  "key": 'digimktg', "title": 'Digital Marketing Manager',
+  "industry": 'E-commerce', "city": 'Austin', "country": 'United States',
+  "min_exp": 5, "max_exp": 10,
+  "skills": ['paid acquisition', 'Google Ads', 'Meta Ads', 'GA4', 'attribution'],
+  "partial_skills": ['campaign management', 'social media'],
+  "alt_titles": ['Performance Marketing Manager', 'Growth Marketing Manager'],
+  "companies": ['Indeed', 'Bazaarvoice', 'SolarWinds', 'Q2 Holdings'],
+  "degree": 'BA Marketing',
+  "jd": 'Own a $2.4m annual paid budget across Google and Meta, with full P&L accountability for blended CAC. GA4, attribution modelling and incrementality testing. Hybrid, three days in the Austin office.',
+},
+{
+  "key": 'warehouse', "title": 'Warehouse Operations Manager',
+  "industry": 'Logistics', "city": 'Rotterdam', "country": 'Netherlands',
+  "min_exp": 6, "max_exp": 14,
+  "skills": ['WMS', 'continuous improvement', 'Six Sigma', 'safety management', 'shift planning'],
+  "partial_skills": ['warehouse supervision', 'stock control'],
+  "alt_titles": ['Distribution Centre Manager', 'Operations Supervisor'],
+  "companies": ['Kuehne+Nagel', 'DSV', 'Rhenus Logistics', 'Broekman'],
+  "degree": 'BSc Logistics Management',
+  "jd": 'Run a 24/5 operation across two shifts and 90 staff. WMS ownership including configuration and data quality, continuous improvement on pick rates and dispatch accuracy, and full safety accountability. Rotating early and late shifts.',
+},
+{
+  "key": 'frontend', "title": 'Junior Frontend Developer',
+  "industry": 'EdTech', "city": 'Krakow', "country": 'Poland',
+  "min_exp": 0, "max_exp": 2,
+  "skills": ['React', 'TypeScript', 'JavaScript', 'CSS', 'Jest'],
+  "partial_skills": ['JavaScript', 'HTML', 'CSS'],
+  "alt_titles": ['Graduate Developer', 'Junior Developer', 'Web Developer'],
+  "companies": ['Brainly', 'Allegro', 'Motorola Solutions'],
+  "degree": 'B.Sc. Computer Science',
+  "jd": 'Build UI features in React and TypeScript alongside a senior mentor. 0-2 years, working knowledge of JavaScript and CSS, and evidence you can learn fast. Hybrid, two days in the Krakow office.',
+},
+{
+  "key": 'civileng', "title": 'Civil Site Engineer',
+  "industry": 'Construction', "city": 'Dubai', "country": 'United Arab Emirates',
+  "min_exp": 4, "max_exp": 12,
+  "skills": ['reinforced concrete', 'site supervision', 'ITP', 'RFI', 'setting out'],
+  "partial_skills": ['site engineering', 'quality documentation'],
+  "alt_titles": ['Site Engineer', 'Project Engineer', 'Structural Engineer'],
+  "companies": ['Arabtec', 'ALEC', 'Khansaheb', 'Dutco Balfour Beatty'],
+  "degree": 'B.E. Civil Engineering',
+  "jd": 'Supervise the reinforced concrete package on a 22-storey mixed-use tower. Setting out, ITPs, RFIs and NCR close-out, and daily coordination with the MEP subcontractor. Six-day site-based week; Gulf experience strongly preferred.',
+},
+{
+  "key": 'hrbp', "title": 'HR Business Partner',
+  "industry": 'Technology', "city": 'Singapore', "country": 'Singapore',
+  "min_exp": 5, "max_exp": 12,
+  "skills": ['employment law', 'performance cycles', 'works council', 'ER casework'],
+  "partial_skills": ['HR generalist', 'onboarding'],
+  "alt_titles": ['Senior HR Advisor', 'People Partner', 'HR Manager'],
+  "companies": ['Grab', 'Sea Group', 'Lazada', 'GovTech'],
+  "degree": 'BA Human Resource Management',
+  "jd": 'Partner two engineering divisions on performance and compensation cycles, complex ER casework and organisational change. Working knowledge of Singapore employment law and consultation process. Employment pass sponsorship not available.',
+},
+{
+  "key": 'datasci', "title": 'Data Scientist - Credit Risk',
+  "industry": 'Financial Services', "city": 'Toronto', "country": 'Canada',
+  "min_exp": 4, "max_exp": 9,
+  "skills": ['Python', 'scikit-learn', 'gradient boosting', 'model validation', 'SQL'],
+  "partial_skills": ['Python', 'SQL', 'statistics'],
+  "alt_titles": ['Machine Learning Engineer', 'Quantitative Analyst', 'Risk Analyst'],
+  "companies": ['Wealthsimple', 'Koho', 'Borrowell', 'Questrade'],
+  "degree": 'M.Sc. Statistics',
+  "jd": 'Build and validate behavioural scorecards used for limit decisions. Python, scikit-learn, gradient boosting, and a model validation pack that stands up to regulatory review. Explaining model results to non-technical stakeholders is core.',
+},
+{
+  "key": 'sdr', "title": 'Sales Development Representative',
+  "industry": 'B2B SaaS', "city": 'London', "country": 'United Kingdom',
+  "min_exp": 1, "max_exp": 4,
+  "skills": ['outbound prospecting', 'cold calling', 'Salesforce', 'Outreach', 'qualification'],
+  "partial_skills": ['lead generation', 'CRM'],
+  "alt_titles": ['Business Development Representative', 'Inside Sales Executive'],
+  "companies": ['Monzo', 'GoCardless', 'Hopin', 'Tessian'],
+  "degree": 'BA Business Studies',
+  "jd": 'Generate qualified pipeline through outbound prospecting into mid-market accounts. Cold calling, sequenced email, Salesforce and Outreach hygiene, and a disciplined qualification framework. Four days a week in the London office.',
+},
+{
+  "key": 'cra', "title": 'Clinical Research Associate',
+  "industry": 'Pharmaceuticals', "city": 'Basel', "country": 'Switzerland',
+  "min_exp": 3, "max_exp": 8,
+  "skills": ['GCP', 'monitoring visits', 'source data verification', 'protocol deviation', 'CTMS'],
+  "partial_skills": ['clinical trials', 'data entry'],
+  "alt_titles": ['Clinical Trial Associate', 'Study Coordinator'],
+  "companies": ['Roche', 'Novartis', 'Lonza', 'Idorsia'],
+  "degree": 'B.Sc. Life Sciences',
+  "jd": 'Monitor Phase II/III sites across Europe: source data verification, protocol deviation management and CTMS hygiene, all to ICH-GCP. Up to 60% travel including overnight stays.',
+},
+{
+  "key": 'chef', "title": 'Head Chef',
+  "industry": 'Hospitality', "city": 'Melbourne', "country": 'Australia',
+  "min_exp": 5, "max_exp": 12,
+  "skills": ['menu development', 'food cost control', 'HACCP', 'kitchen management', 'supplier management'],
+  "partial_skills": ['line cooking', 'food safety'],
+  "alt_titles": ['Sous Chef', 'Executive Chef', 'Kitchen Manager'],
+  "companies": ['Attica', 'Cutler & Co', 'Chin Chin', 'Supernormal'],
+  "degree": 'Certificate IV in Commercial Cookery',
+  "jd": 'Run a 90-cover restaurant kitchen: menu development on a seasonal cycle, food cost control to a 28% target, HACCP compliance and a brigade of eleven. Split shifts including weekends.',
+},
+{
+  "key": 'secanalyst', "title": 'Security Analyst - SOC',
+  "industry": 'Cybersecurity', "city": 'Dublin', "country": 'Ireland',
+  "min_exp": 2, "max_exp": 7,
+  "skills": ['SIEM', 'incident response', 'threat hunting', 'Splunk', 'MITRE ATT&CK'],
+  "partial_skills": ['log analysis', 'alert triage'],
+  "alt_titles": ['SOC Analyst', 'Information Security Analyst'],
+  "companies": ['Workhuman', 'Intercom', 'Stripe', 'Mastercard'],
+  "degree": 'B.Sc. Computer Security',
+  "jd": 'Triage and investigate alerts in a 24/7 SOC. SIEM (Splunk), incident response runbooks, threat hunting against MITRE ATT&CK, and clean escalation writing. Rotating shift pattern including nights and weekends.',
+},
+{
+  "key": 'supplychain', "title": 'Head of Supply Chain Planning',
+  "industry": 'FMCG', "city": 'Amsterdam', "country": 'Netherlands',
+  "min_exp": 10, "max_exp": 18,
+  "skills": ['S&OP', 'demand planning', 'inventory optimisation', 'SAP APO', 'leadership'],
+  "partial_skills": ['demand planning', 'forecasting'],
+  "alt_titles": ['Supply Chain Manager', 'Planning Manager', 'Demand Planning Lead'],
+  "companies": ['Heineken', 'Unilever', 'FrieslandCampina', 'Picnic'],
+  "degree": 'MSc Supply Chain Management',
+  "jd": 'Own the monthly S&OP cycle across four regions and chair the executive demand review. Inventory optimisation against a service-level target, SAP APO, and leadership of a team of nine. Monthly travel to regional sites.',
+},
+{
+  "key": 'teacher', "title": 'Primary School Teacher - Year 4',
+  "industry": 'Education', "city": 'Melbourne', "country": 'Australia',
+  "min_exp": 1, "max_exp": 8,
+  "skills": ['differentiated instruction', 'curriculum planning', 'classroom management', 'assessment'],
+  "partial_skills": ['classroom teaching', 'lesson planning'],
+  "alt_titles": ['Classroom Teacher', 'Primary Teacher'],
+  "companies": ['Carey Baptist Grammar', 'Wesley College', 'Haileybury'],
+  "degree": 'Master of Teaching (Primary)',
+  "jd": 'Teach a mixed-ability Year 4 class of 24, five of whom have individual learning plans. Current VIT registration, differentiated instruction, and confident parent communication through conferences and term reports. Full academic year, on site.',
+},
+{
+  "key": 'legal', "title": 'Legal Counsel - Commercial Technology',
+  "industry": 'Technology', "city": 'Amsterdam', "country": 'Netherlands',
+  "min_exp": 5, "max_exp": 12,
+  "skills": ['SaaS contracting', 'DPA', 'GDPR', 'commercial negotiation', 'sub-processor management'],
+  "partial_skills": ['contract review', 'legal research'],
+  "alt_titles": ['Commercial Counsel', 'Legal Advisor', 'Contracts Manager'],
+  "companies": ['Adyen', 'Booking.com', 'Mollie', 'Elastic'],
+  "degree": 'LLM',
+  "jd": 'Negotiate enterprise SaaS agreements and own the DPA template and sub-processor register. GDPR fluency, commercial pragmatism, and the judgement to say when a risk is worth taking. Two days a week on site; qualification in a European jurisdiction.',
+},
+{
+  "key": 'sre', "title": 'Site Reliability Engineer',
+  "industry": 'Cloud Infrastructure', "city": 'Krakow', "country": 'Poland',
+  "min_exp": 4, "max_exp": 10,
+  "skills": ['Terraform', 'AWS', 'Prometheus', 'Grafana', 'SLO', 'incident response'],
+  "partial_skills": ['Linux', 'monitoring', 'scripting'],
+  "alt_titles": ['DevOps Engineer', 'Platform Engineer', 'Infrastructure Engineer'],
+  "companies": ['Allegro', 'Brainly', 'Sabre', 'Comarch'],
+  "degree": 'B.Sc. Computer Science',
+  "jd": 'Own the reliability of a multi-tenant platform: Terraform-managed AWS, Prometheus and Grafana, SLOs and error budgets agreed with product teams. One-in-five on-call rotation, and remote-within-Poland only.',
+},
+{
+  "key": 'electech', "title": 'Electrical Maintenance Technician',
+  "industry": 'Utilities', "city": 'Leeds', "country": 'United Kingdom',
+  "min_exp": 2, "max_exp": 8,
+  "skills": ['PLC fault finding', '18th Edition', 'LOTO', 'preventive maintenance', 'SCADA'],
+  "partial_skills": ['electrical maintenance', 'fault finding'],
+  "alt_titles": ['Maintenance Technician', 'Electrical Technician'],
+  "companies": ['Northern Powergrid', 'Yorkshire Water', 'Drax', 'Sellafield'],
+  "degree": 'Level 3 Electrical Installation',
+  "jd": 'Planned and reactive maintenance across a water treatment site. PLC fault finding, 18th Edition, strict LOTO discipline and SCADA familiarity. Participation in the standby rota is a condition of the role.',
+},
+{
+  "key": 'csm', "title": 'Customer Success Manager - Enterprise',
+  "industry": 'B2B SaaS', "city": 'Madrid', "country": 'Spain',
+  "min_exp": 3, "max_exp": 8,
+  "skills": ['renewals', 'expansion', 'onboarding', 'QBR', 'churn mitigation'],
+  "partial_skills": ['account management', 'customer support'],
+  "alt_titles": ['Account Manager', 'Client Success Manager', 'Relationship Manager'],
+  "companies": ['Glovo', 'TravelPerk', 'Typeform', 'Factorial'],
+  "degree": 'BA Business Administration',
+  "jd": 'Carry a EUR 6m renewal book across 30 enterprise accounts. Onboarding, quarterly business reviews, expansion to signature and early churn detection. Fluent Spanish and English to business level; occasional travel across EMEA.',
+},
+]
+
+assert len(ROLES) == 20, f"expected 20 roles, got {len(ROLES)}"
+assert len({r["key"] for r in ROLES}) == 20, "role keys must be unique"
+
+BY_KEY = {r["key"]: r for r in ROLES}
