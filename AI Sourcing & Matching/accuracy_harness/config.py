@@ -70,6 +70,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PROMPTS_DIR = os.path.join(HERE, "prompts")
 GOLDEN_DIR = os.path.join(HERE, "golden")
 OUTPUT_DIR = os.path.join(HERE, "output")
+os.makedirs(OUTPUT_DIR, exist_ok=True)   # not in git — created on first run
 
 # The REAL Neptune system prompts (you will drop these in). The reference leg
 # runs THESE exact prompts through Sonnet 5, so it's same-prompt / different-model.

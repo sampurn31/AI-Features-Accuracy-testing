@@ -33,7 +33,7 @@ def kw(q): return {"keywordSearch": {"keywords": {"booleanQuery": q}}}
 for env in ("ai4", "ai5", "dev"):
     alb = f"https://albatross-{env}.recruitcrm.net/v1"
     nep = f"https://{env}-neptune.recruitcrm.net/v1"
-    raw = post(alb + "/login", {"email": os.environ["RCRM_LOGIN_EMAIL"], "password": os.environ["RCRM_LOGIN_PASSWORD"]}, timeout=60)
+    raw = post(alb + "/login", {"email": os.environ["AIS_EMAIL"], "password": os.environ["AIS_PASSWORD"]}, timeout=60)
     if raw.startswith("__"):
         print(f"{env}: login {raw}"); continue
     try: token = json.loads(raw)["data"]["token"]

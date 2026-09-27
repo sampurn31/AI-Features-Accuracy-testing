@@ -1,21 +1,26 @@
 #!/bin/sh
-# Local, gitignored env for the accuracy harness.
-#
-# The ONLY thing you must fill in is your Anthropic key on the line below.
-# Everything else (ss5 login, job-service URL, the flag-enabled test account) is
-# handled automatically by config.py — no token to paste, no reaper.
-#
-# Usage:
-#   source set_env.sh
-#   python3 check_env.py        # confirm all green (run on corp/VPN so ss5job resolves)
-#   python run.py --limit 3     # smoke test
-#   python run.py               # full golden set
+# ─────────────────────────────────────────────────────────────────────────────
+#  Accuracy harness — local env.   cp set_env.example.sh set_env.sh
+#  Fill in, then:   source set_env.sh
+#  set_env.sh is gitignored — never commit it.
+# ─────────────────────────────────────────────────────────────────────────────
 
-export ANTHROPIC_API_KEY=""
+# ── Required ─────────────────────────────────────────────────────────────────
+export ANTHROPIC_API_KEY=""            # your own key — reference model + judge
+export RCRM_LOGIN_EMAIL=""             # test account with unified_ai_sourcing_matching enabled
+export RCRM_LOGIN_PASSWORD=""
 
-# --- optional overrides (uncomment only if a default is wrong) ---------------
-# export RCRM_ENV="ss5"
-# export RCRM_JOB_SERVICE_URL="https://ss5job.recruitcrm.net/v2"   # real ss5 job host
-# export RCRM_LOGIN_EMAIL=""
-# export RCRM_LOGIN_PASSWORD=""
-# export RCRM_ALBATROSS_TOKEN=""   # paste a token here to skip the login step entirely
+# ── Target environment (non-prod) ───────────────────────────────────────────
+# URLs are derived from RCRM_ENV:  albatross-<env>.recruitcrm.net/v1,
+# <env>job.recruitcrm.net/v2, <env>-neptune.recruitcrm.net/v1, <env>-aries.recruitcrm.net/v2
+export RCRM_ENV="dev"
+
+# ── Optional overrides ───────────────────────────────────────────────────────
+# export RCRM_JOB_SERVICE_URL=""       # when the job host doesn't follow <env>job.recruitcrm.net
+# export RCRM_ALBATROSS_TOKEN=""       # paste a bearer to skip the login step
+# export ACCURACY_MODEL="claude-sonnet-5"
+
+# ── My Database (db=1) seeding only — prep_db1_dataset.py / run_matching_scale.py ──
+# export RCRM_ACCOUNT_API_KEY=""       # the account's PUBLIC API key (Settings → API), not the password
+# export RCRM_PUBLIC_API_URL=""        # defaults to https://<env>api.recruitcrm.net/v1
+# export RCRM_ARIES_URL=""             # defaults to https://<env>-aries.recruitcrm.net/v2

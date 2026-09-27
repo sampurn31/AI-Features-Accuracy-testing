@@ -14,10 +14,12 @@ Plus a Dashboard with per-query and overall analytics (% good-enough, % relevant
 
 ## 1. Setup (one-time, ~2 min)
 
-Needs Python 3.10+.
+Needs Python 3.10+, your own Anthropic API key, and the login of a **prod** Recruit CRM test account
+with AI Sourcing enabled (the external corpus only returns candidates on prod).
 
 ```bash
-cd "AI Sourcing & Matching/sourcing_eval_kit"
+git clone https://github.com/kowshik-recruitcrm/AI-Features-Accuracy-testing.git
+cd "AI-Features-Accuracy-testing/AI Sourcing & Matching/sourcing_eval_kit"
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -28,6 +30,13 @@ pip install -r requirements.txt
 cp set_env.example.sh set_env.sh             # paste your own Anthropic key
 cp set_prod_urls.example.sh set_prod_urls.sh   # prod URLs are filled in; add the test-account login
 ```
+
+| Variable | File | What to put |
+|---|---|---|
+| `ANTHROPIC_API_KEY` | `set_env.sh` | your own key |
+| `RCRM_LOGIN_EMAIL` / `RCRM_LOGIN_PASSWORD` | `set_prod_urls.sh` | the prod test account |
+| `RCRM_ALBATROSS_TOKEN` | `set_prod_urls.sh` | optional — a bearer token instead of the login |
+| `ACCURACY_MODEL` | `set_env.sh` | optional — `claude-opus-5` to judge with Opus |
 
 > ⚠️ `set_env.sh` and `set_prod_urls.sh` hold secrets — keep this folder internal, don't commit
 > them to a public repo or paste them in a public channel. (`.gitignore` already excludes them.)
@@ -67,7 +76,7 @@ ACCURACY_MODEL=claude-opus-5 python run_sourcing_eval.py --run-id myrun_opus --y
 The console header prints `judge-model=...` so you can confirm which one is live.
 
 **Rough cost** for a 5-query / ~500-candidate run: **~$7 on Sonnet 5, ~$15 on Opus 5**
-(Opus ≈ 2.5× Sonnet). Prod search itself uses the shared account's credits, not your Anthropic key.
+(Opus ≈ 2.5× Sonnet). Prod search itself uses the test account's credits, not your Anthropic key.
 
 ---
 
@@ -101,8 +110,6 @@ python run_sourcing_eval.py --run-id myrun --rebuild
 | **Relevance** | per candidate: relevant? + reason |
 
 Queries that return **0 candidates are automatically excluded** from the workbook.
-
-See `example_report.xlsx` for a sample.
 
 ---
 

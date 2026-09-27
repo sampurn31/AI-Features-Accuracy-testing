@@ -32,9 +32,10 @@ PARSER_PASSWORD = os.getenv("PARSER_PASSWORD", "")
 PARSER_TOKEN = ""
 
 # Endpoints - Using albatross-ss domain
-LOGIN_URL = "https://albatross-dev.recruitcrm.net/v1/login"
-PRESIGN_URL = "https://albatross-dev.recruitcrm.net/v1/get-presigned-url"
-PARSE_URL = "https://albatross-dev.recruitcrm.net/v1/jobs/parse-job"
+BASE_URL = os.getenv("JOB_PARSER_BASE_URL", "https://albatross-dev.recruitcrm.net/v1").rstrip("/")
+LOGIN_URL = f"{BASE_URL}/login"
+PRESIGN_URL = f"{BASE_URL}/get-presigned-url"
+PARSE_URL = f"{BASE_URL}/jobs/parse-job"
 
 # Output
 RESULT_EXCEL = "Job_Parser_Results.xlsx"

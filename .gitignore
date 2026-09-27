@@ -51,5 +51,13 @@ Resume Formatting Agent/reports/
 
 # LLM scoring comparison run outputs
 AI Sourcing & Matching/llm_scoring_comparison/llm_*.json
-AI Sourcing & Matching/llm_scoring_comparison/direct_eval_*.json
-AI Sourcing & Matching/llm_scoring_comparison/*_report.txt
+AI Sourcing & Matching/llm_scoring_comparison/llm_*.txt
+AI Sourcing & Matching/llm_scoring_comparison/direct_eval_*
+
+# Boolean search run outputs
+AI Sourcing & Matching/boolean_search/results*.json
+
+# Resume Parser reviewer workspaces (hold resume text / candidate data)
+verify/
+verify_packets/
+Parser_Comparison_Report*.xlsx

@@ -8,3 +8,4 @@ set_env.sh
 # Never commit the real Neptune prompts if they're considered internal:
 # (uncomment if required)
 # prompts/neptune_*_system_prompt.txt
+set_prod_urls.sh

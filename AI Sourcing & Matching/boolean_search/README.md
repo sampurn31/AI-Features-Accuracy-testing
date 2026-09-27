@@ -45,15 +45,48 @@ reported 32 exclusion violations that were not real. `highlightTerms` — what t
 itself reports as matched — is the oracle instead. The indexed text is not exposed by this
 endpoint, so record-level *inclusion* cannot be verified from the API alone.
 
+## Setup
+
+Needs Python 3.10+ and a Recruit CRM test account with AI Sourcing V3 on the env you test. The
+harness is standard-library only; `openpyxl` is used just for the Excel report.
+
+```bash
+git clone https://github.com/kowshik-recruitcrm/AI-Features-Accuracy-testing.git
+cd "AI-Features-Accuracy-testing/AI Sourcing & Matching/boolean_search"
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+export AIS_EMAIL=you@example.com      # test account login — never written to disk by the harness
+export AIS_PASSWORD='...'
+export AIS_ENV=ai4                    # optional; default ai4
+```
+
+The env name picks the hosts: `https://albatross-<env>.recruitcrm.net/v1` (login) and
+`https://<env>-neptune.recruitcrm.net/v1` (search). `.env.example` lists the same variables.
+
 ## Running
 
 ```bash
-export AIS_EMAIL=... AIS_PASSWORD=...     # never stored here
-python3 run_checks.py --env ai4           # both layers, ~2 min
-python3 run_checks.py --layer 1           # algebra only, ~30s
+python3 run_checks.py                      # all five layers
+python3 run_checks.py --env ai4            # a specific env
+python3 run_checks.py --layer 1            # algebra only, ~30s (repeat --layer to combine)
+python3 run_checks.py --limit 5            # cap the layer-2 record checks
+python3 run_checks.py --xlsx report.xlsx   # choose the workbook name
 ```
 
-Exit code is non-zero when any check fails. Detail lands in `results.json`.
+The exit code is non-zero when any check fails. Output: `results.json` (every check with expected
+vs actual) and `ai_sourcing_boolean_results.xlsx`. Neither is committed.
+
+Known findings are listed in `triage.py`. They still run and are still measured, but a re-run
+reports them as settled rather than as fresh failures.
+
+One-off probes (`probe_*.py` are hard-coded to `ai4` and `which_parser.py` checks `ai4`, `ai5` and `dev`; edit the file to change them):
+
+```bash
+python3 probe_collision.py    # do terms containing and/or/not get split?
+python3 probe_highlight.py    # highlightTerms for the query shapes that were broken
+python3 which_parser.py       # which envs run the old parser vs the new query_string one
+```
 
 ## Files
 
@@ -61,4 +94,8 @@ Exit code is non-zero when any check fails. Detail lands in `results.json`.
 |---|---|
 | `client.py` | sign-in, the two endpoints, NDJSON stream reader, candidate text |
 | `booleval.py` | independent boolean parser/evaluator — the textbook reading, used as the oracle |
-| `run_checks.py` | both layers and the report |
+| `run_checks.py` | all five layers and the report |
+| `collisions.py` | layer 5 — terms that contain an operator word |
+| `triage.py` | decisions on findings already raised |
+| `xlsx_report.py` | the Excel workbook |
+| `probe_*.py`, `which_parser.py` | one-off diagnostics |

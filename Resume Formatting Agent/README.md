@@ -11,17 +11,78 @@ The MOM's three testable claims:
    generate, guess or placeholder one.
 3. That no-change case must show a **warning** — and is still **billed**.
 
+## Prerequisites
+
+- **Python 3.10+**
+- **A Recruit CRM login on the env you test** (default `ai1`), on an account with **Resume Formatting
+  Agent V2** enabled. Without the v2 flag the run stops at preflight.
+- **Credits on that account.** A full run costs roughly 87 credits. You can run unfunded with
+  `--allow-unfunded` (see "Gate order, and running unfunded" below).
+- **Admin rights.** The harness changes the agent's admin settings, creates two candidates, and
+  (in category I) toggles redaction and then restores it. Use a test account.
+
+The env name picks the hosts: `https://albatross-<env>.recruitcrm.net/v1/` and
+`https://<env>-neptune.recruitcrm.net/v1/`.
+
+## Install
+
+```bash
+git clone https://github.com/kowshik-recruitcrm/AI-Features-Accuracy-testing.git
+cd "AI-Features-Accuracy-testing/Resume Formatting Agent"
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python3 selftest.py              # offline check of the verdict engine — no network, no credits
+```
+
+## Configure
+
+Pass the login as flags, or export it once:
+
+```bash
+export RCRM_EMAIL=you@example.com
+export RCRM_PASSWORD='...'       # if neither the flag nor the variable is set, you're prompted
+```
+
+The password is never written to the workbook, the checkpoint or the raw archive.
+
 ## Run it
 
 ```bash
-pip install -r requirements.txt
-python3 run_accuracy.py --env ai1 --db test --email you@example.com --password secret
+python3 run_accuracy.py --env ai1 --dry-run         # preflight + fixture only: no edits, no credits
+python3 run_accuracy.py --env ai1 --limit 20        # smoke run
+python3 run_accuracy.py --env ai1 --db test         # full run (166 scenarios)
+python3 run_accuracy.py --env ai1 --resume          # continue a run that stopped
 ```
 
-The workbook lands in `reports/ai-edit-accuracy-<env>-<timestamp>.xlsx`.
+`--db` is only recorded in the report; the API picks the database from `--env`.
 
-166 scenarios. Roughly **87 credits** (0.5 per processed edit; refusals are free) and about
-**45–70 minutes**, since every scenario is a real LLM call.
+Output:
+- `reports/ai-edit-accuracy-<env>-<timestamp>.xlsx` — the workbook
+- `reports/checkpoint-<env>.jsonl` — what `--resume` reads
+- `raw/raw-<env>-<timestamp>.jsonl` — every response body, for re-scoring
+
+`reports/` and `raw/` are gitignored.
+
+A full run is 166 scenarios, roughly **87 credits** (0.5 per processed edit; refusals are free) and
+about **45–70 minutes**, because every scenario is a real LLM call.
+
+### Re-score against the PRD (no API calls)
+
+```bash
+python3 rescore_prd.py raw/raw-ai1-<timestamp>.jsonl    # → reports/PRD-VALIDATION-<stamp>.xlsx
+```
+
+It re-applies the PW-7788 PRD contract to the archived responses. See its docstring for how the PRD
+differs from the MOM.
+
+### Billing check, measured from the balance
+
+```bash
+python3 verify_billing.py --env ai1       # uses RCRM_EMAIL / RCRM_PASSWORD, or --email / --password
+```
+
+About 1.5 credits per case. It brackets each refusal between two applied edits to check whether it
+was billed and whether it counted toward the 15-edit cap.
 
 ### Useful flags
 
@@ -37,8 +98,6 @@ The workbook lands in `reports/ai-edit-accuracy-<env>-<timestamp>.xlsx`.
 | `--allow-unfunded` | Run on an account with no credits. See "Running unfunded" below. |
 | `--stop-on-402` | Stop at the first insufficient-credit response instead of continuing. |
 
-`--password` also reads `RCRM_PASSWORD`, or prompts. It is never written to the workbook or
-the checkpoint.
 
 ## What it builds
 

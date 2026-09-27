@@ -17,7 +17,12 @@ never stops for the others.**
 
 ## 1. Install
 
+Needs Python 3.10+, a prod Recruit CRM test account with AI Sourcing enabled, and an API key for
+each challenger model you want to test (plus an Anthropic key for the final recommendation).
+
 ```bash
+git clone https://github.com/kowshik-recruitcrm/AI-Features-Accuracy-testing.git
+cd "AI-Features-Accuracy-testing/AI Sourcing & Matching/accuracy_harness/model-bakeoff"
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```

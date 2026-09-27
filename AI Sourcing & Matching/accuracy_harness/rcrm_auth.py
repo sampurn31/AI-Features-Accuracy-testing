@@ -17,6 +17,10 @@ import config
 
 def login():
     """Log in the configured test account; return {token, email, account, account_id}."""
+    if not (config.LOGIN_EMAIL and config.LOGIN_PASSWORD):
+        raise SystemExit(
+            "Missing RCRM_LOGIN_EMAIL / RCRM_LOGIN_PASSWORD — set them in set_env.sh (or "
+            "set_prod_urls.sh for prod runs), or set RCRM_ALBATROSS_TOKEN to skip login. See README.md.")
     resp = requests.post(
         config.LOGIN_URL,
         data={"email": config.LOGIN_EMAIL, "password": config.LOGIN_PASSWORD},  # x-www-form-urlencoded
