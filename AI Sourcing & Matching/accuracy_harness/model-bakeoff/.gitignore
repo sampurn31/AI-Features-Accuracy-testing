@@ -1,0 +1,12 @@
+# secrets — never commit / zip your filled-in keys
+env.sh
+slots.json
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# run outputs (keep the folder)
+output/*
+!output/.gitkeep

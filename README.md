@@ -1,6 +1,6 @@
 # Accuracy Testing
 
-Three independent test suites for validating Recruit CRM's AI parsing, LLM, and AI Matching features.
+Independent test suites for validating Recruit CRM's AI parsing, LLM, AI Sourcing and AI Matching features.
 
 ---
 
@@ -14,6 +14,18 @@ Tests **Neptune LLM features** — sends the same prompt to two environments (ba
 
 ### `Activity Context/`
 Tests whether giving the **AI Matching scorer** a candidate's notes and call logs improves its reasoning and scores. Two deployments over one shared database — one that can see activity, one that cannot.
+
+### `AI Sourcing & Matching/`
+Tests **Unified Sourcing & Matching / AI Sourcing V3 and AI Matching** — natural-language query → questions, criteria and filters; whether the boolean query is really applied; candidate relevance and match-score accuracy on the Global and My Database pools; and scorer-model head-to-heads. Four projects inside, each with its own README.
+
+### `Resume Parser/`
+Compares **resume parser environments** field by field (Prod vs Staging, Prod vs SambaNova, Dev with a new model provider vs Staging) and scores them against a blind ground-truth answer key.
+
+### `Job Parser/`
+Runs JDs through the **job parser** and grades the new parser against Sovren as ground truth.
+
+### `Resume Formatting Agent/`
+Tests **AI Edit in Resume Formatting Agent V2** (PW-7788) — the edit must use a real value from the candidate record, must not invent one when the field is empty, must warn, and must still bill.
 
 ---
 
@@ -111,6 +123,21 @@ See [Activity Context/activity_eval/README.md](Activity%20Context/activity_eval/
 
 ---
 
+## AI Sourcing & Matching, Resume Parser, Job Parser, Resume Formatting Agent — how to run
+
+Each folder has its own README with the setup and a "pick what to run" table:
+
+| Folder | Start here |
+|--------|-----------|
+| `AI Sourcing & Matching/` | [README](AI%20Sourcing%20%26%20Matching/README.md) — overview of the four projects inside |
+| `Resume Parser/` | [README](Resume%20Parser/README.md) |
+| `Job Parser/` | [README](Job%20Parser/README.md) |
+| `Resume Formatting Agent/` | [README](Resume%20Formatting%20Agent/README.md) |
+
+Credentials always come from a local `.env` (or `set_env.sh` in the sourcing harness), copied from the `*.example` file next to it.
+
+---
+
 ## Which one should I use?
 
 | I want to test... | Use |
@@ -121,3 +148,9 @@ See [Activity Context/activity_eval/README.md](Activity%20Context/activity_eval/
 | Candidate summary, email generation, job description | `LLM Replacement` |
 | Any Neptune AI feature (before/after model swap) | `LLM Replacement` |
 | Whether notes / call logs improve AI Matching scores | `Activity Context` |
+| AI Sourcing / Unified Search query → filters, candidates, scores | `AI Sourcing & Matching` |
+| Whether a boolean keyword search is applied to results | `AI Sourcing & Matching/boolean_search` |
+| Which LLM scores AI Matching candidates closest to Sonnet | `AI Sourcing & Matching/llm_scoring_comparison` |
+| Resume parser env vs env, or vs a ground-truth answer key | `Resume Parser` |
+| Job parser vs Sovren | `Job Parser` |
+| AI Edit in the Resume Formatting Agent | `Resume Formatting Agent` |

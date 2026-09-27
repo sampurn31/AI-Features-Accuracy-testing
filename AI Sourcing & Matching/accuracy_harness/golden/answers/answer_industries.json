@@ -1,0 +1,660 @@
+[
+  {
+    "id": "ans-ind-backend-engineer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a backend engineer to join our growing team.",
+    "expectation": "Ambiguous on language/stack, seniority and location -> should ask questions; after answering, config should reflect the chosen stack/seniority and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-frontend-developer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a frontend developer for a new product we're building.",
+    "expectation": "Ambiguous on framework, seniority and location -> should ask questions; answers should populate the chosen framework/seniority and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-data-engineer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a data engineer to help us make sense of our data.",
+    "expectation": "Ambiguous on tools (Spark/Airflow/warehouse), seniority and domain -> questions; answering should add the chosen tools/seniority and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-mobile-developer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We want a mobile developer to build out our app.",
+    "expectation": "Ambiguous on platform (iOS/Android/cross), seniority and location -> should ask questions; answers should set the chosen platform and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-devops-engineer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Seeking a DevOps engineer to help us scale our infrastructure.",
+    "expectation": "Ambiguous on cloud (AWS/GCP/Azure), tooling and seniority -> questions; answers should populate the chosen cloud/tools and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-qa-engineer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're hiring a QA engineer to improve the quality of our releases.",
+    "expectation": "Ambiguous on manual-vs-automation, tooling and seniority -> should ask questions; after answering, config should reflect the chosen focus and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-fullstack-developer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Need a full-stack developer to help us ship features faster.",
+    "expectation": "Ambiguous on stack, seniority and location -> questions; answers should shift skills/filters to the chosen stack and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-ml-engineer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a machine learning engineer to work on our models.",
+    "expectation": "Ambiguous on ML sub-area (NLP/CV/recsys), frameworks and seniority -> should ask questions; answers should add the chosen specialty and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-security-engineer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're bringing on a security engineer to help lock things down.",
+    "expectation": "Ambiguous on domain (appsec/infra/GRC), seniority and location -> questions; answering should set the chosen security domain and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-sre",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a site reliability engineer to keep our systems running smoothly.",
+    "expectation": "Ambiguous on tooling, cloud and seniority -> should ask questions; after answering, config should reflect the chosen tools/seniority and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-engineering-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need an engineering manager to lead one of our teams.",
+    "expectation": "Ambiguous on team domain, team size and location -> questions; answers should add the chosen domain/scope and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-sales-rep",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're hiring a sales representative to help grow our customer base.",
+    "expectation": "Ambiguous on industry, B2B-vs-B2C and seniority -> should ask questions; answers should add the chosen segment and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-account-executive",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for an account executive to close more deals for us.",
+    "expectation": "Ambiguous on deal size/segment, industry and location -> questions; after answering, config should reflect the chosen segment/industry and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-marketing-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a marketing manager to own our marketing efforts.",
+    "expectation": "Ambiguous on channel focus, seniority and industry -> should ask questions; answers should populate the chosen channel/seniority and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-content-writer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a content writer to produce material for our brand.",
+    "expectation": "Ambiguous on content type, domain and seniority -> questions; answering should set the chosen content focus and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-seo-specialist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We want an SEO specialist to improve our search rankings.",
+    "expectation": "Ambiguous on technical-vs-content SEO, tools and seniority -> should ask questions; answers should add the chosen focus and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-social-media-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a social media manager to run our channels.",
+    "expectation": "Ambiguous on platforms, organic-vs-paid and industry -> questions; answers should reflect the chosen platforms/focus and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-biz-dev-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Need a business development manager to help us open new markets.",
+    "expectation": "Ambiguous on industry, target market and seniority -> should ask questions; after answering, config should reflect the chosen market/industry and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-product-marketing-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're hiring a product marketing manager for our upcoming launches.",
+    "expectation": "Ambiguous on product domain, seniority and location -> questions; answers should add the chosen domain/seniority and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-demand-gen-specialist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Seeking a demand generation specialist to fill our sales pipeline.",
+    "expectation": "Ambiguous on channels, tools (marketing automation) and seniority -> should ask questions; answers should populate the chosen channels/tools and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-sales-director",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a sales director to lead our commercial team.",
+    "expectation": "Ambiguous on industry, team size and location -> questions; answering should set the chosen industry/scope and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-registered-nurse",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're hiring a nurse for our clinic and want someone reliable.",
+    "expectation": "Ambiguous on specialty, shift and seniority/licensure -> should ask questions; after answering, config should reflect the chosen specialty/shift and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-physician",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a physician to join our practice.",
+    "expectation": "Ambiguous on specialty, setting and location -> questions; answers should add the chosen specialty and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-medical-assistant",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a medical assistant to support our providers.",
+    "expectation": "Ambiguous on specialty setting, certification and location -> should ask questions; answers should populate the chosen setting/cert and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-pharmacist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a pharmacist for our pharmacy team.",
+    "expectation": "Ambiguous on retail-vs-clinical, shift and location -> questions; answering should set the chosen pharmacy setting and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-physical-therapist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We want a physical therapist to work with our patients.",
+    "expectation": "Ambiguous on setting (outpatient/inpatient), specialty and location -> should ask questions; answers should add the chosen setting/specialty and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-lab-technician",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Seeking a lab technician for our diagnostics team.",
+    "expectation": "Ambiguous on lab type, certification and shift -> questions; answers should reflect the chosen lab type/cert and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-dental-hygienist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a dental hygienist to join our office.",
+    "expectation": "Ambiguous on seniority, schedule and location -> should ask questions; after answering, config should reflect the chosen schedule/experience and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-radiologic-technologist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a radiologic technologist for our imaging department.",
+    "expectation": "Ambiguous on modality (X-ray/CT/MRI), certification and shift -> questions; answers should set the chosen modality and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-care-coordinator",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a care coordinator to manage our patient care plans.",
+    "expectation": "Ambiguous on clinical background, patient population and location -> should ask questions; answers should add the chosen population/background and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-nurse-practitioner",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're bringing on a nurse practitioner for our clinic.",
+    "expectation": "Ambiguous on specialty, patient population and location -> questions; answering should set the chosen specialty/population and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-medical-billing-specialist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Need a medical billing specialist for our office.",
+    "expectation": "Ambiguous on specialty billing, software and seniority -> should ask questions; answers should populate the chosen software/experience and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-financial-analyst",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a financial analyst to support our planning.",
+    "expectation": "Ambiguous on FP&A-vs-investment focus, tools and seniority -> should ask questions; answers should add the chosen focus/tools and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-accountant",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're hiring an accountant to manage our books.",
+    "expectation": "Ambiguous on specialty (GL/tax/audit), certification and seniority -> questions; answering should set the chosen specialty/cert and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-bookkeeper",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Need a bookkeeper to keep our finances in order.",
+    "expectation": "Ambiguous on software (QuickBooks/Xero), industry and seniority -> should ask questions; answers should populate the chosen software and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-auditor",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring an auditor to review our processes.",
+    "expectation": "Ambiguous on internal-vs-external, industry and seniority -> questions; answers should reflect the chosen audit type and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-controller",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We want a controller to oversee our accounting function.",
+    "expectation": "Ambiguous on industry, company size and certification -> should ask questions; after answering, config should reflect the chosen industry/cert and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-tax-specialist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Seeking a tax specialist to handle our filings.",
+    "expectation": "Ambiguous on tax area (corporate/individual/international), certification and location -> questions; answers should add the chosen tax area and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-accounts-payable-clerk",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for an accounts payable clerk for our finance team.",
+    "expectation": "Ambiguous on ERP/software, industry and seniority -> should ask questions; answers should populate the chosen software and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-credit-analyst",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a credit analyst to help us assess risk.",
+    "expectation": "Ambiguous on consumer-vs-commercial credit, industry and seniority -> questions; answering should set the chosen credit focus and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-payroll-specialist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a payroll specialist to run our payroll.",
+    "expectation": "Ambiguous on payroll software, multi-state/region scope and seniority -> should ask questions; answers should add the chosen software/scope and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-finance-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're bringing on a finance manager to lead the team.",
+    "expectation": "Ambiguous on industry, team size and location -> questions; answers should reflect the chosen industry/scope and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-electrician",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're hiring an electrician for our upcoming projects.",
+    "expectation": "Ambiguous on residential-vs-commercial, licensure level and location -> should ask questions; after answering, config should reflect the chosen sector/license and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-plumber",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a plumber to join our team.",
+    "expectation": "Ambiguous on residential-vs-commercial, licensure and location -> questions; answers should add the chosen sector/license and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-carpenter",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a carpenter for our building work.",
+    "expectation": "Ambiguous on specialty (rough/finish), experience and location -> should ask questions; answers should set the chosen specialty and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-welder",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a welder for our fabrication shop.",
+    "expectation": "Ambiguous on welding process (MIG/TIG/stick), certification and shift -> questions; answering should populate the chosen process/cert and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-hvac-technician",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Seeking an HVAC technician for service calls.",
+    "expectation": "Ambiguous on residential-vs-commercial, certification (EPA) and location -> should ask questions; answers should add the chosen sector/cert and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-construction-pm",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We want a construction project manager to run our sites.",
+    "expectation": "Ambiguous on project type, seniority and location -> questions; answers should reflect the chosen project type/seniority and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-site-supervisor",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a site supervisor for our jobsites.",
+    "expectation": "Ambiguous on project type, crew size and location -> should ask questions; after answering, config should reflect the chosen project/scope and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-heavy-equipment-operator",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a heavy equipment operator for our crew.",
+    "expectation": "Ambiguous on machine type, certification and location -> questions; answers should set the chosen equipment and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-general-laborer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring general laborers for our construction work.",
+    "expectation": "Ambiguous on trade focus, experience and location -> should ask questions; answers should add the chosen trade/experience and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-estimator",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're bringing on an estimator to price our bids.",
+    "expectation": "Ambiguous on construction sector, software and seniority -> questions; answering should populate the chosen sector/software and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-warehouse-associate",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're hiring warehouse associates to join our operation.",
+    "expectation": "Ambiguous on shift, equipment/certification and location -> should ask questions; after answering, config should reflect the chosen shift/cert and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-forklift-operator",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a forklift operator for our warehouse.",
+    "expectation": "Ambiguous on certification type, shift and location -> questions; answers should add the chosen certification/shift and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-production-supervisor",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a production supervisor for our plant.",
+    "expectation": "Ambiguous on industry, shift and team size -> should ask questions; answers should set the chosen industry/shift and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-qc-inspector",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a quality control inspector for our production line.",
+    "expectation": "Ambiguous on industry, standards (ISO/AS9100) and seniority -> questions; answering should populate the chosen standards and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-supply-chain-analyst",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We want a supply chain analyst to optimize our flow.",
+    "expectation": "Ambiguous on focus (planning/procurement/logistics), tools and seniority -> should ask questions; answers should add the chosen focus/tools and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-machine-operator",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Seeking a machine operator for our factory.",
+    "expectation": "Ambiguous on machine type, shift and experience -> questions; answers should reflect the chosen machine/shift and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-logistics-coordinator",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a logistics coordinator to manage our shipments.",
+    "expectation": "Ambiguous on mode (freight/parcel/international), software and seniority -> should ask questions; answers should set the chosen mode/software and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-maintenance-technician",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a maintenance technician for our facility.",
+    "expectation": "Ambiguous on discipline (mechanical/electrical), shift and location -> questions; answering should populate the chosen discipline and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-inventory-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring an inventory manager for our distribution center.",
+    "expectation": "Ambiguous on industry, WMS/software and seniority -> should ask questions; answers should add the chosen software/experience and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-truck-driver",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're bringing on truck drivers for our deliveries.",
+    "expectation": "Ambiguous on license class (CDL A/B), route type and location -> questions; answers should reflect the chosen license/route and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-paralegal",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're hiring a paralegal to support our attorneys.",
+    "expectation": "Ambiguous on practice area, seniority and location -> should ask questions; after answering, config should reflect the chosen practice area/seniority and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-hr-generalist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for an HR generalist to join our people team.",
+    "expectation": "Ambiguous on focus area, industry and seniority -> questions; answers should add the chosen focus and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-recruiter",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a recruiter to help us hire.",
+    "expectation": "Ambiguous on agency-vs-inhouse, function hired for and seniority -> should ask questions; answers should set the chosen recruiting focus and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-executive-assistant",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring an executive assistant for our leadership team.",
+    "expectation": "Ambiguous on seniority of exec supported, industry and location -> questions; answering should populate the chosen scope and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-office-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We want an office manager to keep things running.",
+    "expectation": "Ambiguous on company size, responsibilities and location -> should ask questions; answers should add the chosen scope and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-legal-counsel",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Seeking legal counsel to advise the business.",
+    "expectation": "Ambiguous on practice area, seniority and industry -> questions; answers should reflect the chosen practice area/seniority and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-compliance-officer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a compliance officer to manage our obligations.",
+    "expectation": "Ambiguous on regulatory domain, industry and seniority -> should ask questions; after answering, config should reflect the chosen domain and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-administrative-assistant",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need an administrative assistant for our office.",
+    "expectation": "Ambiguous on department, seniority and location -> questions; answers should set the chosen department/scope and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-hr-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring an HR manager to lead our people function.",
+    "expectation": "Ambiguous on specialty (generalist/TA/comp), industry and team size -> should ask questions; answers should add the chosen specialty and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-contracts-administrator",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're bringing on a contracts administrator.",
+    "expectation": "Ambiguous on contract type, industry and seniority -> questions; answering should populate the chosen contract focus and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-data-entry-clerk",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Need a data entry clerk to support our back office.",
+    "expectation": "Ambiguous on software, domain and location -> should ask questions; answers should reflect the chosen software/domain and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-hotel-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're hiring a hotel manager to run our property.",
+    "expectation": "Ambiguous on property type/size, seniority and location -> should ask questions; after answering, config should reflect the chosen property/scope and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-chef",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a chef to lead our kitchen.",
+    "expectation": "Ambiguous on cuisine, venue type and seniority -> questions; answers should add the chosen cuisine/level and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-retail-store-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a store manager for one of our locations.",
+    "expectation": "Ambiguous on retail category, store size and location -> should ask questions; answers should set the chosen category/scope and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-barista",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring baristas for our cafe.",
+    "expectation": "Ambiguous on experience, shift and location -> questions; answering should populate the chosen shift/experience and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-teacher",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We want a teacher to join our school.",
+    "expectation": "Ambiguous on subject, grade level and location -> should ask questions; answers should add the chosen subject/level and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-front-desk-agent",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Seeking a front desk agent for our hotel.",
+    "expectation": "Ambiguous on property type, shift and language needs -> questions; answers should reflect the chosen shift/property and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-sales-associate",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for sales associates for our shop.",
+    "expectation": "Ambiguous on retail category, experience and location -> should ask questions; after answering, config should reflect the chosen category/experience and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-restaurant-server",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need servers for our restaurant.",
+    "expectation": "Ambiguous on venue type, shift and experience -> questions; answers should set the chosen venue/shift and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-tutor",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a tutor to work with our students.",
+    "expectation": "Ambiguous on subject, grade level and in-person-vs-online -> should ask questions; answers should add the chosen subject/mode and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-event-coordinator",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're bringing on an event coordinator.",
+    "expectation": "Ambiguous on event type, seniority and location -> questions; answering should populate the chosen event focus and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-teaching-assistant",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Need a teaching assistant for our classrooms.",
+    "expectation": "Ambiguous on grade level, subject and location -> should ask questions; answers should reflect the chosen level/subject and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-graphic-designer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're hiring a graphic designer for our brand.",
+    "expectation": "Ambiguous on print-vs-digital, tools and seniority -> should ask questions; after answering, config should reflect the chosen focus/tools and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-ux-designer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a UX designer to improve our product.",
+    "expectation": "Ambiguous on research-vs-UI focus, tools and seniority -> questions; answers should add the chosen focus/tools and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-video-editor",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a video editor for our content team.",
+    "expectation": "Ambiguous on content type, software and seniority -> should ask questions; answers should set the chosen content/software and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-research-scientist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a research scientist for our lab.",
+    "expectation": "Ambiguous on field, degree level and location -> questions; answering should populate the chosen field/degree and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-biologist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We want a biologist to join our research group.",
+    "expectation": "Ambiguous on sub-field, degree level and setting -> should ask questions; answers should add the chosen sub-field and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-nonprofit-program-manager",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Seeking a program manager for our non-profit.",
+    "expectation": "Ambiguous on program area, seniority and location -> questions; answers should reflect the chosen program area and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-grant-writer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Looking for a grant writer to support our fundraising.",
+    "expectation": "Ambiguous on sector, grant type and seniority -> should ask questions; after answering, config should reflect the chosen sector/grant focus and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-journalist",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We need a journalist to cover stories for us.",
+    "expectation": "Ambiguous on beat, medium and seniority -> questions; answers should set the chosen beat/medium and resolve COMPLETE."
+  },
+  {
+    "id": "ans-ind-photographer",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "Hiring a photographer for our media team.",
+    "expectation": "Ambiguous on specialty, gear/skills and location -> should ask questions; answers should add the chosen specialty and go COMPLETE."
+  },
+  {
+    "id": "ans-ind-fundraising-coordinator",
+    "kind": "answer_influence",
+    "database_type": 2,
+    "input": "We're bringing on a fundraising coordinator for our cause.",
+    "expectation": "Ambiguous on fundraising channel, sector and seniority -> questions; answering should populate the chosen channel/sector and go COMPLETE."
+  }
+]

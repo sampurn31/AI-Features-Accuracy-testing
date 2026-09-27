@@ -1,0 +1,85 @@
+[
+  {
+    "id": "backend-python-aws",
+    "query": "Senior backend software engineers in the United States with strong Python and AWS experience",
+    "criteria": [
+      {"text": "Strong Python and API development skills", "weight": 9},
+      {"text": "AWS or cloud infrastructure experience", "weight": 8},
+      {"text": "Senior-level (5+ years) software engineering experience", "weight": 7},
+      {"text": "Experience with microservices or distributed systems", "weight": 6}
+    ],
+    "expectation": "Candidates with Python + AWS + senior tenure should score highest; those missing AWS or seniority should score lower and matchAnalysis must reflect it."
+  },
+  {
+    "id": "frontend-react",
+    "query": "Frontend engineers skilled in React and TypeScript",
+    "criteria": [
+      {"text": "React and modern JavaScript/TypeScript proficiency", "weight": 9},
+      {"text": "Experience building responsive, accessible UIs", "weight": 7},
+      {"text": "Familiarity with state management (Redux, Zustand, etc.)", "weight": 6}
+    ],
+    "expectation": "React/TS should be the dominant signal; a backend-only profile should score low."
+  },
+  {
+    "id": "data-scientist-ml",
+    "query": "Data scientists with machine learning and Python experience",
+    "criteria": [
+      {"text": "Machine learning model development experience", "weight": 9},
+      {"text": "Python and data analysis (pandas, scikit-learn) skills", "weight": 8},
+      {"text": "Experience deploying models to production", "weight": 6},
+      {"text": "Strong statistics or mathematics background", "weight": 5}
+    ],
+    "expectation": "ML + Python should drive the score; a pure data-analyst without ML should be mid/low."
+  },
+  {
+    "id": "devops-k8s",
+    "query": "DevOps engineers experienced with Kubernetes and CI/CD",
+    "criteria": [
+      {"text": "Kubernetes and container orchestration experience", "weight": 9},
+      {"text": "CI/CD pipeline design (Jenkins, GitHub Actions, GitLab CI)", "weight": 7},
+      {"text": "Infrastructure-as-code (Terraform, Ansible)", "weight": 7},
+      {"text": "Cloud platform experience (AWS/GCP/Azure)", "weight": 6}
+    ],
+    "expectation": "K8s + IaC should dominate; a generic sysadmin without containers should score lower."
+  },
+  {
+    "id": "product-manager-fintech",
+    "query": "Product managers with fintech or payments experience",
+    "criteria": [
+      {"text": "Product management experience shipping B2B or consumer products", "weight": 9},
+      {"text": "Fintech, banking, or payments domain experience", "weight": 8},
+      {"text": "Experience working with engineering and design teams", "weight": 6}
+    ],
+    "expectation": "PM tenure + fintech domain should score highest; a PM in an unrelated domain should be mid."
+  },
+  {
+    "id": "recruiter-tech",
+    "query": "Technical recruiters with experience hiring software engineers",
+    "criteria": [
+      {"text": "Full-cycle technical recruiting experience", "weight": 9},
+      {"text": "Experience sourcing and hiring software engineers specifically", "weight": 8},
+      {"text": "Familiarity with ATS and sourcing tools", "weight": 5}
+    ],
+    "expectation": "Tech-recruiting tenure should drive the score; a generalist HR profile should be lower."
+  },
+  {
+    "id": "registered-nurse",
+    "query": "Registered nurses with ICU or critical care experience",
+    "criteria": [
+      {"text": "Active registered nurse (RN) licensure", "weight": 9},
+      {"text": "ICU or critical care experience", "weight": 8},
+      {"text": "Experience in an acute-care hospital setting", "weight": 6}
+    ],
+    "expectation": "Non-tech domain sanity check — RN + ICU should score high; a non-clinical profile should be excluded/low."
+  },
+  {
+    "id": "accountant-cpa",
+    "query": "Accountants with CPA certification and audit experience",
+    "criteria": [
+      {"text": "CPA certification", "weight": 9},
+      {"text": "Public accounting or audit experience", "weight": 8},
+      {"text": "Proficiency with accounting software (QuickBooks, SAP, NetSuite)", "weight": 5}
+    ],
+    "expectation": "CPA + audit should drive score; a bookkeeper without CPA should be lower and satisfied=false on the CPA criterion."
+  }
+]

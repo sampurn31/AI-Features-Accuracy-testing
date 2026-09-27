@@ -1,0 +1,22 @@
+[
+  {
+    "id": "backend-add-rust",
+    "query": "Senior backend software engineers in the United States with strong Python and AWS experience",
+    "base_criteria": [
+      {"text": "Strong Python and API development skills", "weight": 9},
+      {"text": "AWS or cloud infrastructure experience", "weight": 8}
+    ],
+    "extra_criterion": {"text": "Production experience with Rust", "weight": 9},
+    "expectation": "Same retrieved pool, re-scored. Adding a high-weight Rust criterion: candidates who satisfy it must not drop; candidates who don't must not rise. Most US Python/AWS engineers won't have Rust, so their scores should fall or hold."
+  },
+  {
+    "id": "datasci-add-llm",
+    "query": "Data scientists with machine learning and Python experience",
+    "base_criteria": [
+      {"text": "Machine learning model development experience", "weight": 9},
+      {"text": "Python and data analysis skills", "weight": 8}
+    ],
+    "extra_criterion": {"text": "Hands-on experience fine-tuning large language models (LLMs)", "weight": 8},
+    "expectation": "Adding a niche LLM criterion: satisfiers hold/rise, non-satisfiers hold/fall. Verifies score responds correctly to a new weighted requirement on a stable pool."
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "gemini-lite-direct",
+    "provider": "google",
+    "model": "gemini-2.5-flash-lite",
+    "key_env": "GEMINI_API_KEY",
+    "label": "Gemini 2.5 Flash Lite (direct)",
+    "extra_generation_config": {
+      "thinkingConfig": {
+        "thinkingBudget": 0
+      }
+    }
+  },
+  {
+    "id": "gemini-flash",
+    "provider": "google",
+    "model": "gemini-2.5-flash",
+    "key_env": "GEMINI_API_KEY",
+    "label": "Gemini 2.5 Flash"
+  },
+  {
+    "id": "claude-haiku",
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5-20251001",
+    "key_env": "ANTHROPIC_API_KEY",
+    "label": "Claude Haiku 4.5"
+  },
+  {
+    "id": "openai",
+    "provider": "openai",
+    "model": "",
+    "key_env": "OPENAI_API_KEY",
+    "label": "OpenAI"
+  },
+  {
+    "id": "compat-1",
+    "provider": "openai_compat",
+    "model": "",
+    "key_env": "DEEPSEEK_API_KEY",
+    "base_url": "https://api.deepseek.com/v1",
+    "label": "DeepSeek"
+  },
+  {
+    "id": "compat-2",
+    "provider": "openai_compat",
+    "model": "",
+    "key_env": "XAI_API_KEY",
+    "base_url": "https://api.x.ai/v1",
+    "label": "Grok"
+  }
+]

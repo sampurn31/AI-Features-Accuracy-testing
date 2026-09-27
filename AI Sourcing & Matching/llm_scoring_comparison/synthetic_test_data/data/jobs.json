@@ -1,0 +1,766 @@
+[
+  {
+    "job_id": "JOB-001",
+    "title": "Senior Backend Engineer",
+    "domain": "fintech_backend",
+    "company": "Northwind Payments",
+    "location": {
+      "city": "Austin",
+      "state": "TX",
+      "country": "US",
+      "remote_policy": "hybrid"
+    },
+    "employment_type": "Full-time",
+    "experience_required_years": {
+      "min_years": 6,
+      "max_years": 10
+    },
+    "seniority": "Senior",
+    "must_have_skills": [
+      "Java",
+      "Spring Boot",
+      "AWS",
+      "Apache Kafka",
+      "PostgreSQL",
+      "Microservices",
+      "REST APIs",
+      "Docker",
+      "Redis",
+      "Git"
+    ],
+    "nice_to_have_skills": [
+      "Kubernetes",
+      "gRPC",
+      "Terraform",
+      "GraphQL",
+      "Event Sourcing"
+    ],
+    "domain_keywords": [
+      "payments",
+      "PCI-DSS compliance",
+      "financial ledger",
+      "fintech",
+      "transaction processing",
+      "reconciliation"
+    ],
+    "certifications": [
+      "AWS Certified Solutions Architect",
+      "Oracle Certified Professional Java"
+    ],
+    "compensation": {
+      "min": 160000,
+      "max": 210000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "- Design and implement scalable payment processing services handling 10M+ transactions daily",
+      "- Build and maintain distributed ledger systems with strong consistency guarantees",
+      "- Lead technical architecture decisions for core banking integrations",
+      "- Implement PCI-DSS compliant data handling and security controls",
+      "- Mentor junior engineers and conduct code reviews",
+      "- Collaborate with product and compliance teams on feature delivery",
+      "- Optimize database queries and caching strategies for sub-100ms latency",
+      "- Build monitoring, alerting, and observability for critical payment flows"
+    ],
+    "qualifications": [
+      "- Bachelor's degree in Computer Science or equivalent experience",
+      "- 6+ years of backend development with Java/Spring ecosystem",
+      "- Strong experience with event-driven architectures and message queues",
+      "- Proven track record building high-availability financial systems",
+      "- Deep understanding of distributed systems, CAP theorem, and consistency models",
+      "- Experience with AWS services (ECS, RDS, SQS, Lambda)",
+      "- Strong SQL skills and database optimization experience",
+      "- Excellent problem-solving and communication skills"
+    ],
+    "jd_text": "Senior Backend Engineer\nNorthwind Payments\nAustin, TX, US - Hybrid\n\nABOUT THE ROLE\n- Design and implement scalable payment processing services handling 10M+ transactions daily\n- Build and maintain distributed ledger systems with strong consistency guarantees\n- Lead technical architecture decisions for core banking integrations\n- Implement PCI-DSS compliant data handling and security controls\n- Mentor junior engineers and conduct code reviews\n- Collaborate with product and compliance teams on feature delivery\n- Optimize database queries and caching strategies for sub-100ms latency\n- Build monitoring, alerting, and observability for critical payment flows\n\n\nREQUIREMENTS\n- Bachelor's degree in Computer Science or equivalent experience\n- 6+ years of backend development with Java/Spring ecosystem\n- Strong experience with event-driven architectures and message queues\n- Proven track record building high-availability financial systems\n- Deep understanding of distributed systems, CAP theorem, and consistency models\n- Experience with AWS services (ECS, RDS, SQS, Lambda)\n- Strong SQL skills and database optimization experience\n- Excellent problem-solving and communication skills\n\n\nCOMPENSATION\n$160,000 - $210,000 USD\n\n\nTO APPLY\nPlease submit your resume and cover letter."
+  },
+  {
+    "job_id": "JOB-002",
+    "title": "Pediatric Registered Nurse",
+    "domain": "pediatric_nurse",
+    "company": "Children's Hospital of Philadelphia",
+    "location": {
+      "city": "Philadelphia",
+      "state": "PA",
+      "country": "US",
+      "remote_policy": "on-site"
+    },
+    "employment_type": "Full-time",
+    "experience_required_years": {
+      "min_years": 3,
+      "max_years": 7
+    },
+    "seniority": "Mid-Senior",
+    "must_have_skills": [
+      "Pediatric Nursing",
+      "Patient Assessment",
+      "IV Therapy",
+      "Medication Administration",
+      "Vital Signs Monitoring",
+      "Electronic Health Records (Epic)",
+      "PALS Certification",
+      "BLS Certification",
+      "Family-Centered Care",
+      "Emergency Response"
+    ],
+    "nice_to_have_skills": [
+      "NICU Experience",
+      "Pediatric Advanced Life Support",
+      "Bilingual (Spanish)",
+      "Charge Nurse Experience"
+    ],
+    "domain_keywords": [
+      "acute care",
+      "pediatric unit",
+      "HIPAA compliance",
+      "patient safety",
+      "neonatal",
+      "child development"
+    ],
+    "certifications": [
+      "RN License (Active)",
+      "PALS (Pediatric Advanced Life Support)",
+      "BLS (Basic Life Support)",
+      "Certified Pediatric Nurse (CPN)"
+    ],
+    "compensation": {
+      "min": 72000,
+      "max": 95000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "- Provide direct nursing care to pediatric patients aged 0-18 years in acute care setting",
+      "- Assess patient conditions, monitor vital signs, and document in Epic EHR system",
+      "- Administer medications, IV therapy, and treatments per physician orders",
+      "- Collaborate with interdisciplinary team including physicians, therapists, and social workers",
+      "- Educate families on post-discharge care, medications, and follow-up appointments",
+      "- Respond to emergencies and participate in rapid response team activations",
+      "- Maintain infection control protocols and patient safety standards",
+      "- Mentor new graduate nurses and nursing students during clinical rotations"
+    ],
+    "qualifications": [
+      "- Active RN license in Pennsylvania (or compact state license)",
+      "- Bachelor of Science in Nursing (BSN) preferred",
+      "- 3+ years of pediatric acute care experience required",
+      "- Current PALS and BLS certifications required",
+      "- Proficiency with Epic or similar electronic health record systems",
+      "- Strong clinical assessment and critical thinking skills",
+      "- Excellent communication skills with children and families",
+      "- Ability to work 12-hour shifts including nights, weekends, and holidays"
+    ],
+    "jd_text": "Pediatric Registered Nurse\nChildren's Hospital of Philadelphia\nPhiladelphia, PA, US - On-Site\n\nABOUT THE ROLE\n- Provide direct nursing care to pediatric patients aged 0-18 years in acute care setting\n- Assess patient conditions, monitor vital signs, and document in Epic EHR system\n- Administer medications, IV therapy, and treatments per physician orders\n- Collaborate with interdisciplinary team including physicians, therapists, and social workers\n- Educate families on post-discharge care, medications, and follow-up appointments\n- Respond to emergencies and participate in rapid response team activations\n- Maintain infection control protocols and patient safety standards\n- Mentor new graduate nurses and nursing students during clinical rotations\n\n\nREQUIREMENTS\n- Active RN license in Pennsylvania (or compact state license)\n- Bachelor of Science in Nursing (BSN) preferred\n- 3+ years of pediatric acute care experience required\n- Current PALS and BLS certifications required\n- Proficiency with Epic or similar electronic health record systems\n- Strong clinical assessment and critical thinking skills\n- Excellent communication skills with children and families\n- Ability to work 12-hour shifts including nights, weekends, and holidays\n\n\nCOMPENSATION\n$72,000 - $95,000 USD\n\n\nTO APPLY\nPlease submit your resume and cover letter."
+  },
+  {
+    "job_id": "JOB-003",
+    "title": "Senior Tax Accountant",
+    "domain": "tax_accountant",
+    "company": "Deloitte Tax LLP",
+    "location": {
+      "city": "Chicago",
+      "state": "IL",
+      "country": "US",
+      "remote_policy": "hybrid"
+    },
+    "employment_type": "Full-time",
+    "experience_required_years": {
+      "min_years": 5,
+      "max_years": 8
+    },
+    "seniority": "Senior",
+    "must_have_skills": [
+      "Corporate Tax Compliance",
+      "US GAAP",
+      "Tax Research",
+      "ASC 740 (Income Taxes)",
+      "Tax Provision Preparation",
+      "Federal Tax Returns",
+      "State Tax Returns",
+      "Excel Advanced",
+      "Tax Software (CCH Axcess, OneSource)",
+      "Workpaper Documentation"
+    ],
+    "nice_to_have_skills": [
+      "International Tax",
+      "Transfer Pricing",
+      "Tax Credits (R&D)",
+      "M&A Tax Due Diligence"
+    ],
+    "domain_keywords": [
+      "tax compliance",
+      "tax provision",
+      "quarterly estimates",
+      "IRS regulations",
+      "multistate taxation",
+      "effective tax rate"
+    ],
+    "certifications": [
+      "CPA (Certified Public Accountant)",
+      "EA (Enrolled Agent)"
+    ],
+    "compensation": {
+      "min": 95000,
+      "max": 135000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "- Prepare and review corporate federal and state income tax returns for Fortune 500 clients",
+      "- Calculate quarterly tax provisions under ASC 740 and analyze effective tax rate variances",
+      "- Research complex tax issues and document technical conclusions",
+      "- Manage tax compliance calendar and coordinate with client finance teams",
+      "- Review tax workpapers prepared by staff accountants for accuracy and completeness",
+      "- Identify tax planning opportunities and advise clients on tax strategies",
+      "- Respond to IRS and state tax authority notices and inquiries",
+      "- Mentor junior team members and provide training on tax technical topics"
+    ],
+    "qualifications": [
+      "- Bachelor's or Master's degree in Accounting or Taxation",
+      "- Active CPA license required",
+      "- 5+ years of corporate tax experience in public accounting or industry",
+      "- Strong technical knowledge of US federal and multistate tax regulations",
+      "- Proficiency with CCH Axcess, OneSource, or similar tax software",
+      "- Advanced Excel skills including pivot tables, VLOOKUPs, and macros",
+      "- Experience with ASC 740 tax provision calculations",
+      "- Excellent written and verbal communication skills",
+      "- Big 4 public accounting experience preferred"
+    ],
+    "jd_text": "Senior Tax Accountant\nDeloitte Tax LLP\nChicago, IL, US - Hybrid\n\nABOUT THE ROLE\n- Prepare and review corporate federal and state income tax returns for Fortune 500 clients\n- Calculate quarterly tax provisions under ASC 740 and analyze effective tax rate variances\n- Research complex tax issues and document technical conclusions\n- Manage tax compliance calendar and coordinate with client finance teams\n- Review tax workpapers prepared by staff accountants for accuracy and completeness\n- Identify tax planning opportunities and advise clients on tax strategies\n- Respond to IRS and state tax authority notices and inquiries\n- Mentor junior team members and provide training on tax technical topics\n\n\nREQUIREMENTS\n- Bachelor's or Master's degree in Accounting or Taxation\n- Active CPA license required\n- 5+ years of corporate tax experience in public accounting or industry\n- Strong technical knowledge of US federal and multistate tax regulations\n- Proficiency with CCH Axcess, OneSource, or similar tax software\n- Advanced Excel skills including pivot tables, VLOOKUPs, and macros\n- Experience with ASC 740 tax provision calculations\n- Excellent written and verbal communication skills\n- Big 4 public accounting experience preferred\n\n\nCOMPENSATION\n$95,000 - $135,000 USD\n\n\nTO APPLY\nPlease submit your resume and cover letter."
+  },
+  {
+    "job_id": "JOB-004",
+    "title": "Industrial Mechanical Engineer",
+    "domain": "mechanical_engineer",
+    "company": "Caterpillar Inc.",
+    "location": {
+      "city": "Peoria",
+      "state": "IL",
+      "country": "US",
+      "remote_policy": "on-site"
+    },
+    "employment_type": "Full-time",
+    "experience_required_years": {
+      "min_years": 4,
+      "max_years": 8
+    },
+    "seniority": "Mid-Senior",
+    "must_have_skills": [
+      "SolidWorks",
+      "AutoCAD",
+      "ANSYS (FEA)",
+      "GD&T (Geometric Dimensioning)",
+      "Manufacturing Processes",
+      "Material Selection",
+      "Hydraulic Systems",
+      "Mechanical Design",
+      "Technical Drawing",
+      "Product Development"
+    ],
+    "nice_to_have_skills": [
+      "CREO",
+      "MATLAB",
+      "Six Sigma Green Belt",
+      "Lean Manufacturing"
+    ],
+    "domain_keywords": [
+      "heavy machinery",
+      "industrial equipment",
+      "ASME standards",
+      "prototype testing",
+      "manufacturing engineering",
+      "mechanical assemblies"
+    ],
+    "certifications": [
+      "PE (Professional Engineer)",
+      "Six Sigma Green Belt",
+      "ASME Certification"
+    ],
+    "compensation": {
+      "min": 85000,
+      "max": 115000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "- Design and develop mechanical components for heavy construction equipment",
+      "- Create 3D CAD models and engineering drawings using SolidWorks and AutoCAD",
+      "- Perform finite element analysis (FEA) to validate structural integrity",
+      "- Collaborate with manufacturing teams to ensure design for manufacturability",
+      "- Conduct prototype testing and validation per ASME and industry standards",
+      "- Select materials and specify tolerances using GD&T principles",
+      "- Review supplier drawings and approve component specifications",
+      "- Support production teams with engineering change orders and root cause analysis",
+      "- Document design calculations, test results, and technical specifications"
+    ],
+    "qualifications": [
+      "- Bachelor's degree in Mechanical Engineering required",
+      "- Professional Engineer (PE) license preferred",
+      "- 4+ years of experience in mechanical design for industrial/manufacturing applications",
+      "- Expert-level proficiency in SolidWorks and AutoCAD",
+      "- Strong understanding of GD&T, ASME Y14.5 standards",
+      "- Experience with hydraulic and pneumatic systems design",
+      "- Knowledge of manufacturing processes (machining, welding, casting, forging)",
+      "- Excellent problem-solving skills and attention to detail",
+      "- Ability to work on-site at manufacturing facilities"
+    ],
+    "jd_text": "Industrial Mechanical Engineer\nCaterpillar Inc.\nPeoria, IL, US - On-Site\n\nABOUT THE ROLE\n- Design and develop mechanical components for heavy construction equipment\n- Create 3D CAD models and engineering drawings using SolidWorks and AutoCAD\n- Perform finite element analysis (FEA) to validate structural integrity\n- Collaborate with manufacturing teams to ensure design for manufacturability\n- Conduct prototype testing and validation per ASME and industry standards\n- Select materials and specify tolerances using GD&T principles\n- Review supplier drawings and approve component specifications\n- Support production teams with engineering change orders and root cause analysis\n- Document design calculations, test results, and technical specifications\n\n\nREQUIREMENTS\n- Bachelor's degree in Mechanical Engineering required\n- Professional Engineer (PE) license preferred\n- 4+ years of experience in mechanical design for industrial/manufacturing applications\n- Expert-level proficiency in SolidWorks and AutoCAD\n- Strong understanding of GD&T, ASME Y14.5 standards\n- Experience with hydraulic and pneumatic systems design\n- Knowledge of manufacturing processes (machining, welding, casting, forging)\n- Excellent problem-solving skills and attention to detail\n- Ability to work on-site at manufacturing facilities\n\n\nCOMPENSATION\n$85,000 - $115,000 USD\n\n\nTO APPLY\nPlease submit your resume and cover letter."
+  },
+  {
+    "job_id": "JOB-005",
+    "title": "Performance Marketing Manager",
+    "domain": "marketing_manager",
+    "company": "Warby Parker",
+    "location": {
+      "city": "New York",
+      "state": "NY",
+      "country": "US",
+      "remote_policy": "remote"
+    },
+    "employment_type": "Full-time",
+    "experience_required_years": {
+      "min_years": 4,
+      "max_years": 7
+    },
+    "seniority": "Mid-Senior",
+    "must_have_skills": [
+      "Facebook Ads Manager",
+      "Google Ads",
+      "Instagram Advertising",
+      "TikTok Ads",
+      "Google Analytics",
+      "A/B Testing",
+      "Conversion Rate Optimization",
+      "Marketing Attribution",
+      "Budget Management",
+      "ROI Analysis"
+    ],
+    "nice_to_have_skills": [
+      "Snapchat Ads",
+      "Pinterest Ads",
+      "SQL",
+      "Looker/Tableau",
+      "Shopify"
+    ],
+    "domain_keywords": [
+      "paid social",
+      "direct-to-consumer",
+      "customer acquisition cost",
+      "ROAS (Return on Ad Spend)",
+      "e-commerce",
+      "performance marketing"
+    ],
+    "certifications": [
+      "Google Ads Certification",
+      "Facebook Blueprint Certification",
+      "Google Analytics Certified"
+    ],
+    "compensation": {
+      "min": 100000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "- Manage $2M+ monthly paid social budget across Facebook, Instagram, TikTok, and Snapchat",
+      "- Develop and execute performance marketing campaigns to drive customer acquisition for D2C brand",
+      "- Analyze campaign performance, optimize for ROAS, and reduce customer acquisition costs",
+      "- Design and implement A/B tests for ad creative, landing pages, and audience targeting",
+      "- Build attribution models and reporting dashboards to measure marketing effectiveness",
+      "- Collaborate with creative team on ad concepts, copy, and visual assets",
+      "- Stay current on platform updates, algorithm changes, and emerging ad formats",
+      "- Present performance insights and strategic recommendations to executive leadership"
+    ],
+    "qualifications": [
+      "- Bachelor's degree in Marketing, Business, or related field",
+      "- 4+ years of performance marketing experience in D2C e-commerce",
+      "- Expert knowledge of Facebook Ads Manager and Google Ads platforms",
+      "- Proven track record managing $1M+ monthly ad budgets",
+      "- Strong analytical skills with proficiency in Google Analytics and Excel",
+      "- Experience with A/B testing methodologies and statistical significance",
+      "- Deep understanding of marketing attribution and customer funnel optimization",
+      "- Excellent communication and presentation skills",
+      "- Google Ads and Facebook Blueprint certifications preferred"
+    ],
+    "jd_text": "Performance Marketing Manager\nWarby Parker\nNew York, NY, US - Remote\n\nABOUT THE ROLE\n- Manage $2M+ monthly paid social budget across Facebook, Instagram, TikTok, and Snapchat\n- Develop and execute performance marketing campaigns to drive customer acquisition for D2C brand\n- Analyze campaign performance, optimize for ROAS, and reduce customer acquisition costs\n- Design and implement A/B tests for ad creative, landing pages, and audience targeting\n- Build attribution models and reporting dashboards to measure marketing effectiveness\n- Collaborate with creative team on ad concepts, copy, and visual assets\n- Stay current on platform updates, algorithm changes, and emerging ad formats\n- Present performance insights and strategic recommendations to executive leadership\n\n\nREQUIREMENTS\n- Bachelor's degree in Marketing, Business, or related field\n- 4+ years of performance marketing experience in D2C e-commerce\n- Expert knowledge of Facebook Ads Manager and Google Ads platforms\n- Proven track record managing $1M+ monthly ad budgets\n- Strong analytical skills with proficiency in Google Analytics and Excel\n- Experience with A/B testing methodologies and statistical significance\n- Deep understanding of marketing attribution and customer funnel optimization\n- Excellent communication and presentation skills\n- Google Ads and Facebook Blueprint certifications preferred\n\n\nCOMPENSATION\n$100,000 - $140,000 USD\n\n\nTO APPLY\nPlease submit your resume and cover letter."
+  },
+  {
+    "job_id": "JOB-006",
+    "title": "Senior UX/Product Designer",
+    "domain": "ux_designer",
+    "company": "Atlassian",
+    "location": {
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "US",
+      "remote_policy": "hybrid"
+    },
+    "employment_type": "Full-time",
+    "experience_required_years": {
+      "min_years": 5,
+      "max_years": 8
+    },
+    "seniority": "Senior",
+    "must_have_skills": [
+      "Figma",
+      "User Research",
+      "Wireframing",
+      "Prototyping",
+      "Design Systems",
+      "Interaction Design",
+      "Usability Testing",
+      "User Flows",
+      "Information Architecture",
+      "Accessibility (WCAG)"
+    ],
+    "nice_to_have_skills": [
+      "Sketch",
+      "Adobe XD",
+      "Framer",
+      "HTML/CSS",
+      "Motion Design"
+    ],
+    "domain_keywords": [
+      "B2B SaaS",
+      "enterprise software",
+      "design thinking",
+      "user-centered design",
+      "design tokens",
+      "component libraries"
+    ],
+    "certifications": [
+      "Nielsen Norman Group UX Certification",
+      "IDEO Design Thinking Certificate"
+    ],
+    "compensation": {
+      "min": 140000,
+      "max": 190000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "- Lead end-to-end UX design for enterprise SaaS products used by 100K+ business users",
+      "- Conduct user research including interviews, usability testing, and data analysis",
+      "- Create wireframes, high-fidelity mockups, and interactive prototypes in Figma",
+      "- Build and maintain design system components and documentation",
+      "- Collaborate with product managers and engineers on feature planning and implementation",
+      "- Design accessible interfaces meeting WCAG 2.1 AA standards",
+      "- Present design rationale and research findings to stakeholders and executive leadership",
+      "- Mentor junior designers and advocate for user-centered design practices"
+    ],
+    "qualifications": [
+      "- Bachelor's or Master's degree in Design, HCI, or related field",
+      "- 5+ years of UX/product design experience for B2B SaaS applications",
+      "- Expert proficiency in Figma and modern design tools",
+      "- Strong portfolio demonstrating end-to-end product design work",
+      "- Experience building and maintaining design systems at scale",
+      "- Solid understanding of user research methodologies and usability testing",
+      "- Knowledge of front-end technologies (HTML, CSS) and design-to-dev handoff",
+      "- Excellent communication and stakeholder management skills",
+      "- Experience designing for accessibility and inclusive design principles"
+    ],
+    "jd_text": "Senior UX/Product Designer\nAtlassian\nSan Francisco, CA, US - Hybrid\n\nABOUT THE ROLE\n- Lead end-to-end UX design for enterprise SaaS products used by 100K+ business users\n- Conduct user research including interviews, usability testing, and data analysis\n- Create wireframes, high-fidelity mockups, and interactive prototypes in Figma\n- Build and maintain design system components and documentation\n- Collaborate with product managers and engineers on feature planning and implementation\n- Design accessible interfaces meeting WCAG 2.1 AA standards\n- Present design rationale and research findings to stakeholders and executive leadership\n- Mentor junior designers and advocate for user-centered design practices\n\n\nREQUIREMENTS\n- Bachelor's or Master's degree in Design, HCI, or related field\n- 5+ years of UX/product design experience for B2B SaaS applications\n- Expert proficiency in Figma and modern design tools\n- Strong portfolio demonstrating end-to-end product design work\n- Experience building and maintaining design systems at scale\n- Solid understanding of user research methodologies and usability testing\n- Knowledge of front-end technologies (HTML, CSS) and design-to-dev handoff\n- Excellent communication and stakeholder management skills\n- Experience designing for accessibility and inclusive design principles\n\n\nCOMPENSATION\n$140,000 - $190,000 USD\n\n\nTO APPLY\nPlease submit your resume and cover letter."
+  },
+  {
+    "job_id": "JOB-007",
+    "title": "High School Mathematics Teacher",
+    "domain": "math_teacher",
+    "company": "Lincoln High School",
+    "location": {
+      "city": "Portland",
+      "state": "OR",
+      "country": "US",
+      "remote_policy": "on-site"
+    },
+    "employment_type": "Full-time",
+    "experience_required_years": {
+      "min_years": 3,
+      "max_years": 10
+    },
+    "seniority": "Mid-Senior",
+    "must_have_skills": [
+      "Algebra Instruction",
+      "Geometry Instruction",
+      "Calculus",
+      "Statistics",
+      "Lesson Planning",
+      "Classroom Management",
+      "Student Assessment",
+      "Differentiated Instruction",
+      "Google Classroom",
+      "IEP Accommodations"
+    ],
+    "nice_to_have_skills": [
+      "AP Calculus",
+      "AP Statistics",
+      "Math Competition Coaching",
+      "STEM Integration"
+    ],
+    "domain_keywords": [
+      "Common Core Standards",
+      "state testing",
+      "FERPA compliance",
+      "parent communication",
+      "individualized education plans",
+      "formative assessment"
+    ],
+    "certifications": [
+      "State Teaching License (Mathematics)",
+      "Single Subject Credential",
+      "NCTM Member"
+    ],
+    "compensation": {
+      "min": 55000,
+      "max": 78000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "- Teach 5 sections of high school mathematics (Algebra I, Geometry, Algebra II, Pre-Calculus)",
+      "- Design and deliver standards-aligned lessons following Common Core State Standards",
+      "- Assess student learning through formative and summative assessments",
+      "- Differentiate instruction to meet diverse learning needs and IEP accommodations",
+      "- Maintain organized classroom management and positive learning environment",
+      "- Communicate regularly with parents regarding student progress and concerns",
+      "- Participate in department meetings, professional development, and school committees",
+      "- Sponsor Math Club and prepare students for regional math competitions",
+      "- Use Google Classroom and district LMS for assignments and grade reporting"
+    ],
+    "qualifications": [
+      "- Bachelor's degree in Mathematics or Mathematics Education required",
+      "- Valid state teaching license in Secondary Mathematics",
+      "- 3+ years of high school teaching experience preferred",
+      "- Strong knowledge of Common Core Mathematics Standards",
+      "- Experience working with diverse student populations",
+      "- Ability to implement differentiated instruction and support IEP goals",
+      "- Proficiency with educational technology (Google Classroom, graphing calculators, virtual manipulatives)",
+      "- Excellent classroom management and interpersonal skills",
+      "- Commitment to creating an inclusive and engaging learning environment"
+    ],
+    "jd_text": "High School Mathematics Teacher\nLincoln High School\nPortland, OR, US - On-Site\n\nABOUT THE ROLE\n- Teach 5 sections of high school mathematics (Algebra I, Geometry, Algebra II, Pre-Calculus)\n- Design and deliver standards-aligned lessons following Common Core State Standards\n- Assess student learning through formative and summative assessments\n- Differentiate instruction to meet diverse learning needs and IEP accommodations\n- Maintain organized classroom management and positive learning environment\n- Communicate regularly with parents regarding student progress and concerns\n- Participate in department meetings, professional development, and school committees\n- Sponsor Math Club and prepare students for regional math competitions\n- Use Google Classroom and district LMS for assignments and grade reporting\n\n\nREQUIREMENTS\n- Bachelor's degree in Mathematics or Mathematics Education required\n- Valid state teaching license in Secondary Mathematics\n- 3+ years of high school teaching experience preferred\n- Strong knowledge of Common Core Mathematics Standards\n- Experience working with diverse student populations\n- Ability to implement differentiated instruction and support IEP goals\n- Proficiency with educational technology (Google Classroom, graphing calculators, virtual manipulatives)\n- Excellent classroom management and interpersonal skills\n- Commitment to creating an inclusive and engaging learning environment\n\n\nCOMPENSATION\n$55,000 - $78,000 USD\n\n\nTO APPLY\nPlease submit your resume and cover letter."
+  },
+  {
+    "job_id": "JOB-008",
+    "title": "Pharmaceutical Sales Representative",
+    "domain": "pharma_sales",
+    "company": "Bristol Myers Squibb",
+    "location": {
+      "city": "New York",
+      "state": "NY",
+      "country": "US",
+      "remote_policy": "field-based"
+    },
+    "employment_type": "Full-time",
+    "experience_required_years": {
+      "min_years": 3,
+      "max_years": 7
+    },
+    "seniority": "Mid-Senior",
+    "must_have_skills": [
+      "Pharmaceutical Sales",
+      "Territory Management",
+      "Relationship Building",
+      "Clinical Knowledge",
+      "Salesforce CRM",
+      "Oncology Therapeutics",
+      "Key Account Management",
+      "Product Presentations",
+      "Sample Management",
+      "Compliance (PhRMA Code)"
+    ],
+    "nice_to_have_skills": [
+      "Immunology",
+      "Biologics",
+      "Hospital Sales",
+      "Formulary Access"
+    ],
+    "domain_keywords": [
+      "specialty pharmaceuticals",
+      "oncology",
+      "prescriber targeting",
+      "managed care",
+      "formulary",
+      "prior authorization"
+    ],
+    "certifications": [
+      "CNPR (Certified National Pharmaceutical Representative)",
+      "Bachelor's Degree in Life Sciences"
+    ],
+    "compensation": {
+      "min": 80000,
+      "max": 110000,
+      "currency": "USD",
+      "additional": "Plus uncapped commission and car allowance"
+    },
+    "responsibilities": [
+      "- Manage assigned territory of 150+ oncology prescribers in New York metropolitan area",
+      "- Promote specialty oncology portfolio to oncologists, hematologists, and hospital systems",
+      "- Build and maintain relationships with key opinion leaders and clinical decision makers",
+      "- Deliver clinical presentations on product efficacy, safety, and dosing guidelines",
+      "- Navigate formulary processes and support patient access to therapies",
+      "- Meet quarterly sales targets and grow market share within assigned territory",
+      "- Attend medical conferences and sponsor continuing education programs",
+      "- Maintain compliance with PhRMA Code, company policies, and FDA regulations",
+      "- Use Salesforce CRM to track calls, manage samples, and report activities"
+    ],
+    "qualifications": [
+      "- Bachelor's degree in Life Sciences, Biology, or related field required",
+      "- 3+ years of pharmaceutical or medical device sales experience",
+      "- Oncology or specialty pharmaceutical experience strongly preferred",
+      "- Proven track record of exceeding sales quotas",
+      "- Strong clinical aptitude and ability to discuss complex medical information",
+      "- Excellent presentation and communication skills",
+      "- Valid driver's license and ability to travel 70% within assigned territory",
+      "- Proficiency with Salesforce or similar CRM systems",
+      "- CNPR certification preferred"
+    ],
+    "jd_text": "Pharmaceutical Sales Representative\nBristol Myers Squibb\nNew York, NY, US - Field-Based\n\nABOUT THE ROLE\n- Manage assigned territory of 150+ oncology prescribers in New York metropolitan area\n- Promote specialty oncology portfolio to oncologists, hematologists, and hospital systems\n- Build and maintain relationships with key opinion leaders and clinical decision makers\n- Deliver clinical presentations on product efficacy, safety, and dosing guidelines\n- Navigate formulary processes and support patient access to therapies\n- Meet quarterly sales targets and grow market share within assigned territory\n- Attend medical conferences and sponsor continuing education programs\n- Maintain compliance with PhRMA Code, company policies, and FDA regulations\n- Use Salesforce CRM to track calls, manage samples, and report activities\n\n\nREQUIREMENTS\n- Bachelor's degree in Life Sciences, Biology, or related field required\n- 3+ years of pharmaceutical or medical device sales experience\n- Oncology or specialty pharmaceutical experience strongly preferred\n- Proven track record of exceeding sales quotas\n- Strong clinical aptitude and ability to discuss complex medical information\n- Excellent presentation and communication skills\n- Valid driver's license and ability to travel 70% within assigned territory\n- Proficiency with Salesforce or similar CRM systems\n- CNPR certification preferred\n\n\nCOMPENSATION\n$80,000 - $110,000 USD\nPlus uncapped commission and car allowance\n\nTO APPLY\nPlease submit your resume and cover letter."
+  },
+  {
+    "job_id": "JOB-009",
+    "title": "Construction Project Manager",
+    "domain": "construction_pm",
+    "company": "Turner Construction Company",
+    "location": {
+      "city": "Dallas",
+      "state": "TX",
+      "country": "US",
+      "remote_policy": "on-site"
+    },
+    "employment_type": "Full-time",
+    "experience_required_years": {
+      "min_years": 6,
+      "max_years": 12
+    },
+    "seniority": "Senior",
+    "must_have_skills": [
+      "Construction Management",
+      "Project Scheduling",
+      "Budget Management",
+      "Subcontractor Management",
+      "Building Codes",
+      "Procore",
+      "Primavera P6",
+      "Blueprint Reading",
+      "RFI Management",
+      "Safety Management"
+    ],
+    "nice_to_have_skills": [
+      "BIM (Building Information Modeling)",
+      "LEED AP",
+      "Estimating",
+      "Structural Engineering"
+    ],
+    "domain_keywords": [
+      "commercial construction",
+      "ground-up construction",
+      "tenant improvements",
+      "change orders",
+      "OSHA compliance",
+      "punch list"
+    ],
+    "certifications": [
+      "PMP (Project Management Professional)",
+      "OSHA 30-Hour",
+      "LEED AP (Accredited Professional)"
+    ],
+    "compensation": {
+      "min": 110000,
+      "max": 155000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "- Lead commercial construction projects from preconstruction through closeout ($10M-$50M range)",
+      "- Develop and maintain project schedules using Primavera P6, coordinate subcontractor activities",
+      "- Manage project budgets, process change orders, and maintain cost control",
+      "- Oversee 15+ subcontractors and ensure work quality meets specifications",
+      "- Conduct daily site walks, track progress, and resolve field issues",
+      "- Review and approve submittals, RFIs, and shop drawings",
+      "- Ensure OSHA safety compliance and maintain zero-incident safety record",
+      "- Coordinate with architects, engineers, owners, and municipal inspectors",
+      "- Use Procore for project documentation, progress photos, and reporting"
+    ],
+    "qualifications": [
+      "- Bachelor's degree in Construction Management, Civil Engineering, or related field",
+      "- 6+ years of commercial construction project management experience",
+      "- PMP certification and OSHA 30-Hour card required",
+      "- Experience managing ground-up commercial projects ($10M+ budget)",
+      "- Proficiency with Procore, Primavera P6, and Microsoft Project",
+      "- Strong knowledge of building codes, ADA requirements, and municipal permitting",
+      "- Excellent leadership, communication, and problem-solving skills",
+      "- Ability to read and interpret blueprints, specifications, and construction documents",
+      "- Valid driver's license and ability to be on-site daily"
+    ],
+    "jd_text": "Construction Project Manager\nTurner Construction Company\nDallas, TX, US - On-Site\n\nABOUT THE ROLE\n- Lead commercial construction projects from preconstruction through closeout ($10M-$50M range)\n- Develop and maintain project schedules using Primavera P6, coordinate subcontractor activities\n- Manage project budgets, process change orders, and maintain cost control\n- Oversee 15+ subcontractors and ensure work quality meets specifications\n- Conduct daily site walks, track progress, and resolve field issues\n- Review and approve submittals, RFIs, and shop drawings\n- Ensure OSHA safety compliance and maintain zero-incident safety record\n- Coordinate with architects, engineers, owners, and municipal inspectors\n- Use Procore for project documentation, progress photos, and reporting\n\n\nREQUIREMENTS\n- Bachelor's degree in Construction Management, Civil Engineering, or related field\n- 6+ years of commercial construction project management experience\n- PMP certification and OSHA 30-Hour card required\n- Experience managing ground-up commercial projects ($10M+ budget)\n- Proficiency with Procore, Primavera P6, and Microsoft Project\n- Strong knowledge of building codes, ADA requirements, and municipal permitting\n- Excellent leadership, communication, and problem-solving skills\n- Ability to read and interpret blueprints, specifications, and construction documents\n- Valid driver's license and ability to be on-site daily\n\n\nCOMPENSATION\n$110,000 - $155,000 USD\n\n\nTO APPLY\nPlease submit your resume and cover letter."
+  },
+  {
+    "job_id": "JOB-010",
+    "title": "Senior Data Scientist (NLP/ML)",
+    "domain": "data_scientist",
+    "company": "OpenAI",
+    "location": {
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "US",
+      "remote_policy": "hybrid"
+    },
+    "employment_type": "Full-time",
+    "experience_required_years": {
+      "min_years": 5,
+      "max_years": 9
+    },
+    "seniority": "Senior",
+    "must_have_skills": [
+      "Python",
+      "Machine Learning",
+      "Natural Language Processing",
+      "PyTorch",
+      "TensorFlow",
+      "Transformers",
+      "Statistical Modeling",
+      "SQL",
+      "Model Evaluation",
+      "Research Papers"
+    ],
+    "nice_to_have_skills": [
+      "Large Language Models",
+      "Reinforcement Learning",
+      "Docker",
+      "MLOps",
+      "Spark"
+    ],
+    "domain_keywords": [
+      "NLP research",
+      "deep learning",
+      "model fine-tuning",
+      "embeddings",
+      "pre-training",
+      "transformer architectures"
+    ],
+    "certifications": [
+      "PhD in CS/ML/NLP (preferred)",
+      "Master's in Data Science",
+      "Published research papers"
+    ],
+    "compensation": {
+      "min": 180000,
+      "max": 250000,
+      "currency": "USD"
+    },
+    "responsibilities": [
+      "- Develop and implement state-of-the-art NLP models for production applications",
+      "- Design experiments, train transformer-based models, and evaluate performance on benchmarks",
+      "- Collaborate with research team to implement findings from latest ML papers",
+      "- Build data pipelines for large-scale text preprocessing and model training",
+      "- Fine-tune foundation models on domain-specific datasets",
+      "- Analyze model behavior, identify failure modes, and propose improvements",
+      "- Present research findings to cross-functional teams and publish technical blog posts",
+      "- Mentor junior data scientists and contribute to ML best practices"
+    ],
+    "qualifications": [
+      "- PhD or Master's degree in Computer Science, Machine Learning, or related field",
+      "- 5+ years of hands-on experience building NLP/ML systems in production",
+      "- Deep expertise in PyTorch or TensorFlow and transformer architectures",
+      "- Strong publication record in NLP/ML conferences (ACL, EMNLP, NeurIPS, ICML)",
+      "- Experience with large-scale model training and distributed computing",
+      "- Proficiency in Python and modern ML engineering practices",
+      "- Strong understanding of statistical methods and experimental design",
+      "- Excellent communication skills and ability to explain complex concepts",
+      "- Track record of shipping ML products to production"
+    ],
+    "jd_text": "Senior Data Scientist (NLP/ML)\nOpenAI\nSan Francisco, CA, US - Hybrid\n\nABOUT THE ROLE\n- Develop and implement state-of-the-art NLP models for production applications\n- Design experiments, train transformer-based models, and evaluate performance on benchmarks\n- Collaborate with research team to implement findings from latest ML papers\n- Build data pipelines for large-scale text preprocessing and model training\n- Fine-tune foundation models on domain-specific datasets\n- Analyze model behavior, identify failure modes, and propose improvements\n- Present research findings to cross-functional teams and publish technical blog posts\n- Mentor junior data scientists and contribute to ML best practices\n\n\nREQUIREMENTS\n- PhD or Master's degree in Computer Science, Machine Learning, or related field\n- 5+ years of hands-on experience building NLP/ML systems in production\n- Deep expertise in PyTorch or TensorFlow and transformer architectures\n- Strong publication record in NLP/ML conferences (ACL, EMNLP, NeurIPS, ICML)\n- Experience with large-scale model training and distributed computing\n- Proficiency in Python and modern ML engineering practices\n- Strong understanding of statistical methods and experimental design\n- Excellent communication skills and ability to explain complex concepts\n- Track record of shipping ML products to production\n\n\nCOMPENSATION\n$180,000 - $250,000 USD\n\n\nTO APPLY\nPlease submit your resume and cover letter."
+  }
+]

@@ -24,3 +24,32 @@ manifest.json
 activity_context_manifest.json
 activity_context_edge_manifest.json
 results_*.json
+
+# AI Sourcing & Matching — local env scripts hold credentials
+set_env.sh
+set_prod_urls.sh
+output/
+*.jsonl
+
+# Resume Parser / Job Parser — resumes, JDs, raw responses and answer keys hold real candidate data
+Test_Data/
+ss5_Test_Data/
+English_100/
+raw_responses*/
+review_packets/
+review_verdicts/
+truth/
+truth_packets/
+dev_vs_staging_state.json
+truth_scores.json
+JD/
+job_responses/
+
+# Resume Formatting Agent run outputs
+Resume Formatting Agent/raw/
+Resume Formatting Agent/reports/
+
+# LLM scoring comparison run outputs
+AI Sourcing & Matching/llm_scoring_comparison/llm_*.json
+AI Sourcing & Matching/llm_scoring_comparison/direct_eval_*.json
+AI Sourcing & Matching/llm_scoring_comparison/*_report.txt

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "clear-senior-java-backend",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Senior Java Backend Engineer. 6+ years building production backend services. Required: Java 17, Spring Boot, REST APIs, microservices, AWS, Kafka, PostgreSQL, Docker, Kubernetes. Location: San Francisco, CA (hybrid). Bachelor's in Computer Science required. Experience with CI/CD and Agile.",
+    "expectation": "Criteria should cover the core requirements (backend experience, Java/Spring Boot, AWS, microservices, CI/CD) with sensible weights; filters should extract title=Backend/Java Engineer, skills, ~6y experience, location San Francisco, education CS. JD is fairly unambiguous, so few or no clarifying questions are expected.",
+    "note": "Clear, well-specified JD — tests criteria coverage + faithful filter extraction."
+  },
+  {
+    "id": "ambiguous-vague-jd",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "We need a strong engineer to help us build our platform and move fast. Should be a great communicator and a self-starter.",
+    "expectation": "The JD is highly ambiguous (no seniority, no location, no concrete skills, no domain). The pipeline should surface clarifying questions (e.g. role/title, seniority, required skills, location) rather than inventing specific criteria/filters.",
+    "note": "Deliberately under-specified — tests that clarifying questions fire on ambiguity."
+  },
+  {
+    "id": "sales-representative-real-estate",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Sales Representative, Real Estate. 3+ years proven sales experience in real estate. Familiarity with real estate data tools (e.g. PropStream). Strong 'hunter' mentality and cold-calling track record. Location: remote (US).",
+    "expectation": "Criteria should center on real-estate sales experience, cold-calling/hunter mentality, and tool familiarity; filters should extract a sales/real-estate title, ~3y experience, US/remote location. Should not drift into unrelated engineering criteria.",
+    "note": "Non-technical domain — tests domain fidelity of criteria/filters."
+  },
+  {
+    "id": "must-have-vs-nice-to-have",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Frontend Engineer. MUST have production React and TypeScript experience. Nice to have: Vue, GraphQL, design-system work. 4+ years. Berlin or remote within CET.",
+    "expectation": "React and TypeScript should be treated as hard/must-have skills; Vue/GraphQL/design-systems as good-to-have; ~4y experience; location Berlin/CET. Weights should reflect the must-have vs nice-to-have split.",
+    "note": "Tests must-have vs good-to-have separation in skills extraction."
+  }
+]

@@ -1,0 +1,2912 @@
+[
+  {
+    "id": "c2f-ind-senior-frontend-react-berlin",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "We are hiring a Senior Frontend Engineer to join our product team in Berlin on a hybrid basis. You will own our React-based design system and mentor two mid-level engineers.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have strong React and TypeScript experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience building and maintaining a component/design system",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Based in Berlin with ability to work hybrid (3 days on-site)",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Good to have Next.js and Storybook experience",
+        "weight": 4
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have GraphQL exposure",
+        "weight": 3
+      }
+    ],
+    "expectation": "The compound 'React and TypeScript' criterion should split into two separate must_have skill filters (weight 9), design-system experience and Berlin/hybrid location as must_have, and Next.js/Storybook/GraphQL as good_to_have.",
+    "note": "compound multi-skill split; senior; specific city + hybrid"
+  },
+  {
+    "id": "c2f-ind-backend-java-microservices-remote",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Fully remote Backend Engineer role building high-throughput microservices for a payments platform. This is a Java-first shop moving toward an event-driven architecture.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong Java backend development with Spring Boot",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience designing microservices and REST APIs",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Comfortable working fully remote across EU time zones",
+        "weight": 6
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have Kafka or other event-streaming exposure",
+        "weight": 4
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have Postgres query optimisation experience",
+        "weight": 3
+      }
+    ],
+    "expectation": "Java and microservices/REST land in must_have (weights 8-9); Kafka and Postgres optimisation land in good_to_have (weights 3-4); the remote preference is captured, illustrating clear must vs nice-to-have separation by weight.",
+    "note": "clear mix of high-weight must-haves and low-weight nice-to-haves; remote"
+  },
+  {
+    "id": "c2f-ind-devops-kubernetes-aws",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Seeking a DevOps Engineer in Austin, TX to scale our cloud infrastructure. You will own CI/CD pipelines and our Kubernetes footprint on AWS.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have Kubernetes and Docker in production",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Must have AWS and Terraform",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience with CI/CD pipelines (GitLab CI or Jenkins)",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Located in Austin, TX",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have Prometheus and Grafana monitoring",
+        "weight": 4
+      }
+    ],
+    "expectation": "Two compound criteria should each split - 'Kubernetes and Docker' and 'AWS and Terraform' into four separate must_have skill filters; CI/CD and the Austin location as must_have; Prometheus/Grafana as good_to_have.",
+    "note": "two compound multi-skill criteria to split; specific city"
+  },
+  {
+    "id": "c2f-ind-mobile-ios-swift-london",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Our London fintech is looking for a Senior iOS Engineer to lead development of our consumer banking app. Swift-first codebase with a strong emphasis on clean architecture.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong native iOS development in Swift",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Currently or previously at a consumer fintech such as Monzo, Revolut or Starling",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Based in London (hybrid, 2 days on-site)",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Experience with SwiftUI and Combine",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have App Store release management experience",
+        "weight": 3
+      }
+    ],
+    "expectation": "Swift as a must_have skill, SwiftUI/Combine and App Store release as good_to_have, London/hybrid as a must_have location, and the target-company criterion mapped to a company/employer filter listing Monzo, Revolut and Starling.",
+    "note": "target company criterion (fintech names); senior; London hybrid"
+  },
+  {
+    "id": "c2f-ind-data-engineer-spark-airflow",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Data Engineer wanted to build and maintain our batch and streaming pipelines. You will work closely with analytics to deliver clean, reliable datasets in our Snowflake warehouse.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have Apache Spark and Airflow",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Strong SQL and data modelling skills",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience with Snowflake or a comparable cloud warehouse",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Python for pipeline development",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have dbt experience",
+        "weight": 4
+      },
+      {
+        "id": "c6",
+        "text": "Nice to have Kafka streaming exposure",
+        "weight": 3
+      }
+    ],
+    "expectation": "The compound 'Spark and Airflow' criterion splits into two must_have skill filters; SQL/data modelling, Snowflake and Python as must_have; dbt and Kafka as good_to_have.",
+    "note": "compound multi-skill split; mid-senior data engineering"
+  },
+  {
+    "id": "c2f-ind-ml-engineer-nlp",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "We're hiring a Machine Learning Engineer focused on NLP to improve our resume-parsing and semantic search. You will take models from prototype to production.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong experience training NLP models (transformers, embeddings)",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Proficient in PyTorch",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience deploying models to production",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have experience with vector databases (Pinecone, FAISS)",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have MLOps tooling exposure (MLflow)",
+        "weight": 3
+      }
+    ],
+    "expectation": "NLP modelling, PyTorch and production deployment land in must_have (7-9); vector databases and MLflow land in good_to_have (3-5), demonstrating a weight-driven must vs nice split.",
+    "note": "clear mix of must-have and nice-to-have; ML/NLP"
+  },
+  {
+    "id": "c2f-ind-security-engineer-appsec",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Application Security Engineer to embed security into our SDLC and run our bug-bounty triage. You will perform threat modelling and secure code reviews across services.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong application security / secure code review experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Exclude candidates without an OSCP or equivalent offensive-security certification",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Hands-on with SAST and DAST tooling",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have cloud security experience (AWS IAM, GuardDuty)",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have bug-bounty program management",
+        "weight": 4
+      }
+    ],
+    "expectation": "AppSec and SAST/DAST as must_have skills; the exclusion criterion becomes a hard filter requiring OSCP/equivalent (candidates without it excluded); cloud security and bug-bounty as good_to_have.",
+    "note": "exclusion criterion (certification requirement phrased as exclusion); security"
+  },
+  {
+    "id": "c2f-ind-fullstack-mern-junior",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Junior Full-Stack Developer to join a small startup team building a MERN-stack SaaS product. Great mentorship and room to grow.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Working knowledge of React",
+        "weight": 7
+      },
+      {
+        "id": "c2",
+        "text": "Working knowledge of Node.js",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Familiarity with MongoDB",
+        "weight": 6
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have a portfolio of personal projects",
+        "weight": 3
+      }
+    ],
+    "expectation": "React and Node.js as must_have (7), MongoDB as moderate, portfolio as good_to_have; a straightforward junior stack with no special traps.",
+    "note": "straightforward junior full-stack; no trap"
+  },
+  {
+    "id": "c2f-ind-principal-backend-golang",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Principal Backend Engineer to set technical direction for our platform team. You will drive architecture decisions across a Go-based services estate serving millions of requests per day.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "10+ years of backend engineering experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Deep expertise in Go",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Proven track record designing distributed systems at scale",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience mentoring and setting technical direction for senior engineers",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have gRPC and Protobuf experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "The explicit '10+ years' maps to an experience_min filter of 10 years; Go, distributed-systems design and mentoring as must_have; gRPC/Protobuf as good_to_have.",
+    "note": "explicit years-of-experience (10+); principal seniority"
+  },
+  {
+    "id": "c2f-ind-android-kotlin-remote",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Remote Android Engineer for a DACH-focused mobility app. You will build features in Kotlin and collaborate daily with our product team in Munich.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong native Android development in Kotlin",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Fluent in German (spoken and written)",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience with Jetpack Compose",
+        "weight": 6
+      },
+      {
+        "id": "c4",
+        "text": "Comfortable working fully remote",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have Kotlin Multiplatform experience",
+        "weight": 3
+      }
+    ],
+    "expectation": "Kotlin as a must_have skill; the German fluency criterion maps to a spoken-language filter (not a skill), weight 8; Jetpack Compose, remote and KMP as good_to_have.",
+    "note": "spoken-language requirement (German) routed to language field; remote"
+  },
+  {
+    "id": "c2f-ind-data-scientist-python",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Data Scientist to join our marketing analytics team and build attribution and churn models. You will partner with stakeholders to turn data into decisions.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have Python and R",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Must have SQL and Tableau",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Experience with statistical modelling and A/B testing",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have causal-inference experience",
+        "weight": 4
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have dashboarding in Looker",
+        "weight": 3
+      }
+    ],
+    "expectation": "'Python and R' and 'SQL and Tableau' each split into separate skill filters (must_have); stats/A-B testing as must_have; causal inference and Looker as good_to_have.",
+    "note": "two compound multi-skill criteria to split; data science"
+  },
+  {
+    "id": "c2f-ind-sre-observability",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Site Reliability Engineer to own our observability stack and incident response. You will improve SLOs, build runbooks and reduce toil across our services.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong SRE background with on-call and incident response",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Based in Dublin, Ireland (hybrid)",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience with an observability stack (Prometheus, Grafana)",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Experience with Kubernetes in production",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have Terraform experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "Although the job description gives no location, the criterion supplies one - Dublin/hybrid must map to a location filter (weight 8); SRE/incident response and Kubernetes as must_have; Terraform as good_to_have.",
+    "note": "location supplied by a criterion (JD has none); SRE"
+  },
+  {
+    "id": "c2f-ind-qa-automation-selenium",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "QA Automation Engineer to expand our end-to-end test coverage for a web application. You will build and maintain a reliable Selenium suite and integrate it into CI.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong Selenium WebDriver test automation experience",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Experience integrating tests into CI (Jenkins or GitHub Actions)",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Java for test frameworks",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have API testing with REST Assured",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have performance testing with JMeter",
+        "weight": 3
+      }
+    ],
+    "expectation": "Selenium, CI integration and Java land in must_have (7-8); REST Assured and JMeter land in good_to_have (3-5), showing a weight-based must vs nice separation.",
+    "note": "clear mix of must-have and nice-to-have; QA automation"
+  },
+  {
+    "id": "c2f-ind-frontend-vue-junior-remote",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Junior Frontend Developer (remote) to help build customer-facing dashboards in Vue 3. You will work alongside senior engineers and grow your skills quickly.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Working knowledge of Vue 3",
+        "weight": 7
+      },
+      {
+        "id": "c2",
+        "text": "Comfortable with HTML, CSS and responsive design",
+        "weight": 6
+      },
+      {
+        "id": "c3",
+        "text": "Familiarity with Git-based workflows",
+        "weight": 5
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have TypeScript exposure",
+        "weight": 3
+      }
+    ],
+    "expectation": "Vue 3 as must_have; HTML/CSS and Git as moderate; TypeScript as good_to_have; a straightforward junior remote frontend role.",
+    "note": "straightforward junior frontend; remote; no trap"
+  },
+  {
+    "id": "c2f-ind-engineering-manager-platform",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Engineering Manager to lead our Platform team of eight engineers. You will balance hands-on technical leadership with people management and delivery.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "5+ years engineering plus 2+ years managing engineers",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Previously an engineering manager at a high-growth SaaS scale-up (e.g., Datadog, Stripe, GitLab)",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Strong background in backend or platform engineering",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience with agile delivery and hiring",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience scaling teams through hypergrowth",
+        "weight": 4
+      }
+    ],
+    "expectation": "The target-company criterion maps to a company/employer filter (Datadog, Stripe, GitLab); management plus backend as must_have; agile/hiring and hypergrowth as good_to_have.",
+    "note": "target company criterion (SaaS scale-ups); manager seniority"
+  },
+  {
+    "id": "c2f-ind-mlops-engineer",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "MLOps Engineer to productionise our ML platform. You will own model deployment, monitoring and the training-serving infrastructure.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have Docker and Kubernetes",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Must have MLflow and Kubeflow",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Python for tooling and automation",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience with CI/CD for ML pipelines",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have feature-store experience (Feast)",
+        "weight": 3
+      }
+    ],
+    "expectation": "'Docker and Kubernetes' and 'MLflow and Kubeflow' each split into separate must_have skill filters; Python and CI/CD as must_have; Feast as good_to_have.",
+    "note": "two compound multi-skill criteria to split; MLOps"
+  },
+  {
+    "id": "c2f-ind-enterprise-account-executive-saas",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Enterprise Account Executive to close six-figure SaaS deals with Fortune 500 logos. You will own the full sales cycle from prospecting to close in a New York-based hybrid role.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Proven enterprise SaaS closing experience with six-figure ACV",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Currently at a top SaaS vendor such as Salesforce, HubSpot or Workday",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Based in New York (hybrid)",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Experience with MEDDIC or MEDDPICC sales methodology",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience selling into financial services",
+        "weight": 4
+      }
+    ],
+    "expectation": "Enterprise closing and the NY location as must_have; the target-company criterion maps to a company filter (Salesforce, HubSpot, Workday); MEDDIC and the FS vertical as good_to_have.",
+    "note": "target company criterion (SaaS vendors); enterprise sales; hybrid"
+  },
+  {
+    "id": "c2f-ind-sdr-junior-remote",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Sales Development Representative (remote, entry-level) to book qualified meetings for our AE team. A high-energy outbound role with a clear promotion path.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong written and verbal communication skills",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Comfortable with high-volume outbound calling and email",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Nice to have experience with Outreach or SalesLoft",
+        "weight": 5
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have HubSpot CRM familiarity",
+        "weight": 4
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have a track record of hitting quota in a prior SDR role",
+        "weight": 3
+      }
+    ],
+    "expectation": "Communication and outbound as must_have (7-8); Outreach/SalesLoft, HubSpot and prior-quota as good_to_have (3-5), a clear weight-based split for an entry SDR.",
+    "note": "clear mix of must-have and nice-to-have; junior SDR; remote"
+  },
+  {
+    "id": "c2f-ind-performance-marketing-manager",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Performance Marketing Manager to own our paid acquisition across search and social. You will manage a multi-million dollar budget and report on CAC and ROAS.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have Google Ads and Meta Ads management experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience managing large paid budgets to CAC/ROAS targets",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Proficient in GA4",
+        "weight": 6
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have TikTok Ads experience",
+        "weight": 4
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with a marketing-attribution tool",
+        "weight": 3
+      }
+    ],
+    "expectation": "'Google Ads and Meta Ads' splits into two must_have skill filters; budget/CAC-ROAS management as must_have; GA4 as moderate; TikTok Ads and attribution as good_to_have.",
+    "note": "compound multi-skill split (ad platforms); marketing manager"
+  },
+  {
+    "id": "c2f-ind-content-marketing-lead",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Content Marketing Lead to own our editorial calendar, SEO strategy and long-form content. You will manage two writers and a freelance network.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Proven B2B content marketing and editorial experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Strong SEO knowledge and keyword strategy",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Experience managing writers or a content team",
+        "weight": 6
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have experience with a CMS such as WordPress or Webflow",
+        "weight": 4
+      }
+    ],
+    "expectation": "Content/editorial and SEO as must_have; team management as moderate; CMS familiarity as good_to_have; a straightforward content lead role.",
+    "note": "straightforward content marketing lead; no trap"
+  },
+  {
+    "id": "c2f-ind-sales-ops-salesforce-admin",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Sales Operations Analyst to keep our Salesforce org healthy and our pipeline reporting accurate. You will build dashboards, manage data hygiene and support the RevOps roadmap.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Salesforce administration experience (certified admin preferred)",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Strong pipeline reporting and dashboard building",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Nice to have experience with CPQ",
+        "weight": 5
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have SQL for ad-hoc analysis",
+        "weight": 4
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with a BI tool (Tableau or Power BI)",
+        "weight": 3
+      }
+    ],
+    "expectation": "Salesforce admin and reporting as must_have (8); CPQ, SQL and BI as good_to_have (3-5), a clear weight-based split for sales ops.",
+    "note": "clear mix of must-have and nice-to-have; sales ops"
+  },
+  {
+    "id": "c2f-ind-regional-sales-manager-dach",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Regional Sales Manager for the DACH market to lead a team of five field reps. You will own the number for Germany, Austria and Switzerland from our Frankfurt office.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Proven B2B sales management experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Fluent in German and English",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Based in Frankfurt or willing to relocate",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Experience selling into DACH mid-market",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with Salesforce",
+        "weight": 3
+      }
+    ],
+    "expectation": "The 'German and English' criterion maps to two spoken-language filters (must_have); sales management and the Frankfurt location as must_have; DACH mid-market as moderate; Salesforce as good_to_have.",
+    "note": "spoken-language requirement (German + English) to language field; regional manager"
+  },
+  {
+    "id": "c2f-ind-growth-marketing-b2b",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Growth Marketing Lead to own our full-funnel B2B growth experiments. You will run acquisition, activation and retention programs backed by rigorous experimentation.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "8+ years in B2B growth or demand generation",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Strong experimentation and funnel-analytics mindset",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience with marketing automation (Marketo or HubSpot)",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have product-led growth (PLG) experience",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have SQL for self-serve analysis",
+        "weight": 3
+      }
+    ],
+    "expectation": "The explicit '8+ years' maps to an experience_min of 8; experimentation and marketing automation as must_have; PLG and SQL as good_to_have.",
+    "note": "explicit years-of-experience (8+); growth marketing lead"
+  },
+  {
+    "id": "c2f-ind-brand-manager-cpg",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Brand Manager for a fast-moving consumer goods portfolio. You will own P&L, positioning and go-to-market for two personal-care brands.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Proven brand management experience in CPG/FMCG",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "MBA from a recognised business school",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Experience owning a brand P&L",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Strong cross-functional leadership (R&D, supply, trade)",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have shopper/trade marketing experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "The MBA criterion maps to an education filter (degree/qualification); brand management and P&L ownership as must_have; cross-functional leadership as moderate; shopper marketing as good_to_have.",
+    "note": "education criterion (MBA); brand manager; CPG"
+  },
+  {
+    "id": "c2f-ind-senior-icu-nurse",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Senior ICU Registered Nurse for a Level I trauma center in Chicago. You will provide critical care for high-acuity patients and precept newer nurses.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Active RN license in Illinois",
+        "weight": 10
+      },
+      {
+        "id": "c2",
+        "text": "Must have ACLS and BLS certifications",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "3+ years of ICU/critical-care experience",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Based in Chicago, IL",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Experience with EPIC EHR",
+        "weight": 6
+      },
+      {
+        "id": "c6",
+        "text": "Nice to have CCRN certification",
+        "weight": 5
+      }
+    ],
+    "expectation": "'ACLS and BLS' splits into two certification/must_have filters; the RN license (10), ICU experience and Chicago location as must_have; EPIC and CCRN as good_to_have.",
+    "note": "compound multi-cert split (ACLS + BLS); senior ICU nurse; city"
+  },
+  {
+    "id": "c2f-ind-registered-nurse-med-surg",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Med-Surg Registered Nurse for a 30-bed unit on rotating shifts. Join a supportive team at a community hospital in Phoenix, Arizona.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Exclude candidates without an active, unencumbered RN license",
+        "weight": 10
+      },
+      {
+        "id": "c2",
+        "text": "BLS certification",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "1+ year of med-surg or acute-care experience",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Willing to work rotating day/night shifts",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have EPIC experience",
+        "weight": 3
+      }
+    ],
+    "expectation": "The exclusion becomes a hard filter requiring an active RN license (candidates without it excluded); BLS and med-surg experience as must_have; shift flexibility as moderate; EPIC as good_to_have.",
+    "note": "exclusion criterion (license requirement phrased as exclusion); med-surg RN; city"
+  },
+  {
+    "id": "c2f-ind-physician-family-medicine",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Board-certified Family Medicine Physician for an outpatient clinic in Denver. Full-time, four-day work week, with a collaborative care team.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "MD or DO degree",
+        "weight": 10
+      },
+      {
+        "id": "c2",
+        "text": "Board certified in Family Medicine",
+        "weight": 10
+      },
+      {
+        "id": "c3",
+        "text": "Active, unrestricted state medical license",
+        "weight": 10
+      },
+      {
+        "id": "c4",
+        "text": "Experience in outpatient primary care",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have Spanish language skills for patient care",
+        "weight": 4
+      }
+    ],
+    "expectation": "MD/DO and board certification map to education/qualification filters (must_have, 10); the license as must_have; outpatient experience as must_have; Spanish as a good_to_have language filter.",
+    "note": "education criterion (MD/DO + board cert); physician"
+  },
+  {
+    "id": "c2f-ind-clinical-pharmacist-hospital",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Clinical Pharmacist for inpatient services at a teaching hospital. You will round with care teams, verify orders and provide drug-information support.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "PharmD degree",
+        "weight": 10
+      },
+      {
+        "id": "c2",
+        "text": "Active pharmacist license",
+        "weight": 10
+      },
+      {
+        "id": "c3",
+        "text": "Completed a PGY-1 residency",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Experience with inpatient order verification",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have BCPS board certification",
+        "weight": 5
+      }
+    ],
+    "expectation": "PharmD maps to an education filter (must_have, 10); the license and inpatient experience as must_have; PGY-1 residency as must_have; BCPS as good_to_have.",
+    "note": "education criterion (PharmD); clinical pharmacist"
+  },
+  {
+    "id": "c2f-ind-nurse-practitioner-telehealth",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Nurse Practitioner for a growing telehealth practice providing primary and urgent care video visits. Flexible scheduling and a strong clinical support team.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Active Nurse Practitioner license",
+        "weight": 10
+      },
+      {
+        "id": "c2",
+        "text": "Licensed to practice in Texas",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Experience with telehealth or virtual visits",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Comfortable with an EHR-based virtual workflow",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have DEA registration",
+        "weight": 4
+      }
+    ],
+    "expectation": "Although the description names no location, the criterion supplies a jurisdiction - Texas licensure/location maps to a location filter (weight 9); the NP license and telehealth experience as must_have; DEA as good_to_have.",
+    "note": "location supplied by a criterion (JD has none); telehealth NP"
+  },
+  {
+    "id": "c2f-ind-physical-therapist-outpatient",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Physical Therapist for a busy outpatient orthopedic clinic. You will manage a caseload of post-surgical and sports-injury patients.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Licensed Physical Therapist (DPT)",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience in outpatient orthopedics",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Strong manual-therapy skills",
+        "weight": 6
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have sports-rehabilitation experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "The PT license and outpatient ortho experience as must_have; manual therapy as moderate; sports rehab as good_to_have; a straightforward clinical role.",
+    "note": "straightforward outpatient PT; no trap"
+  },
+  {
+    "id": "c2f-ind-medical-billing-specialist",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Medical Billing and Coding Specialist for a multi-specialty practice. You will handle claims, denials and coding accuracy across several payers.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have ICD-10 and CPT coding proficiency",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience with claims submission and denial management",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "CPC (Certified Professional Coder) certification",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have experience with a PM system (e.g., Kareo)",
+        "weight": 4
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have knowledge of Medicare billing rules",
+        "weight": 3
+      }
+    ],
+    "expectation": "'ICD-10 and CPT' splits into two must_have skill filters; claims/denials and the CPC certification as must_have; the PM system and Medicare rules as good_to_have.",
+    "note": "compound multi-skill split (ICD-10 + CPT); medical billing"
+  },
+  {
+    "id": "c2f-ind-travel-nurse-er",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Travel ER Registered Nurse for 13-week assignments at hospitals in Southern California. A fast-paced emergency environment with strong stipends.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Active RN license (California or compact)",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "2+ years of emergency-department experience",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "ACLS, BLS and PALS certifications",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Bilingual - fluent in Spanish and English",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have trauma (TNCC) certification",
+        "weight": 4
+      }
+    ],
+    "expectation": "The 'Spanish and English' criterion maps to spoken-language filters (must_have); the RN license, ER experience and ACLS/BLS/PALS certifications as must_have; TNCC as good_to_have.",
+    "note": "spoken-language requirement (bilingual Spanish/English) to language field; travel ER nurse"
+  },
+  {
+    "id": "c2f-ind-radiologic-technologist",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Radiologic Technologist for a diagnostic imaging center. You will perform X-ray and CT exams and ensure patient safety and image quality.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "ARRT (R) certification",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Active state radiography license",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "CT experience",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have MRI cross-training",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with a specific PACS",
+        "weight": 3
+      }
+    ],
+    "expectation": "ARRT, state license and CT experience as must_have (7-9); MRI cross-training and PACS as good_to_have (3-5), a clear weight-based split for a rad tech.",
+    "note": "clear mix of must-have and nice-to-have; radiologic technologist"
+  },
+  {
+    "id": "c2f-ind-charge-nurse-manager",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Charge Nurse / Unit Manager to lead a 24-bed medical unit. You will manage staffing, quality metrics and mentor the nursing team.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "7+ years of nursing experience, including charge/leadership",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Active RN license",
+        "weight": 10
+      },
+      {
+        "id": "c3",
+        "text": "Experience with staffing, scheduling and quality metrics",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "BSN degree",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with Magnet designation processes",
+        "weight": 4
+      }
+    ],
+    "expectation": "The explicit '7+ years' maps to an experience_min of 7; the RN license and leadership experience as must_have; BSN as moderate; Magnet experience as good_to_have.",
+    "note": "explicit years-of-experience (7+); charge nurse/manager"
+  },
+  {
+    "id": "c2f-ind-senior-financial-analyst-cfa",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Senior Financial Analyst for our corporate FP&A team in Boston. You will own forecasting, variance analysis and board reporting.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "CFA charter (or Level III candidate)",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Strong financial modelling in Excel",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Experience with FP&A: forecasting and variance analysis",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Based in Boston (hybrid)",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with a planning tool (Anaplan)",
+        "weight": 4
+      }
+    ],
+    "expectation": "The CFA criterion maps to an education/qualification filter; Excel modelling and FP&A as must_have; Boston as a moderate location; Anaplan as good_to_have.",
+    "note": "education criterion (CFA); senior financial analyst"
+  },
+  {
+    "id": "c2f-ind-staff-accountant-cpa",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Staff Accountant to support month-end close, reconciliations and journal entries. Growing company with a clear path to Senior Accountant.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "CPA or actively pursuing CPA",
+        "weight": 7
+      },
+      {
+        "id": "c2",
+        "text": "Bachelor's degree in Accounting",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience with month-end close and reconciliations",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Proficiency in Excel",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have NetSuite experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "CPA and the Accounting degree map to education filters (must_have); close/reconciliations and Excel as must_have; NetSuite as good_to_have.",
+    "note": "education criterion (CPA + accounting degree); staff accountant"
+  },
+  {
+    "id": "c2f-ind-investment-banking-associate",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Investment Banking Associate for our M&A advisory team in London. You will build models, prepare pitch materials and support live transactions.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "2-4 years in investment banking (analyst-to-associate)",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Previously at a bulge-bracket or elite boutique (e.g., Goldman Sachs, Morgan Stanley, Lazard)",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Strong LBO and DCF modelling skills",
+        "weight": 9
+      },
+      {
+        "id": "c4",
+        "text": "Based in London",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have sector coverage in TMT",
+        "weight": 4
+      }
+    ],
+    "expectation": "The target-company criterion maps to an employer filter (Goldman Sachs, Morgan Stanley, Lazard); modelling and the London location as must_have; IB tenure as must_have; TMT coverage as good_to_have.",
+    "note": "target company criterion (bulge-bracket banks); IB associate; city"
+  },
+  {
+    "id": "c2f-ind-controller-manufacturing",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Controller for a mid-sized manufacturing business. You will own the general ledger, financial reporting, and lead a small accounting team.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong GAAP financial-reporting experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience as a Controller or Assistant Controller in manufacturing",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Team-leadership experience",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have cost-accounting / standard-costing experience",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have ERP-implementation experience (SAP)",
+        "weight": 3
+      }
+    ],
+    "expectation": "GAAP reporting, controller experience and leadership as must_have (7-9); cost accounting and ERP implementation as good_to_have (3-5), a clear weight-based split.",
+    "note": "clear mix of must-have and nice-to-have; controller"
+  },
+  {
+    "id": "c2f-ind-fpa-manager-remote",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Remote FP&A Manager to lead planning, budgeting and management reporting for a SaaS company. You will partner with department heads to drive financial discipline.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have Anaplan and Hyperion experience",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Strong SaaS-metrics knowledge (ARR, churn, CAC)",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Advanced Excel financial modelling",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Comfortable working fully remote",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have SQL for data pulls",
+        "weight": 4
+      }
+    ],
+    "expectation": "'Anaplan and Hyperion' splits into two must_have skill filters; SaaS metrics and Excel as must_have; remote and SQL as good_to_have.",
+    "note": "compound multi-skill split (planning tools); FP&A manager; remote"
+  },
+  {
+    "id": "c2f-ind-audit-manager-big4",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Audit Manager to lead external audit engagements for mid-market clients. You will manage teams, review workpapers and own client relationships.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Currently or recently at a Big 4 firm (Deloitte, PwC, EY, KPMG)",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "CPA or ACA/ACCA qualification",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "5+ years of external-audit experience",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience managing audit teams",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have dual IFRS and US GAAP experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "The target-company criterion maps to an employer filter (Deloitte, PwC, EY, KPMG); the CPA/ACA qualification as education; audit tenure and team management as must_have; IFRS/US GAAP as good_to_have.",
+    "note": "target company criterion (Big 4); audit manager"
+  },
+  {
+    "id": "c2f-ind-tax-accountant-junior",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Junior Tax Accountant to assist with corporate tax returns and provisions during busy season. A great training environment at a regional firm.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Exclude candidates who are not authorised to work in the country without sponsorship",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Bachelor's degree in Accounting or Finance",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Some exposure to corporate tax or an internship",
+        "weight": 6
+      },
+      {
+        "id": "c4",
+        "text": "Proficiency in Excel",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with tax software (e.g., CCH)",
+        "weight": 3
+      }
+    ],
+    "expectation": "The exclusion becomes a hard work-authorisation filter (candidates needing sponsorship excluded); the accounting degree as education/must_have; tax exposure and Excel as moderate; CCH as good_to_have.",
+    "note": "exclusion criterion (work-authorisation phrased as exclusion); junior tax"
+  },
+  {
+    "id": "c2f-ind-treasury-analyst",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Treasury Analyst for a multinational's European hub. You will manage cash positioning, FX exposure and bank relationships across the region.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong cash-management and liquidity-forecasting experience",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Fluent in French",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience with FX and hedging instruments",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Familiarity with a treasury-management system (Kyriba)",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have a treasury qualification (AMCT)",
+        "weight": 3
+      }
+    ],
+    "expectation": "The French fluency criterion maps to a spoken-language filter (must_have); cash management and FX as must_have; Kyriba and AMCT as good_to_have.",
+    "note": "spoken-language requirement (French) to language field; treasury analyst"
+  },
+  {
+    "id": "c2f-ind-payroll-specialist",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Payroll Specialist to run our semi-monthly, multi-state payroll and ensure compliance. You will handle garnishments, tax filings and year-end reporting.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Experience running multi-state US payroll",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Based in or near Atlanta, GA (hybrid, 2 days on-site)",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience with a payroll platform (ADP or Workday)",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Knowledge of payroll tax and compliance",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have FPC or CPP certification",
+        "weight": 4
+      }
+    ],
+    "expectation": "Although the description gives no location, the criterion supplies Atlanta/hybrid - mapping to a location filter (weight 8); multi-state payroll, the platform and compliance as must_have; FPC/CPP as good_to_have.",
+    "note": "location supplied by a criterion (JD has none); payroll specialist"
+  },
+  {
+    "id": "c2f-ind-site-civil-engineer",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Site Civil Engineer for a large infrastructure project. You will produce designs, supervise works and coordinate with contractors on site.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have AutoCAD and Civil 3D",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Degree in Civil Engineering",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience on infrastructure or highways projects",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Chartered (or working toward) with ICE",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have Revit experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "'AutoCAD and Civil 3D' splits into two must_have skill filters; the Civil Engineering degree as education; infrastructure experience as must_have; ICE chartership and Revit as good_to_have.",
+    "note": "compound multi-skill split (CAD tools); civil engineer"
+  },
+  {
+    "id": "c2f-ind-electrician-commercial",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Commercial Electrician for fit-out and maintenance jobs across multiple sites. Van and tools provided; travel between sites is required.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Exclude candidates without a valid full driving licence",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Qualified electrician (NVQ Level 3 or equivalent)",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "18th Edition wiring-regulations certification",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience with commercial installations",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have testing and inspection (2391) qualification",
+        "weight": 4
+      }
+    ],
+    "expectation": "The exclusion becomes a hard filter requiring a valid driving licence (candidates without one excluded); NVQ Level 3 and 18th Edition as must_have; commercial experience as must_have; 2391 as good_to_have.",
+    "note": "exclusion criterion (driving licence phrased as exclusion); commercial electrician"
+  },
+  {
+    "id": "c2f-ind-hvac-technician",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "HVAC Service Technician to install, service and repair residential and light-commercial systems. On-call rotation with overtime available.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "EPA 608 certification",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "3+ years of HVAC service and repair experience",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience with both residential and light-commercial systems",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have refrigeration experience",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have familiarity with smart thermostats and controls",
+        "weight": 3
+      }
+    ],
+    "expectation": "EPA 608, HVAC experience and residential/commercial work as must_have (7-8); refrigeration and smart controls as good_to_have (3-5), a clear weight split.",
+    "note": "clear mix of must-have and nice-to-have; HVAC technician"
+  },
+  {
+    "id": "c2f-ind-construction-project-manager",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Construction Project Manager to deliver commercial building projects on time and on budget. You will manage subcontractors, schedules and client communications.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Proven commercial construction project-management experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience with scheduling software (Primavera P6 or MS Project)",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "PMP certification",
+        "weight": 6
+      },
+      {
+        "id": "c4",
+        "text": "Degree in Construction Management or Civil Engineering",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have LEED accreditation",
+        "weight": 3
+      }
+    ],
+    "expectation": "Construction PM experience and scheduling software as must_have; PMP and the degree as moderate education/qualification; LEED as good_to_have; a straightforward PM role.",
+    "note": "straightforward construction PM; no single dominant trap"
+  },
+  {
+    "id": "c2f-ind-structural-engineer-pe",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Structural Engineer to lead design of steel and concrete structures for commercial buildings. You will stamp drawings and mentor junior engineers.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "8+ years of structural-engineering experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Licensed Professional Engineer (PE)",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Experience with steel and concrete design",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Proficiency in structural-analysis software (ETABS, SAP2000)",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have seismic-design experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "The explicit '8+ years' maps to an experience_min of 8; the PE license and steel/concrete design as must_have; analysis software as must_have; seismic as good_to_have.",
+    "note": "explicit years-of-experience (8+); structural engineer"
+  },
+  {
+    "id": "c2f-ind-plumber-residential",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Residential Plumber for service calls, installations and repairs. Steady work with a well-established plumbing company and a supportive team.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Licensed journeyman plumber",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Must be based within commuting distance of Seattle, WA",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience with residential service and repair",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Comfortable with customer-facing service calls",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have gas-fitting certification",
+        "weight": 4
+      }
+    ],
+    "expectation": "Although the description names no location, the criterion supplies Seattle - mapping to a location filter (weight 8); the journeyman license and residential experience as must_have; customer service as moderate; gas-fitting as good_to_have.",
+    "note": "location supplied by a criterion (JD has none); residential plumber"
+  },
+  {
+    "id": "c2f-ind-quantity-surveyor-uk",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Quantity Surveyor for a UK main contractor working on residential developments. You will manage costs, valuations and subcontractor accounts.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Experience as a Quantity Surveyor with a main contractor",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Strong cost-control and valuation experience",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Degree in Quantity Surveying (RICS-accredited)",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Working toward MRICS chartership",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with NEC or JCT contracts",
+        "weight": 4
+      }
+    ],
+    "expectation": "QS experience and cost control as must_have; the RICS-accredited degree as education/qualification; MRICS and NEC/JCT as good_to_have; a straightforward QS role.",
+    "note": "straightforward quantity surveyor; no single dominant trap"
+  },
+  {
+    "id": "c2f-ind-welder-tig-mig",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Skilled Welder for a fabrication shop producing structural and architectural metalwork. You will read drawings and produce high-quality welds to spec.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must be proficient in TIG and MIG welding",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Able to read engineering drawings",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience welding stainless steel",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have a coded/AWS welding certification",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have aluminium welding experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "'TIG and MIG' splits into two must_have skill filters; drawing reading and stainless-steel experience as must_have; an AWS certification and aluminium as good_to_have.",
+    "note": "compound multi-skill split (welding processes); welder"
+  },
+  {
+    "id": "c2f-ind-architect-revit",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Project Architect to lead design on high-end residential and mixed-use schemes. You will run projects from concept through to construction.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Registered/licensed architect",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Previously at a leading/award-winning architecture practice (e.g., Foster + Partners, Zaha Hadid, Gensler)",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Proficiency in Revit",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience running projects across RIBA stages",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have Rhino and Grasshopper skills",
+        "weight": 4
+      }
+    ],
+    "expectation": "The target-company criterion maps to an employer filter (Foster + Partners, Zaha Hadid, Gensler); registration, Revit and project-running as must_have; Rhino/Grasshopper as good_to_have.",
+    "note": "target company criterion (top architecture practices); project architect"
+  },
+  {
+    "id": "c2f-ind-warehouse-supervisor",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Warehouse Supervisor to lead a shift of 20 associates in a high-volume distribution center. You will hit throughput targets and enforce safety standards.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Experience supervising warehouse or DC teams",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Focus on safety (OSHA) and productivity metrics",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Strong knowledge of WMS and inventory accuracy",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have forklift certification",
+        "weight": 4
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with peak-season ramp-up",
+        "weight": 3
+      }
+    ],
+    "expectation": "Supervisory experience, safety/productivity and WMS as must_have (7-9); forklift certification and peak-season experience as good_to_have (3-4), a clear weight split.",
+    "note": "clear mix of must-have and nice-to-have; warehouse supervisor"
+  },
+  {
+    "id": "c2f-ind-supply-chain-manager",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Supply Chain Manager to own end-to-end planning, procurement and logistics for a manufacturing site. You will optimise inventory and supplier performance.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have SAP and Oracle ERP experience",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Strong demand-planning and inventory-management skills",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Experience managing supplier relationships and contracts",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "APICS/CSCP certification",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have a lean/Six Sigma background",
+        "weight": 4
+      }
+    ],
+    "expectation": "'SAP and Oracle' splits into two must_have skill filters; demand planning and supplier management as must_have; APICS and lean as good_to_have.",
+    "note": "compound multi-skill split (ERP systems); supply chain manager"
+  },
+  {
+    "id": "c2f-ind-cdl-truck-driver",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Class A CDL Truck Driver for regional routes with home time every weekend. Late-model equipment and competitive per-mile pay.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Valid Class A CDL",
+        "weight": 10
+      },
+      {
+        "id": "c2",
+        "text": "Exclude candidates with a DUI or major moving violation in the last 5 years",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Clean/compliant DOT medical card",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "2+ years of OTR or regional driving experience",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have hazmat endorsement",
+        "weight": 4
+      }
+    ],
+    "expectation": "The CDL Class A and DOT medical card as must_have; the exclusion becomes a hard filter removing candidates with a recent DUI/major violation; driving experience as must_have; hazmat endorsement as good_to_have.",
+    "note": "exclusion criterion (clean record phrased as exclusion); CDL driver"
+  },
+  {
+    "id": "c2f-ind-manufacturing-engineer-lean",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Manufacturing Engineer to improve production processes and reduce waste on an automotive assembly line. You will lead continuous-improvement initiatives.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Experience with lean manufacturing and continuous improvement",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience with process/time studies and line balancing",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Degree in Mechanical or Industrial Engineering",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Six Sigma Green Belt (Black Belt preferred)",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have CAD (SolidWorks) skills",
+        "weight": 4
+      }
+    ],
+    "expectation": "Lean/CI and process studies as must_have; the engineering degree and Six Sigma as moderate education/qualification; SolidWorks as good_to_have; a straightforward manufacturing engineer role.",
+    "note": "straightforward manufacturing engineer; no single dominant trap"
+  },
+  {
+    "id": "c2f-ind-quality-manager-iso",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Quality Manager for a factory supplying automotive components. You will own the QMS, lead audits and interface with overseas suppliers and customers.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Experience owning an ISO 9001 / IATF 16949 QMS",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Fluent in Mandarin for supplier communication",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Experience leading internal and external audits",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Knowledge of APQP, PPAP and FMEA",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have Six Sigma Black Belt",
+        "weight": 4
+      }
+    ],
+    "expectation": "The Mandarin fluency criterion maps to a spoken-language filter (must_have); QMS ownership and audits as must_have; APQP/PPAP/FMEA as moderate; Six Sigma as good_to_have.",
+    "note": "spoken-language requirement (Mandarin) to language field; quality manager"
+  },
+  {
+    "id": "c2f-ind-logistics-coordinator-junior",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Junior Logistics Coordinator to schedule shipments, track deliveries and liaise with carriers. An entry-level role with training provided.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Strong organisational and communication skills",
+        "weight": 7
+      },
+      {
+        "id": "c2",
+        "text": "Must be based in or near Rotterdam",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Some exposure to shipping/logistics or a related internship",
+        "weight": 6
+      },
+      {
+        "id": "c4",
+        "text": "Comfortable with Excel and email-based coordination",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have knowledge of Incoterms",
+        "weight": 3
+      }
+    ],
+    "expectation": "Although the description gives no location, the criterion supplies Rotterdam - mapping to a location filter (weight 8); organisation/communication as must_have; logistics exposure and Excel as moderate; Incoterms as good_to_have.",
+    "note": "location supplied by a criterion (JD has none); junior logistics coordinator"
+  },
+  {
+    "id": "c2f-ind-production-planner",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Production Planner to create and maintain the master production schedule for a food-manufacturing plant. You will balance demand, capacity and inventory.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Experience in production planning or scheduling",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Strong ERP/MRP knowledge",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Analytical and Excel skills",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have experience in food or FMCG manufacturing",
+        "weight": 4
+      }
+    ],
+    "expectation": "Production planning and ERP/MRP as must_have; Excel/analytics as must_have; food/FMCG experience as good_to_have; a straightforward planner role.",
+    "note": "straightforward production planner; no trap"
+  },
+  {
+    "id": "c2f-ind-forklift-operator",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Forklift Operator for a busy distribution warehouse. You will move pallets, load trucks and keep stock organised on the day shift.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Exclude candidates without a valid forklift operator certification",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience operating reach and counterbalance trucks",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Attention to safety and accuracy",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Able to work on your feet for a full shift",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have RF-scanner / WMS experience",
+        "weight": 3
+      }
+    ],
+    "expectation": "The exclusion becomes a hard filter requiring a forklift certification (uncertified candidates excluded); reach/counterbalance experience and safety as must_have; RF/WMS as good_to_have.",
+    "note": "exclusion criterion (certification phrased as exclusion); forklift operator"
+  },
+  {
+    "id": "c2f-ind-corporate-counsel",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Corporate Counsel to support commercial contracts, corporate governance and M&A for a growing technology company. You will be the first in-house lawyer.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "JD (Juris Doctor) degree",
+        "weight": 10
+      },
+      {
+        "id": "c2",
+        "text": "Admitted to the bar and in good standing",
+        "weight": 10
+      },
+      {
+        "id": "c3",
+        "text": "5+ years of commercial/corporate legal experience",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience drafting and negotiating commercial contracts",
+        "weight": 8
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have SaaS/technology industry experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "JD and bar admission map to education/qualification filters (must_have, 10); legal tenure and contract experience as must_have; SaaS industry as good_to_have.",
+    "note": "education criterion (JD + bar admission); corporate counsel"
+  },
+  {
+    "id": "c2f-ind-paralegal-litigation",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Litigation Paralegal to support a busy disputes team. You will manage case files, e-discovery and trial preparation.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Litigation paralegal experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience with e-discovery platforms (Relativity)",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Strong document-management and bundling skills",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have trial-preparation experience",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have a paralegal certificate",
+        "weight": 3
+      }
+    ],
+    "expectation": "Litigation experience, e-discovery and document management as must_have (7-9); trial prep and the paralegal certificate as good_to_have (3-5), a clear weight split.",
+    "note": "clear mix of must-have and nice-to-have; litigation paralegal"
+  },
+  {
+    "id": "c2f-ind-hr-business-partner",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "HR Business Partner to support two business units through the full employee lifecycle. You will coach managers, drive engagement and handle ER cases.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must have Workday and SuccessFactors experience",
+        "weight": 7
+      },
+      {
+        "id": "c2",
+        "text": "Strong employee-relations and coaching experience",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Experience partnering with senior managers",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Knowledge of employment-law fundamentals",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have CIPD qualification",
+        "weight": 4
+      }
+    ],
+    "expectation": "'Workday and SuccessFactors' splits into two must_have skill filters; ER/coaching and senior partnering as must_have; employment-law knowledge as moderate; CIPD as good_to_have.",
+    "note": "compound multi-skill split (HRIS platforms); HR business partner"
+  },
+  {
+    "id": "c2f-ind-talent-acquisition-lead",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Talent Acquisition Lead to build our in-house recruiting function and hire across engineering and go-to-market. You will own the full-cycle process and employer brand.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Proven in-house/full-cycle recruiting experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Exclude candidates with only an agency/staffing-firm background",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Experience hiring technical and GTM roles",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Data-driven approach to recruiting metrics",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with an ATS (Greenhouse or Lever)",
+        "weight": 4
+      }
+    ],
+    "expectation": "In-house recruiting and technical/GTM hiring as must_have; the exclusion becomes a hard filter removing agency-only backgrounds; metrics as moderate; ATS as good_to_have.",
+    "note": "exclusion criterion (no agency-only background); talent acquisition lead"
+  },
+  {
+    "id": "c2f-ind-executive-assistant-ceo",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Executive Assistant to the CEO of an international firm. You will manage a complex calendar, coordinate global travel and handle confidential communications.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "5+ years supporting C-level executives",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Fluent in English and French",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Exceptional calendar and travel management",
+        "weight": 9
+      },
+      {
+        "id": "c4",
+        "text": "High discretion with confidential information",
+        "weight": 8
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience organising board meetings",
+        "weight": 4
+      }
+    ],
+    "expectation": "The 'English and French' criterion maps to spoken-language filters (must_have); C-level support, calendar/travel and discretion as must_have; board-meeting experience as good_to_have.",
+    "note": "spoken-language requirement (English + French) to language field; executive assistant"
+  },
+  {
+    "id": "c2f-ind-compensation-analyst",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Compensation Analyst to support our annual comp review, benchmarking and job leveling. You will work with survey data and build models for pay decisions.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Experience in compensation analysis and benchmarking",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Advanced Excel and comp-survey experience (Radford or Mercer)",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Understanding of job architecture and leveling",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have experience with a comp-planning tool",
+        "weight": 4
+      }
+    ],
+    "expectation": "Comp analysis, Excel/survey work and job architecture as must_have; a comp-planning tool as good_to_have; a straightforward compensation analyst role.",
+    "note": "straightforward compensation analyst; no trap"
+  },
+  {
+    "id": "c2f-ind-office-manager",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Office Manager to run day-to-day operations of a busy office - facilities, vendors, supplies and events. You will be the go-to person keeping everything running smoothly.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Proven office-management or operations experience",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Must be fully on-site in Singapore",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Strong vendor and facilities coordination",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Experience organising team events and onboarding",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have bookkeeping/expense-management experience",
+        "weight": 3
+      }
+    ],
+    "expectation": "Although the description gives no location, the criterion supplies Singapore/on-site - mapping to a location filter (weight 8); office management and vendor coordination as must_have; events as moderate; bookkeeping as good_to_have.",
+    "note": "location supplied by a criterion (JD has none); office manager"
+  },
+  {
+    "id": "c2f-ind-employment-lawyer-uk",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Employment Solicitor for a UK law firm's employment team. You will advise on contentious and non-contentious matters for a range of corporate clients.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "6+ years PQE in employment law",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Qualified solicitor in England & Wales",
+        "weight": 10
+      },
+      {
+        "id": "c3",
+        "text": "Experience with tribunal claims and advisory work",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Strong client-relationship skills",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have TUPE and restructuring experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "The explicit '6+ years PQE' maps to an experience_min of 6; the solicitor qualification as must_have; tribunal/advisory experience as must_have; client skills as moderate; TUPE as good_to_have.",
+    "note": "explicit years-of-experience (6+ PQE); employment lawyer"
+  },
+  {
+    "id": "c2f-ind-hotel-general-manager",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Hotel General Manager to lead a 200-room luxury property. You will own P&L, guest experience and a team of department heads.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Previously GM or Hotel Manager at a luxury/5-star brand (e.g., Four Seasons, Ritz-Carlton, Mandarin Oriental)",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Strong P&L and revenue-management experience",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Proven leadership of large hospitality teams",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience with brand-standard audits",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have pre-opening experience",
+        "weight": 4
+      }
+    ],
+    "expectation": "The target-company criterion maps to an employer filter (Four Seasons, Ritz-Carlton, Mandarin Oriental); P&L and team leadership as must_have; brand audits as moderate; pre-opening as good_to_have.",
+    "note": "target company criterion (luxury hotel brands); hotel GM"
+  },
+  {
+    "id": "c2f-ind-executive-chef-fine-dining",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Executive Chef for a fine-dining restaurant. You will design menus, control food costs and lead a brigade in a high-pressure kitchen.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Executive/Head Chef experience in fine dining",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Strong menu development and food-cost control",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Kitchen leadership and brigade management",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have a Michelin or fine-dining-award kitchen background",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have pastry knowledge",
+        "weight": 3
+      }
+    ],
+    "expectation": "Fine-dining chef experience, menu/cost control and leadership as must_have (8-9); a Michelin background and pastry as good_to_have (3-5), a clear weight split.",
+    "note": "clear mix of must-have and nice-to-have; executive chef"
+  },
+  {
+    "id": "c2f-ind-retail-store-manager",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Store Manager for a flagship location of a premium apparel brand. You will drive sales, lead a team of 25 and deliver an exceptional in-store experience.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Store-management experience at a premium/flagship retailer (e.g., Nike, Apple, Zara)",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Proven track record hitting sales and KPI targets",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Team leadership and scheduling for 20+ staff",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience with visual-merchandising standards",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with clienteling/CRM",
+        "weight": 4
+      }
+    ],
+    "expectation": "The target-company criterion maps to an employer filter (Nike, Apple, Zara); sales KPIs and team leadership as must_have; visual merchandising as moderate; clienteling as good_to_have.",
+    "note": "target company criterion (premium retail brands); store manager"
+  },
+  {
+    "id": "c2f-ind-barista-lead-cafe",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Lead Barista for an authentic Italian espresso bar. You will pull exceptional espresso, train new baristas and help run the bar during busy service.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Specialty-coffee / espresso experience",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Conversational Italian for the cafe's regulars and menu",
+        "weight": 6
+      },
+      {
+        "id": "c3",
+        "text": "Experience training or leading baristas",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Strong customer-service skills",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have latte-art skills",
+        "weight": 4
+      }
+    ],
+    "expectation": "The Italian criterion maps to a spoken-language filter (good_to_have at weight 6, testing language routing independent of weight); espresso experience, training and customer service as must_have; latte art as good_to_have.",
+    "note": "spoken-language requirement (Italian, nice-to-have) to language field; lead barista"
+  },
+  {
+    "id": "c2f-ind-primary-school-teacher",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Primary School Teacher for a Key Stage 2 class starting in September. You will plan and deliver engaging lessons and support pupil progress.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Qualified Teacher Status (QTS)",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Experience teaching Key Stage 2",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Strong classroom and behaviour management",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have a subject specialism (maths or science)",
+        "weight": 4
+      }
+    ],
+    "expectation": "QTS and KS2 experience as must_have; behaviour management as must_have; a subject specialism as good_to_have; a straightforward teaching role.",
+    "note": "straightforward primary teacher; QTS as normal requirement"
+  },
+  {
+    "id": "c2f-ind-university-lecturer-cs",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "University Lecturer in Computer Science to teach undergraduate modules and supervise projects. You will also contribute to the department's research output.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "PhD in Computer Science or a closely related field",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Teaching experience at university level",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "A research track record with peer-reviewed publications",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have experience securing research funding",
+        "weight": 4
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have industry experience in software",
+        "weight": 3
+      }
+    ],
+    "expectation": "The PhD criterion maps to an education filter (must_have); university teaching as must_have; publications as must_have; grants and industry experience as good_to_have.",
+    "note": "education criterion (PhD); university lecturer"
+  },
+  {
+    "id": "c2f-ind-restaurant-sommelier",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Sommelier for a fine-dining restaurant with an extensive Old World wine list. You will curate pairings, manage the cellar and elevate the guest experience.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Certified sommelier (Court of Master Sommeliers or WSET Level 3)",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Fluent in French",
+        "weight": 7
+      },
+      {
+        "id": "c3",
+        "text": "Deep knowledge of Old World wine regions",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience managing a cellar and wine list",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have spirits and sake knowledge",
+        "weight": 3
+      }
+    ],
+    "expectation": "The French fluency criterion maps to a spoken-language filter (must_have); the sommelier certification, wine knowledge and cellar management as must_have; spirits/sake as good_to_have.",
+    "note": "spoken-language requirement (French) to language field; sommelier"
+  },
+  {
+    "id": "c2f-ind-visual-merchandiser",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Visual Merchandiser to design and install window and in-store displays for a fashion retailer. You will translate brand guidelines into eye-catching layouts.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Visual-merchandising experience in fashion retail",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Must be based in Milan and able to travel to regional stores",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Strong eye for styling and display composition",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Ability to work to brand guidelines and seasonal campaigns",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with store-layout/planogram software",
+        "weight": 3
+      }
+    ],
+    "expectation": "Although the description gives no location, the criterion supplies Milan - mapping to a location filter (weight 8); VM experience and styling as must_have; brand-guideline work as moderate; planogram software as good_to_have.",
+    "note": "location supplied by a criterion (JD has none); visual merchandiser"
+  },
+  {
+    "id": "c2f-ind-senior-product-designer",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Senior Product Designer to own end-to-end design for a core product area. You will run discovery, ship polished UI and contribute to our design system.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must be expert in Figma and prototyping",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Strong portfolio of shipped end-to-end product work",
+        "weight": 9
+      },
+      {
+        "id": "c3",
+        "text": "Experience with user research and discovery",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Experience contributing to a design system",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have motion-design skills",
+        "weight": 3
+      }
+    ],
+    "expectation": "'Figma and prototyping' splits into two must_have skill filters; a strong portfolio and user research as must_have; design-system contribution as moderate; motion design as good_to_have.",
+    "note": "compound multi-skill split (Figma + prototyping); senior product designer"
+  },
+  {
+    "id": "c2f-ind-ux-researcher",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "UX Researcher to plan and run studies that shape our product roadmap. You will conduct interviews, usability tests and synthesise insights for stakeholders.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Experience running qualitative studies (interviews, usability testing)",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Ability to synthesise findings into actionable insights",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience partnering with product and design teams",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have quantitative/survey research skills",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with a research-repository tool (Dovetail)",
+        "weight": 3
+      }
+    ],
+    "expectation": "Qualitative research, synthesis and partnering as must_have (7-9); quantitative research and Dovetail as good_to_have (3-5), a clear weight split.",
+    "note": "clear mix of must-have and nice-to-have; UX researcher"
+  },
+  {
+    "id": "c2f-ind-video-editor-premiere",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Video Editor for a content studio producing social and brand films. You will cut engaging edits, add motion graphics and deliver to multiple formats.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Must be proficient in Premiere Pro and After Effects",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Strong storytelling and pacing in edits",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience delivering for social formats (vertical, short-form)",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have colour grading (DaVinci Resolve)",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have sound-design skills",
+        "weight": 3
+      }
+    ],
+    "expectation": "'Premiere Pro and After Effects' splits into two must_have skill filters; storytelling and social-format delivery as must_have; DaVinci and sound design as good_to_have.",
+    "note": "compound multi-skill split (editing tools); video editor"
+  },
+  {
+    "id": "c2f-ind-research-scientist-biotech",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Research Scientist for a biotech developing novel therapeutics. You will design and run experiments, analyse data and contribute to publications and IP.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "PhD in Molecular Biology, Biochemistry or a related field",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Hands-on experience with cell culture and molecular assays",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience analysing and presenting experimental data",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have experience with CRISPR gene editing",
+        "weight": 5
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have a first-author publication record",
+        "weight": 4
+      }
+    ],
+    "expectation": "The PhD criterion maps to an education filter (must_have); wet-lab and data-analysis experience as must_have; CRISPR and first-author publications as good_to_have.",
+    "note": "education criterion (PhD in life sciences); research scientist"
+  },
+  {
+    "id": "c2f-ind-lab-technician-chemistry",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Laboratory Technician for a QC chemistry lab. You will run analytical tests, maintain instruments and record results to GMP standards.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Experience in an analytical/QC chemistry lab",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Hands-on with HPLC and GC instruments",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Understanding of GMP/GLP documentation",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Nice to have experience with LIMS",
+        "weight": 4
+      }
+    ],
+    "expectation": "QC-lab experience, HPLC/GC and GMP as must_have; LIMS as good_to_have; a straightforward lab technician role.",
+    "note": "straightforward lab technician; no trap"
+  },
+  {
+    "id": "c2f-ind-fundraising-manager-ngo",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Fundraising Manager for an international NGO to grow major-gift and institutional income. You will build donor relationships and lead grant applications.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "6+ years in fundraising or development",
+        "weight": 9
+      },
+      {
+        "id": "c2",
+        "text": "Proven major-gift or institutional fundraising track record",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Experience writing successful grant applications",
+        "weight": 7
+      },
+      {
+        "id": "c4",
+        "text": "Strong donor-relationship management",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have experience with a CRM (Salesforce NPSP or Raiser's Edge)",
+        "weight": 4
+      }
+    ],
+    "expectation": "The explicit '6+ years' maps to an experience_min of 6; major-gift fundraising and grant writing as must_have; donor management as must_have; CRM as good_to_have.",
+    "note": "explicit years-of-experience (6+); fundraising manager; NGO"
+  },
+  {
+    "id": "c2f-ind-graphic-designer-junior",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Junior Graphic Designer to produce social-media graphics, marketing collateral and presentations. You will work closely with the marketing team and grow your craft.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Proficiency in the Adobe Creative Suite (Photoshop, Illustrator, InDesign)",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Must be based in or near Toronto for a hybrid role",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "A portfolio showing strong layout and typography",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Ability to work to brand guidelines",
+        "weight": 6
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have basic motion/social-video skills",
+        "weight": 3
+      }
+    ],
+    "expectation": "Although the description gives no location, the criterion supplies Toronto/hybrid - mapping to a location filter (weight 8); the Adobe Creative Suite and portfolio as must_have; brand-guideline work as moderate; motion as good_to_have.",
+    "note": "location supplied by a criterion (JD has none); junior graphic designer"
+  },
+  {
+    "id": "c2f-ind-program-manager-nonprofit",
+    "kind": "criteria_to_filters",
+    "database_type": 2,
+    "input": "Program Manager for a humanitarian non-profit to lead field programs and manage donor-funded projects. You will oversee budgets, reporting and local partner relationships.",
+    "criteria": [
+      {
+        "id": "c1",
+        "text": "Experience managing donor-funded programs (USAID, DFID, UN)",
+        "weight": 8
+      },
+      {
+        "id": "c2",
+        "text": "Exclude candidates without prior international field experience",
+        "weight": 8
+      },
+      {
+        "id": "c3",
+        "text": "Strong budget-management and donor-reporting skills",
+        "weight": 8
+      },
+      {
+        "id": "c4",
+        "text": "Experience managing local implementing partners",
+        "weight": 7
+      },
+      {
+        "id": "c5",
+        "text": "Nice to have French or Arabic language skills",
+        "weight": 5
+      }
+    ],
+    "expectation": "Donor-funded program and budget/reporting experience as must_have; the exclusion becomes a hard filter requiring international field experience; the French/Arabic criterion maps to good_to_have language filters.",
+    "note": "exclusion criterion (field experience phrased as exclusion); non-profit program manager"
+  }
+]

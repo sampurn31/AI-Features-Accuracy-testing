@@ -1,0 +1,402 @@
+[
+  {
+    "id": "senior-frontend-react-austin",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "We're hiring a Senior Frontend Engineer in Austin, TX to build our customer-facing dashboard. You'll own our React and TypeScript codebase, partner with design to ship pixel-perfect UI, and mentor two junior engineers. 6+ years of frontend experience and deep familiarity with state management (Redux or Zustand) required.",
+    "expectation": "A correct config should extract a senior-level (6+ years) frontend engineer role in Austin, TX with core skills React, TypeScript, and state management (Redux/Zustand) plus mentoring responsibility, and the JD is clear enough to need no clarifying questions.",
+    "note": "Clear senior frontend, specific city."
+  },
+  {
+    "id": "backend-golang-remote-us",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Remote (US-based) Backend Engineer needed to design and maintain microservices in Go. You'll build REST and gRPC APIs, optimize PostgreSQL queries, and deploy on Kubernetes. 3-5 years of backend experience expected.",
+    "expectation": "A correct config should extract a mid-level (3-5 years) backend engineer role, remote within the US, with core skills Go, REST/gRPC APIs, PostgreSQL, and Kubernetes, and the JD is clear enough to need no clarifying questions.",
+    "note": "Mid-level backend, remote country-level."
+  },
+  {
+    "id": "lead-sre-aws-berlin-hybrid",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Lead Site Reliability Engineer (hybrid, 3 days/week in Berlin) to own reliability of our payments platform. Responsibilities include managing our AWS infrastructure with Terraform, defining SLOs, running incident response, and building CI/CD pipelines. Must have 8+ years in infrastructure and prior on-call leadership.",
+    "expectation": "A correct config should extract a lead-level (8+ years) SRE role in Berlin on a hybrid schedule with core skills AWS, Terraform, CI/CD, SLOs, and incident response, and the JD is clear enough to need no clarifying questions.",
+    "note": "Lead SRE, hybrid location, clear."
+  },
+  {
+    "id": "mobile-dev-vague-app",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "We need a talented app developer to help take our mobile product to the next level. Must be a self-starter who thrives in a fast-paced startup.",
+    "expectation": "A correct config should recognize a mobile developer role but flag that platform (iOS/Android/cross-platform), seniority, location, and required skills are all unspecified, so clarifying questions should fire.",
+    "note": "Vague mobile brief, triggers clarifying questions."
+  },
+  {
+    "id": "senior-data-engineer-must-nice-split",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Senior Data Engineer, remote across EU time zones. Must-haves: 5+ years building data pipelines, strong Python and SQL, and hands-on Apache Spark. Nice-to-haves: dbt, Airflow, and experience with Snowflake or BigQuery.",
+    "expectation": "A correct config should extract a senior (5+ years) remote (EU) data engineer role, separating must-have skills (Python, SQL, Spark) from nice-to-haves (dbt, Airflow, Snowflake/BigQuery), and the JD is clear with an explicit priority split so it needs no clarifying questions.",
+    "note": "Must-have vs nice-to-have split, data engineering."
+  },
+  {
+    "id": "principal-ml-engineer-london",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Principal Machine Learning Engineer based in London to lead our recommendations team. You will architect large-scale ML systems, own model training and deployment with PyTorch, and set the technical direction for a team of six. Requires 10+ years in ML and a track record of production model deployment.",
+    "expectation": "A correct config should extract a principal-level (10+ years) ML engineer role in London with core skills PyTorch, large-scale ML systems, and model deployment plus team leadership, and the JD is clear enough to need no clarifying questions.",
+    "note": "Principal ML/AI, clear, team leadership."
+  },
+  {
+    "id": "sdr-saas-chicago",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Sales Development Representative for our B2B SaaS platform, based in our Chicago office. You'll prospect outbound leads, book demos for account executives, and manage your pipeline in Salesforce. Ideal for someone with 1-2 years of sales experience looking to grow.",
+    "expectation": "A correct config should extract an entry-level (1-2 years) SDR role in Chicago with core skills outbound prospecting, demo booking, and Salesforce, and the JD is clear enough to need no clarifying questions.",
+    "note": "Entry-level SDR, specific city, clear."
+  },
+  {
+    "id": "account-executive-remote-uk",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Remote Account Executive (UK) to close mid-market deals for our HR software. Responsibilities include running the full sales cycle, hitting a quarterly quota, and forecasting in HubSpot. 4+ years of closing experience in SaaS required.",
+    "expectation": "A correct config should extract a mid-level (4+ years) account executive role, remote in the UK, with core skills full-cycle SaaS sales, quota attainment, and HubSpot, and the JD is clear enough to need no clarifying questions.",
+    "note": "Mid account executive, remote country-level, clear."
+  },
+  {
+    "id": "marketing-manager-hybrid-toronto",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Marketing Manager (hybrid, Toronto) to lead demand generation. You'll manage a $500k annual budget across paid search and social, own our marketing automation in Marketo, and manage two coordinators. 6+ years in B2B marketing with team-management experience.",
+    "expectation": "A correct config should extract a manager-level (6+ years) marketing manager role in Toronto on a hybrid schedule with core skills demand generation, paid media, Marketo, and budget/team management, and the JD is clear enough to need no clarifying questions.",
+    "note": "Manager marketing, hybrid, clear."
+  },
+  {
+    "id": "content-rockstar-vague",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Looking for a content rockstar to help us grow our brand and crush our goals. If you love telling stories and moving fast, let's talk!",
+    "expectation": "A correct config should recognize a content/marketing role but flag that seniority, specific responsibilities, required skills, and location are all missing, so clarifying questions should fire.",
+    "note": "Vague 'rockstar' brief, triggers clarifying questions."
+  },
+  {
+    "id": "senior-growth-marketer-remote-emea",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Senior Growth Marketer, remote across EMEA, to own our user acquisition funnel. You'll run A/B tests, manage performance channels (Google Ads, Meta), and optimize conversion with tools like Amplitude. 5+ years in growth or performance marketing.",
+    "expectation": "A correct config should extract a senior (5+ years) growth marketer role, remote in EMEA, with core skills A/B testing, paid acquisition (Google Ads, Meta), and product analytics (Amplitude), and the JD is clear enough to need no clarifying questions.",
+    "note": "Senior growth, remote region, clear."
+  },
+  {
+    "id": "brand-director-must-nice-nyc",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Brand Director based in New York City to shape our global brand identity. Must-haves: 10+ years in brand marketing, proven experience leading rebrands, and management of a team of five or more. Nice-to-haves: agency background and experience in consumer packaged goods.",
+    "expectation": "A correct config should extract a director-level (10+ years) brand director role in New York City, separating must-haves (brand marketing, rebrand leadership, team management) from nice-to-haves (agency background, CPG experience), and the JD is clear with an explicit split so it needs no clarifying questions.",
+    "note": "Director brand, must-have/nice-to-have split."
+  },
+  {
+    "id": "registered-nurse-icu-houston",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Registered Nurse for our ICU at a Houston, TX hospital, night shift. You'll provide critical care to patients, administer medications, and document in EPIC. Requires an active RN license, BLS and ACLS certification, and 2+ years of ICU experience.",
+    "expectation": "A correct config should extract a mid-level ICU registered nurse role in Houston, TX requiring an active RN license, BLS/ACLS certification, EPIC documentation, and 2+ years of ICU experience, and the JD is clear enough to need no clarifying questions.",
+    "note": "RN with certs and EMR, specific city, clear."
+  },
+  {
+    "id": "family-physician-relocation-rural",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Board-certified Family Medicine Physician needed for a rural clinic in Montana; relocation assistance and sign-on bonus provided. You'll manage a panel of outpatients, perform routine procedures, and supervise mid-level providers. Requires MD/DO, active state license, and board certification in family medicine.",
+    "expectation": "A correct config should extract a physician (family medicine) role at a rural Montana clinic with relocation offered, requiring MD/DO, an active state license, and board certification, and the JD is clear enough to need no clarifying questions.",
+    "note": "Physician, relocation offered, clear."
+  },
+  {
+    "id": "clinical-pharmacist-hospital-manchester",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Clinical Pharmacist for a hospital in Manchester, UK. Responsibilities include reviewing medication orders, advising on dosing, and counseling patients. Requires GPhC registration and an MPharm degree; hospital experience preferred.",
+    "expectation": "A correct config should extract a clinical pharmacist role at a Manchester, UK hospital requiring GPhC registration and an MPharm degree with hospital experience preferred, and the JD is clear enough to need no clarifying questions.",
+    "note": "Pharmacist with registration, specific city, clear."
+  },
+  {
+    "id": "medical-assistant-vague-clinic",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Busy clinic needs a medical assistant ASAP. Must be reliable and good with people.",
+    "expectation": "A correct config should recognize a medical assistant role but flag that certification requirements, experience level, location, and specific duties are unspecified, so clarifying questions should fire.",
+    "note": "Vague healthcare brief, triggers clarifying questions."
+  },
+  {
+    "id": "physiotherapist-outpatient-sydney",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Physiotherapist for our outpatient sports clinic in Sydney, Australia. You'll assess and treat musculoskeletal injuries, design rehab programs, and work alongside our sports-medicine team. Requires AHPRA registration and 3+ years of clinical experience.",
+    "expectation": "A correct config should extract a mid-level (3+ years) physiotherapist role at a Sydney outpatient clinic requiring AHPRA registration and musculoskeletal assessment/rehab expertise, and the JD is clear enough to need no clarifying questions.",
+    "note": "Physiotherapist with registration, specific city, clear."
+  },
+  {
+    "id": "staff-accountant-hybrid-dublin",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Staff Accountant (hybrid, Dublin) to manage month-end close, reconcile accounts, and prepare financial statements under IFRS. Requires a bachelor's in accounting, 3+ years of experience, and proficiency in Xero or QuickBooks; ACCA part-qualified a plus.",
+    "expectation": "A correct config should extract a mid-level (3+ years) staff accountant role in Dublin on a hybrid schedule with core skills month-end close, reconciliations, IFRS, and Xero/QuickBooks, and the JD is clear enough to need no clarifying questions.",
+    "note": "Accountant with tools and standards, hybrid, clear."
+  },
+  {
+    "id": "financial-analyst-fpna-singapore",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Financial Analyst (FP&A) based in Singapore to support budgeting, forecasting, and variance analysis. You'll build financial models in Excel and present monthly reports to leadership. Requires 2-4 years of FP&A experience and advanced Excel; SQL a plus.",
+    "expectation": "A correct config should extract a junior-to-mid (2-4 years) FP&A financial analyst role in Singapore with core skills budgeting, forecasting, variance analysis, and advanced Excel, and the JD is clear enough to need no clarifying questions.",
+    "note": "FP&A analyst, specific city, clear."
+  },
+  {
+    "id": "financial-controller-onsite-vancouver",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Financial Controller (onsite, Vancouver) to lead our accounting function. You'll own the general ledger, manage a team of four, oversee audits, and ensure compliance with GAAP. Requires a CPA designation and 8+ years of progressive accounting experience.",
+    "expectation": "A correct config should extract a senior/manager-level (8+ years) financial controller role onsite in Vancouver requiring a CPA, GAAP compliance, general-ledger ownership, and team management, and the JD is clear enough to need no clarifying questions.",
+    "note": "Controller with CPA, onsite, clear."
+  },
+  {
+    "id": "auditor-vague-firm",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Growing firm seeks an auditor. Great opportunity for the right person.",
+    "expectation": "A correct config should recognize an auditor role but flag that seniority, internal vs external audit, certifications, location, and industry are all unspecified, so clarifying questions should fire.",
+    "note": "Vague finance brief, triggers clarifying questions."
+  },
+  {
+    "id": "investment-analyst-cfa-hongkong",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Investment Analyst for our equities desk in Hong Kong. Must-haves: 4+ years in equity research, strong financial modeling, and a CFA charter or active candidacy. Nice-to-haves: coverage of Asian markets and Python for data analysis.",
+    "expectation": "A correct config should extract a senior (4+ years) equity investment analyst role in Hong Kong, separating must-haves (equity research, financial modeling, CFA) from nice-to-haves (Asian-market coverage, Python), and the JD is clear with an explicit split so it needs no clarifying questions.",
+    "note": "Investment analyst, must-have/nice-to-have split."
+  },
+  {
+    "id": "site-engineer-infrastructure-multisite",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Site Engineer for a highways infrastructure project with sites across the Midlands, UK; travel between sites required. You'll set out works, manage subcontractors, ensure health-and-safety compliance, and report on progress. Requires a degree in civil engineering, a CSCS card, and 4+ years on major civils projects.",
+    "expectation": "A correct config should extract a mid-level (4+ years) site/civil engineer role across multiple Midlands sites with travel, requiring a civil engineering degree, a CSCS card, and health-and-safety compliance, and the JD is clear enough to need no clarifying questions.",
+    "note": "Civil engineer, multi-site with travel, clear."
+  },
+  {
+    "id": "commercial-electrician-denver",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Licensed Commercial Electrician in Denver, CO to install and maintain electrical systems on commercial builds. You'll read blueprints, pull wire, and ensure work meets NEC code. Requires a journeyman electrician license and 3+ years of commercial experience.",
+    "expectation": "A correct config should extract a journeyman commercial electrician role in Denver, CO requiring a journeyman license, blueprint reading, and NEC code compliance with 3+ years of experience, and the JD is clear enough to need no clarifying questions.",
+    "note": "Licensed electrician, specific city, clear."
+  },
+  {
+    "id": "plumber-vague-immediate",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Need a good plumber to start right away. Pay is competitive.",
+    "expectation": "A correct config should recognize a plumber role but flag that licensing, residential vs commercial focus, experience level, and location are all unspecified, so clarifying questions should fire.",
+    "note": "Vague skilled-trade brief, triggers clarifying questions."
+  },
+  {
+    "id": "construction-foreman-onsite-phoenix",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Construction Foreman (onsite, Phoenix, AZ) to lead crews on residential developments. You'll schedule daily work, manage 15-20 tradespeople, enforce safety, and coordinate with the site manager. Requires 7+ years in construction with prior crew-leadership experience and an OSHA 30 certification.",
+    "expectation": "A correct config should extract a lead-level (7+ years) construction foreman role onsite in Phoenix, AZ requiring crew leadership, scheduling, safety enforcement, and OSHA 30, and the JD is clear enough to need no clarifying questions.",
+    "note": "Foreman lead role, onsite, clear."
+  },
+  {
+    "id": "senior-architect-must-nice-dubai",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Senior Architect in Dubai for large-scale mixed-use developments. Must-haves: 8+ years post-qualification, a licensed architect, and expert AutoCAD and Revit skills. Nice-to-haves: LEED accreditation and experience with hospitality projects.",
+    "expectation": "A correct config should extract a senior (8+ years) licensed architect role in Dubai, separating must-haves (license, AutoCAD, Revit) from nice-to-haves (LEED, hospitality experience), and the JD is clear with an explicit split so it needs no clarifying questions.",
+    "note": "Architect, must-have/nice-to-have split."
+  },
+  {
+    "id": "quantity-surveyor-hybrid-leeds",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Quantity Surveyor (hybrid, Leeds, UK) for a commercial fit-out contractor. You'll prepare cost estimates, manage subcontractor accounts, value variations, and produce monthly valuations. Requires a RICS-accredited degree and 3+ years of QS experience in construction.",
+    "expectation": "A correct config should extract a mid-level (3+ years) quantity surveyor role in Leeds on a hybrid schedule with core skills cost estimating, subcontractor accounts, and valuations requiring a RICS-accredited degree, and the JD is clear enough to need no clarifying questions.",
+    "note": "Quantity surveyor, hybrid, clear."
+  },
+  {
+    "id": "production-supervisor-shift-detroit",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Production Supervisor for our automotive parts plant in Detroit, MI, running the evening shift. You'll oversee a team of 25 operators, hit daily output targets, enforce lean-manufacturing practices, and drive continuous improvement. Requires 5+ years in manufacturing with prior supervisory experience.",
+    "expectation": "A correct config should extract a manager-level (5+ years) production supervisor role in Detroit, MI on the evening shift with core skills team leadership, lean manufacturing, and output targets, and the JD is clear enough to need no clarifying questions.",
+    "note": "Production supervisor, shift, clear."
+  },
+  {
+    "id": "supply-chain-analyst-remote-canada",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Remote (Canada) Supply Chain Analyst to optimize our distribution network. You'll analyze inventory data, forecast demand, and build dashboards in Power BI and SQL. Requires 3+ years in supply-chain analytics and strong Excel; APICS certification a plus.",
+    "expectation": "A correct config should extract a mid-level (3+ years) supply-chain analyst role, remote in Canada, with core skills demand forecasting, inventory analysis, Power BI, and SQL, and the JD is clear enough to need no clarifying questions.",
+    "note": "Supply-chain analyst, remote country-level, clear."
+  },
+  {
+    "id": "quality-engineer-medical-devices-galway",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Quality Engineer for a medical-device manufacturer in Galway, Ireland. You'll manage CAPAs, conduct root-cause analysis, support ISO 13485 audits, and validate processes. Requires a degree in engineering and 4+ years in a regulated manufacturing environment.",
+    "expectation": "A correct config should extract a mid/senior (4+ years) quality engineer role in Galway with core skills CAPA management, root-cause analysis, ISO 13485, and process validation in a regulated environment, and the JD is clear enough to need no clarifying questions.",
+    "note": "Quality engineer, regulated industry, clear."
+  },
+  {
+    "id": "warehouse-manager-vague-growing",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Fast-growing e-commerce company needs someone to run our warehouse. Big opportunity as we scale!",
+    "expectation": "A correct config should recognize a warehouse manager role but flag that team size, experience level, location, shift, and required systems are all unspecified, so clarifying questions should fire.",
+    "note": "Vague logistics brief, triggers clarifying questions."
+  },
+  {
+    "id": "cdl-truck-driver-regional-dallas",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Regional CDL-A Truck Driver based out of Dallas, TX for dry-van freight. You'll run regional routes with home time every weekend, perform pre-trip inspections, and maintain electronic logs. Requires a valid Class A CDL, a clean driving record, and 1+ years of OTR experience.",
+    "expectation": "A correct config should extract a regional CDL-A truck driver role out of Dallas, TX requiring a valid Class A CDL, a clean driving record, and 1+ years of OTR experience, and the JD is clear enough to need no clarifying questions.",
+    "note": "CDL driver, specific hub, clear."
+  },
+  {
+    "id": "corporate-paralegal-washington-dc",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Corporate Paralegal at a law firm in Washington, DC. You'll draft and file corporate documents, manage due diligence for M&A deals, and maintain corporate records. Requires a paralegal certificate and 3+ years of corporate-law experience; familiarity with document-management systems preferred.",
+    "expectation": "A correct config should extract a mid-level (3+ years) corporate paralegal role in Washington, DC with core skills corporate document drafting, M&A due diligence, and records management, and the JD is clear enough to need no clarifying questions.",
+    "note": "Paralegal, specific city, clear."
+  },
+  {
+    "id": "hr-manager-hybrid-amsterdam",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "HR Manager (hybrid, Amsterdam) to lead people operations for a 200-person tech company. You'll own the full employee lifecycle, manage HRIS (Workday), advise on Dutch employment law, and run performance cycles. Requires 6+ years in HR with prior management experience.",
+    "expectation": "A correct config should extract a manager-level (6+ years) HR manager role in Amsterdam on a hybrid schedule with core skills employee-lifecycle management, Workday HRIS, employment law, and performance management, and the JD is clear enough to need no clarifying questions.",
+    "note": "HR manager, hybrid, clear."
+  },
+  {
+    "id": "technical-recruiter-remote-apac",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Technical Recruiter, remote across APAC, to own full-cycle hiring for engineering roles. You'll source candidates, run interviews, manage our ATS (Greenhouse), and partner with hiring managers. Requires 3+ years of technical recruiting, ideally in-house.",
+    "expectation": "A correct config should extract a mid-level (3+ years) technical recruiter role, remote in APAC, with core skills full-cycle recruiting, sourcing, and Greenhouse ATS, and the JD is clear enough to need no clarifying questions.",
+    "note": "Recruiter, remote region, clear."
+  },
+  {
+    "id": "executive-assistant-vague-ceo",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Our CEO needs an amazing executive assistant. Must be organized and discreet.",
+    "expectation": "A correct config should recognize an executive assistant role but flag that experience level, location, in-office vs remote, and specific responsibilities are all unspecified, so clarifying questions should fire.",
+    "note": "Vague admin brief, triggers clarifying questions."
+  },
+  {
+    "id": "office-manager-vague-startup",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Startup needs an office manager to keep things running smoothly. Wear many hats and roll with the punches!",
+    "expectation": "A correct config should recognize an office manager role but flag that location, in-office requirement, experience level, and specific duties are all unspecified, so clarifying questions should fire.",
+    "note": "Vague admin brief, triggers clarifying questions."
+  },
+  {
+    "id": "legal-counsel-must-nice-remote-us",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "In-house Legal Counsel, remote (US), for a fintech. Must-haves: a JD, active bar admission, and 6+ years in commercial contracts. Nice-to-haves: fintech or payments industry experience and familiarity with data-privacy regulation.",
+    "expectation": "A correct config should extract a senior (6+ years) in-house legal counsel role, remote in the US, separating must-haves (JD, bar admission, commercial contracts) from nice-to-haves (fintech experience, data-privacy knowledge), and the JD is clear with an explicit split so it needs no clarifying questions.",
+    "note": "Legal counsel, must-have/nice-to-have split."
+  },
+  {
+    "id": "hotel-general-manager-relocation-maldives",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "General Manager for a luxury resort in the Maldives; relocation and housing provided. You'll oversee all operations, manage a team of 150+, own the P&L, and uphold five-star service standards. Requires 10+ years in hospitality with prior GM experience at a luxury property.",
+    "expectation": "A correct config should extract a manager/exec-level (10+ years) hotel general manager role in the Maldives with relocation, requiring luxury-hospitality operations, P&L ownership, and large-team leadership, and the JD is clear enough to need no clarifying questions.",
+    "note": "Hotel GM, relocation, clear."
+  },
+  {
+    "id": "head-chef-restaurant-barcelona",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Head Chef for a Mediterranean restaurant in Barcelona, Spain. You'll design seasonal menus, manage kitchen staff, control food costs, and maintain HACCP food-safety standards. Requires 6+ years in professional kitchens with 2+ years as a head or sous chef.",
+    "expectation": "A correct config should extract a senior (6+ years) head chef role in Barcelona with core skills menu design, kitchen management, food-cost control, and HACCP, and the JD is clear enough to need no clarifying questions.",
+    "note": "Head chef, specific city, clear."
+  },
+  {
+    "id": "retail-store-manager-glasgow",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Store Manager for our flagship fashion retail location in Glasgow, UK. You'll drive sales targets, manage a team of 20, oversee visual merchandising, and control stock. Requires 4+ years in retail with prior store-management experience.",
+    "expectation": "A correct config should extract a manager-level (4+ years) retail store manager role in Glasgow with core skills sales-target management, team leadership, visual merchandising, and stock control, and the JD is clear enough to need no clarifying questions.",
+    "note": "Retail store manager, specific city, clear."
+  },
+  {
+    "id": "secondary-math-teacher-doha",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Secondary School Mathematics Teacher for an international school in Doha, Qatar. You'll teach IGCSE and A-Level maths, plan lessons, assess students, and support pastoral care. Requires a bachelor's in mathematics or education, a teaching qualification (QTS or equivalent), and 2+ years of classroom experience.",
+    "expectation": "A correct config should extract a mid-level (2+ years) secondary mathematics teacher role in Doha, Qatar requiring a relevant degree, a QTS-equivalent teaching qualification, and IGCSE/A-Level experience, and the JD is clear enough to need no clarifying questions.",
+    "note": "Teacher with qualification, specific city, clear."
+  },
+  {
+    "id": "barista-vague-cafe",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Cool cafe looking for a barista. Vibes matter more than resumes!",
+    "expectation": "A correct config should recognize a barista role but flag that location, hours (full or part-time), experience level, and pay are all unspecified, so clarifying questions should fire.",
+    "note": "Vague hospitality brief, triggers clarifying questions."
+  },
+  {
+    "id": "university-lecturer-nursing-edinburgh",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "University Lecturer in Nursing (onsite, Edinburgh, UK) to teach undergraduate and postgraduate nursing students. You'll deliver lectures, supervise clinical placements, and contribute to research. Requires a PhD or active NMC registration with a master's, plus teaching experience in higher education.",
+    "expectation": "A correct config should extract a university lecturer role in nursing onsite in Edinburgh requiring a PhD or NMC registration with a master's plus higher-education teaching experience, and the JD is clear enough to need no clarifying questions.",
+    "note": "University lecturer, education, clear."
+  },
+  {
+    "id": "graphic-designer-remote-global",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Remote Graphic Designer (global, must overlap with US Pacific hours) for a consumer brand. You'll create marketing assets, social graphics, and packaging using Adobe Creative Suite (Photoshop, Illustrator, InDesign). Requires 3+ years of design experience and a strong portfolio.",
+    "expectation": "A correct config should extract a mid-level (3+ years) graphic designer role, remote globally with US Pacific overlap, with core skills Adobe Creative Suite (Photoshop, Illustrator, InDesign) and a portfolio requirement, and the JD is clear enough to need no clarifying questions.",
+    "note": "Graphic designer, remote with overlap, clear."
+  },
+  {
+    "id": "senior-ux-researcher-hybrid-seattle",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Senior UX Researcher (hybrid, Seattle, WA) to lead research for our mobile products. You'll plan and run usability studies, conduct interviews, synthesize findings in Figma and Dovetail, and influence product strategy. Requires 5+ years of applied UX research and mixed-methods expertise.",
+    "expectation": "A correct config should extract a senior (5+ years) UX researcher role in Seattle, WA on a hybrid schedule with core skills usability studies, interviews, mixed-methods research, Figma, and Dovetail, and the JD is clear enough to need no clarifying questions.",
+    "note": "UX researcher, hybrid, clear."
+  },
+  {
+    "id": "journalist-vague-storyteller",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "We want a passionate storyteller to join our newsroom. Come make an impact with us!",
+    "expectation": "A correct config should recognize a journalist/reporter role but flag that beat, seniority, location, medium (print/digital/broadcast), and required skills are all unspecified, so clarifying questions should fire.",
+    "note": "Vague media brief, triggers clarifying questions."
+  },
+  {
+    "id": "research-scientist-biotech-boston",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Research Scientist (onsite, Boston, MA) at a biotech developing gene therapies. You'll design and execute molecular-biology experiments, analyze data, and publish findings. Requires a PhD in molecular biology or a related field and hands-on experience with CRISPR and cell culture.",
+    "expectation": "A correct config should extract a research scientist role onsite in Boston, MA requiring a PhD in molecular biology and hands-on CRISPR and cell-culture experience, and the JD is clear enough to need no clarifying questions.",
+    "note": "Research scientist with PhD, onsite, clear."
+  },
+  {
+    "id": "nonprofit-program-manager-nairobi",
+    "kind": "jd",
+    "database_type": 2,
+    "input": "Program Manager for an international NGO based in Nairobi, Kenya, running youth education programs. You'll manage program budgets, report to donors, coordinate field staff, and monitor and evaluate outcomes. Requires 5+ years in program management in the non-profit or development sector and experience with grant reporting.",
+    "expectation": "A correct config should extract a manager-level (5+ years) non-profit program manager role in Nairobi, Kenya with core skills budget management, donor/grant reporting, field-staff coordination, and monitoring and evaluation, and the JD is clear enough to need no clarifying questions.",
+    "note": "Non-profit program manager, country-level, clear."
+  }
+]

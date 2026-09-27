@@ -1,0 +1,10 @@
+output/
+__pycache__/
+.venv/
+*.pyc
+# Local secrets — never commit. set_env.sh holds your Anthropic key.
+set_env.sh
+.env
+# Never commit the real Neptune prompts if they're considered internal:
+# (uncomment if required)
+# prompts/neptune_*_system_prompt.txt

@@ -1,0 +1,50 @@
+Fields : 
+Title
+
+Job Type
+
+Min Exp
+
+Max Exp
+
+city
+
+state
+
+country
+
+address
+
+min salary
+
+max salary
+
+skills
+
+job_parser_data
+
+job_document_id 
+
+
+
+Sample Response:
+{
+    "silent_progress": true,
+    "message": "Job Parser Successful ",
+    "message_type": "is-success",
+    "data": {
+        "job": {
+            "name": "Frontend Vue.js Developer",
+            "job_type": "fulltime",
+            "minexperienceinyears": 3,
+            "maxexperienceinyears": 6,
+            "city": "Hyderabad",
+            "state": "Telangana",
+            "country": "India",
+            "address": "HITEC City, Hyderabad, Telangana, India",
+            "job_skill": "Vue.js, JavaScript, HTML, CSS, Frontend Development, Team Collaboration, Process Improvement, Dutch",
+            "annualsalarymin": 1500000,
+            "annualsalarymax": 2800000,
+            "job_document_id": "5_1791"
+        }
+    },

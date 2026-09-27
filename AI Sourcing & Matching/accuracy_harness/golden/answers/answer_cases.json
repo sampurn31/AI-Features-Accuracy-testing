@@ -1,0 +1,20 @@
+[
+  {"id": "ans-swe-platform", "kind": "answer_influence", "database_type": 2,
+   "input": "We're hiring a software engineer to help build our platform. Should be a strong problem-solver who moves fast.",
+   "expectation": "Ambiguous on stack/seniority/location -> should ask questions; after answering, config should reflect the chosen answers and go COMPLETE."},
+  {"id": "ans-marketing-startup", "kind": "answer_influence", "database_type": 2,
+   "input": "Looking for a marketing manager for a fast-growing startup.",
+   "expectation": "Ambiguous on channel/seniority/location -> questions; answers should shift criteria/filters (e.g. chosen channel/seniority) and resolve to COMPLETE."},
+  {"id": "ans-project-manager", "kind": "answer_influence", "database_type": 2,
+   "input": "Seeking a project manager to join our team and drive delivery.",
+   "expectation": "Ambiguous on domain/industry/seniority -> questions; answering should add the chosen domain/seniority to criteria/filters and go COMPLETE."},
+  {"id": "ans-designer-product", "kind": "answer_influence", "database_type": 2,
+   "input": "Hiring a designer to help improve our product experience.",
+   "expectation": "Ambiguous on UX-vs-graphic, tools, seniority, location -> questions; answers should land in skills/tools and resolve COMPLETE."},
+  {"id": "ans-data-analyst", "kind": "answer_influence", "database_type": 2,
+   "input": "We need a data analyst to help us make sense of our numbers.",
+   "expectation": "Ambiguous on tools (SQL/BI), domain, seniority, location -> questions; answers should populate the chosen tools/seniority and go COMPLETE."},
+  {"id": "ans-sales-rep", "kind": "answer_influence", "database_type": 2,
+   "input": "Sales representative wanted to grow our customer base.",
+   "expectation": "Ambiguous on industry, B2B/B2C, seniority, location -> questions; answers should add the chosen industry/segment and resolve COMPLETE."}
+]

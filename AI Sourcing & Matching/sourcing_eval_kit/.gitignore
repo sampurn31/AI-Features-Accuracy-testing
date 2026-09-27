@@ -1,0 +1,8 @@
+# Never commit credentials or run output
+set_env.sh
+set_prod_urls.sh
+output/
+.venv/
+venv/
+__pycache__/
+*.pyc
